@@ -1,0 +1,84 @@
+[
+    {
+        "navigation": [
+            {
+                "id": 1,
+                "lableNav": "Play",
+                "icon": "./assets",
+                "list": [
+                    {
+                        "id": 1,
+                        "nav": "Live Streaming",
+                        "link": "http://",
+                        "class": "live-stream"
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "lableNav": "Category",
+                "icon": "./assets",
+                "list": [
+                    {
+                        "id": 1,
+                        "nav": "Home",
+                        "link": "http://"
+                    },
+                    {
+                        "id": 2,
+                        "nav": "Idol",
+                        "link": "http://"
+                    },
+                    {
+                        "id": 3,
+                        "nav": "Showbiz",
+                        "link": "http://"
+                    },
+                    {
+                        "id": 4,
+                        "nav": "Lifestyle",
+                        "link": "http://"
+                    },
+                    {
+                        "id": 5,
+                        "nav": "Gossip",
+                        "link": "http://"
+                    },
+                    {
+                        "id": 6,
+                        "nav": "Cinema",
+                        "link": "http://"
+                    },
+                    {
+                        "id": 7,
+                        "nav": "Digoyang Asik",
+                        "link": "http://"
+                    },
+                    {
+                        "id": 8,
+                        "nav": "Quiz",
+                        "link": "http://"
+                    }
+                ]
+            },
+            {
+                
+                "id": 3,
+                "lableNav": "Radio Streaming",
+                "icon": "./assets",
+                "list": [
+                    {
+                        "id": 1,
+                        "nav": "Celebrities Radio 106.6 FM",
+                        "link": "http://"
+                    },
+                    {
+                        "id": 2,
+                        "nav": "RDI 97.1 FM",
+                        "link": "http://"
+                    }
+                ]
+            }
+        ]
+    }
+]
