@@ -1,0 +1,261 @@
+@font-face {
+  font-family: Inter;
+  src: url("../../assets/fonts/Inter/static/Inter-Regular.ttf"), format("truetype");
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  scrollbar-width: thin !important;
+  scrollbar-color: #f98e8e #1c222b !important;
+}
+:root::-webkit-scrollbar {
+  width: 2px;
+}
+:root::-webkit-scrollbar-thumb {
+  background-color: #f98e8e;
+  border-radius: 2px;
+}
+
+body {
+  font-family: Inter, sans-serif;
+  scroll-behavior: smooth;
+}
+
+h1 {
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 160%;
+}
+
+h2 {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+
+h3 {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+
+h4 {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+h5 {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+
+p {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 42px;
+  }
+}
+@media (min-width: 769px) {
+  .container {
+    padding: 0 82px;
+  }
+}
+#main-layouts {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+#main-layouts header {
+  position: sticky;
+  top: -1px;
+  width: 100%;
+  height: 108px;
+  background-color: #262e39;
+}
+#main-layouts header .container {
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+#main-layouts header .container .brand-btn-wrapper {
+  display: flex;
+  gap: 32px;
+}
+#main-layouts header .container .brand-btn-wrapper .burger-btn {
+  background-color: unset;
+  border: none;
+  cursor: pointer;
+}
+#main-layouts header .container .brand-btn-wrapper .burger-btn .ic-burger {
+  content: url(../../../assets/icon/ic-burger.png);
+  width: 32px;
+  height: 32px;
+}
+#main-layouts header .container .search {
+  background-color: #9b9b9b;
+  padding: 8px 16px;
+  width: 350px;
+  border: none;
+  border-radius: 360px;
+}
+#main-layouts header .container .search::placeholder {
+  color: #707070;
+  text-align: right;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+#main-layouts header .container .search:focus {
+  outline: none;
+}
+#main-layouts nav {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100vh;
+  display: none;
+}
+#main-layouts nav #navigasi {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 24px;
+  background-color: #262e39;
+  width: 280px;
+  height: 100vh;
+  overflow-y: scroll;
+  animation: navClose 0.5s linear forwards;
+}
+#main-layouts nav #navigasi::-webkit-scrollbar {
+  width: 2px;
+}
+#main-layouts nav #navigasi::-webkit-scrollbar-thumb {
+  background-color: #f98e8e;
+  border-radius: 2px;
+}
+#main-layouts nav #navigasi.clicked {
+  animation: navOpen 0.5s linear forwards;
+}
+@keyframes navOpen {
+  from {
+    transform: translateX(-300px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes navClose {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-300px);
+  }
+}
+#main-layouts nav #navigasi .close-nav {
+  float: right;
+  cursor: pointer;
+  width: max-content;
+  border: none;
+  background-color: transparent;
+}
+#main-layouts nav #navigasi .close-nav .ic-close-nav {
+  content: url("../../../assets/icon/ic-close-nav.png");
+  width: 24px;
+  height: 24px;
+}
+#main-layouts nav #navigasi .side-nav {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  list-style: none;
+}
+#main-layouts nav #navigasi .side-nav li label {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  color: #f98e8e;
+  margin-bottom: 16px;
+}
+#main-layouts nav #navigasi .side-nav li label .ic-play,
+#main-layouts nav #navigasi .side-nav li label .ic-category,
+#main-layouts nav #navigasi .side-nav li label .ic-radio {
+  width: 16px;
+  height: 16px;
+}
+#main-layouts nav #navigasi .side-nav li label .ic-play {
+  content: url(../../../assets/icon/ic-play.png);
+}
+#main-layouts nav #navigasi .side-nav li label .ic-category {
+  content: url(../../../assets/icon/ic-category.png);
+}
+#main-layouts nav #navigasi .side-nav li label .ic-radio {
+  content: url(../../../assets/icon/ic-radio.png);
+}
+#main-layouts nav #navigasi .side-nav li ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+#main-layouts nav #navigasi .side-nav li ul li a {
+  text-decoration: none;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  color: #d3d3d3;
+}
+#main-layouts nav.clicked {
+  display: block;
+}
+#main-layouts section {
+  display: flex;
+  gap: 32px;
+}
+#main-layouts section main {
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  background-color: lightblue;
+}
+#main-layouts section aside {
+  width: 300px;
+  min-height: 100vh;
+  overflow: hidden;
+  background-color: lightgreen;
+}
+#main-layouts footer {
+  width: 100%;
+  min-height: 414px;
+  overflow: hidden;
+  background-color: lightpink;
+}
+
+#home-page {
+  background-color: #1c222b;
+}/*# sourceMappingURL=styles.css.map */
