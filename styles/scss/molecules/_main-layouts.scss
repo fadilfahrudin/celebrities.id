@@ -5,6 +5,7 @@
 
     header {
         position: sticky;
+        z-index: 999;
         top: -1px;
         width: 100%;
         height: 108px;
@@ -61,6 +62,7 @@
 
     nav {
         position: fixed;
+        z-index: 9999;
         background: rgba(0, 0, 0, 0.5);
         width: 100%;
         height: 100vh;
@@ -188,7 +190,10 @@
             width: 100%;
             min-height: 100vh;
             overflow: hidden;
-            background-color: lightblue;
+            display: flex;
+            flex-direction: column;
+            gap: 32px 0;
+            // background-color: lightblue;
         }
         aside {
             width: 300px;

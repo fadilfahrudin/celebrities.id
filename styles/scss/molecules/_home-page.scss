@@ -1,3 +1,208 @@
 #home-page {
     background-color: $color-dark;
+    #main-layouts {
+        section {
+            main {
+                .headline {
+                    a {
+                        text-decoration: none;
+                        .headline-img {
+                            aspect-ratio: 16/9;
+                            width: 100%;
+                            height: auto;
+                            overflow: hidden;
+                            img {
+                                background-color: $color-dark-50;
+                                width: 100%;
+                                height: auto;
+                                transform: scale(1);
+                                transition: transform 1s;
+                                &:hover {
+                                    transform: scale(1.2);
+                                }
+                            }
+                        }
+                        h1 {
+                            color: $text-light;
+                        }
+                    }
+                }
+                .live-topics {
+                    background-color: #262e39;
+                    padding: 16px;
+                    gap: 24px;
+                    .live-topic-header {
+                        justify-content: space-between;
+                        h3 {
+                            color: $text-light;
+                        }
+                        .row {
+                            .btn-slide {
+                                cursor: pointer;
+                                background-color: transparent;
+                                border: none;
+                                .ic-left-arrow,
+                                .ic-right-arrow {
+                                    width: 32px;
+                                    height: 32px;
+                                }
+                                .ic-left-arrow {
+                                    content: url(../../../assets/icon/ic-arrow-left.png);
+                                }
+                                .ic-right-arrow {
+                                    content: url(../../../assets/icon/ic-arrow-right.png);
+                                }
+                            }
+                        }
+                    }
+                    .live-topic-body {
+                        gap: 16px;
+                        width: 100%;
+                        overflow-x: hidden;
+                        .live-topic-card {
+                            flex-shrink: 0; //hide grow content
+                            width: 290px;
+                            height: auto;
+                            overflow: hidden;
+                            a {
+                                text-decoration: none;
+                                .live-topic-img {
+                                    position: relative;
+                                    aspect-ratio: 4/3;
+                                    width: 100%;
+                                    height: 170px;
+                                    overflow: hidden;
+                                    margin-bottom: 8px;
+                                    background-color: $color-dark-50;
+                                    img {
+                                        width: 100%;
+                                        height: auto;
+                                        object-fit: contain;
+                                        transform: scale(1);
+                                        transition: transform 1s;
+
+                                        &:hover {
+                                            transform: scale(1.2);
+                                        }
+                                    }
+                                    .ic-video,
+                                    .ic-audio {
+                                        width: 32px;
+                                        height: 32px;
+
+                                        position: absolute;
+                                        right: 12px;
+                                        bottom: 12px;
+                                    }
+                                    .ic-audio {
+                                        content: url(../../../assets/icon/ic-audio.png);
+                                    }
+                                    .ic-video {
+                                        content: url(../../../assets/icon/ic-video.png);
+                                    }
+                                }
+                                h4 {
+                                    color: $text-light;
+                                }
+                            }
+                        }
+                    }
+                    .live-topic-tag {
+                        ul {
+                            display: flex;
+                            list-style: none;
+                            gap: 0 16px;
+                            li {
+                                a {
+                                    display: block;
+                                    text-decoration: none;
+                                    color: $text-white;
+                                    padding: 8px 16px;
+                                    border: 1px solid $color-pink;
+                                    border-radius: 32px;
+                                    &.active {
+                                        background-color: $color-pink;
+                                    }
+                                    &:hover {
+                                        background-color: $color-pink;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .category-widget {
+                    width: 100%;
+                    height: auto;
+                    .category-widget-header {
+                        align-items: center;
+                        justify-content: space-between;
+                        margin-bottom: 16px;
+                        h3 {
+                            color: $text-light;
+                        }
+                        a {
+                            text-decoration: none;
+                            color: $text-white;
+                            padding: 8px 24px;
+                            background-color: $color-pink;
+                            border-radius: 50px;
+                        }
+                    }
+                    .category-widget-body {
+                        display: flex;
+                        flex-wrap: wrap;
+                        gap: 16px;
+                        .category-widget-card {
+                            flex-shrink: 0; //hide grow content
+                            width: 300px;
+                            height: auto;
+                            overflow: hidden;
+                            a {
+                                text-decoration: none;
+                                .category-widget-img {
+                                    position: relative;
+                                    aspect-ratio: 4/3;
+                                    width: 100%;
+                                    height: 200px;
+                                    overflow: hidden;
+                                    margin-bottom: 8px;
+                                    background-color: $color-dark-50;
+                                    img {
+                                        width: 100%;
+                                        height: auto;
+                                        object-fit: contain;
+                                        transform: scale(1);
+                                        transition: transform 1s;
+
+                                        &:hover {
+                                            transform: scale(1.2);
+                                        }
+                                    }
+                                    .ic-video,
+                                    .ic-audio {
+                                        width: 32px;
+                                        height: 32px;
+
+                                        position: absolute;
+                                        right: 12px;
+                                        bottom: 12px;
+                                    }
+                                    .ic-audio {
+                                        content: url(../../../assets/icon/ic-audio.png);
+                                    }
+                                    .ic-video {
+                                        content: url(../../../assets/icon/ic-video.png);
+                                    }
+                                }
+                                h4 {
+                                    color: $text-light;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

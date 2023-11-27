@@ -1,11 +1,16 @@
 @mixin tab {
-    @media (max-width: 768px) {
+    @media (max-width: 820px) {
         @content;
     }
 }
 
 @mixin desktop {
-    @media (min-width: 769px) {
+    @media (min-width: 821px) {
+        @content;
+    }
+}
+@mixin desktop-xl {
+    @media (min-width: 1430px) {
         @content;
     }
 }

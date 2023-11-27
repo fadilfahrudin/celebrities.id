@@ -59,7 +59,7 @@ h2 {
     line-height: 150%;
 }
 h3 {
-    font-size: 16px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 700;
     line-height: 150%;
@@ -67,7 +67,7 @@ h3 {
 h4 {
     font-size: 16px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 700;
     line-height: 150%;
 }
 h5 {
@@ -91,5 +91,10 @@ p {
 @include media.desktop {
     .container {
         padding: 0 82px;
+    }
+}
+@include media.desktop-xl {
+    .container {
+        padding: 0 15%;
     }
 }

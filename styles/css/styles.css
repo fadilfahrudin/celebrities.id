@@ -40,7 +40,7 @@ h2 {
 }
 
 h3 {
-  font-size: 16px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 700;
   line-height: 150%;
@@ -49,7 +49,7 @@ h3 {
 h4 {
   font-size: 16px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 700;
   line-height: 150%;
 }
 
@@ -67,14 +67,19 @@ p {
   line-height: normal;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 820px) {
   .container {
     padding: 0 42px;
   }
 }
-@media (min-width: 769px) {
+@media (min-width: 821px) {
   .container {
     padding: 0 82px;
+  }
+}
+@media (min-width: 1430px) {
+  .container {
+    padding: 0 15%;
   }
 }
 #main-layouts {
@@ -84,6 +89,7 @@ p {
 }
 #main-layouts header {
   position: sticky;
+  z-index: 999;
   top: -1px;
   width: 100%;
   height: 108px;
@@ -135,6 +141,7 @@ p {
 }
 #main-layouts nav {
   position: fixed;
+  z-index: 9999;
   background: rgba(0, 0, 0, 0.5);
   width: 100%;
   height: 100vh;
@@ -247,7 +254,9 @@ p {
   width: 100%;
   min-height: 100vh;
   overflow: hidden;
-  background-color: lightblue;
+  display: flex;
+  flex-direction: column;
+  gap: 32px 0;
 }
 #main-layouts section aside {
   width: 300px;
@@ -350,7 +359,7 @@ p {
   line-height: normal;
   background-color: #323d4c;
 }
-@media (max-width: 768px) {
+@media (max-width: 820px) {
   #main-layouts footer .footer-wrapper .left-side .list-info {
     height: 168px;
     width: 100%;
@@ -394,4 +403,224 @@ p {
 
 #home-page {
   background-color: #1c222b;
+}
+#home-page #main-layouts section main .headline a {
+  text-decoration: none;
+}
+#home-page #main-layouts section main .headline a .headline-img {
+  aspect-ratio: 16/9;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+#home-page #main-layouts section main .headline a .headline-img img {
+  background-color: #222934;
+  width: 100%;
+  height: auto;
+  transform: scale(1);
+  transition: transform 1s;
+}
+#home-page #main-layouts section main .headline a .headline-img img:hover {
+  transform: scale(1.2);
+}
+#home-page #main-layouts section main .headline a h1 {
+  color: #d3d3d3;
+}
+#home-page #main-layouts section main .live-topics {
+  background-color: #262e39;
+  padding: 16px;
+  gap: 24px;
+}
+#home-page #main-layouts section main .live-topics .live-topic-header {
+  justify-content: space-between;
+}
+#home-page #main-layouts section main .live-topics .live-topic-header h3 {
+  color: #d3d3d3;
+}
+#home-page #main-layouts section main .live-topics .live-topic-header .row .btn-slide {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+#home-page #main-layouts section main .live-topics .live-topic-header .row .btn-slide .ic-left-arrow,
+#home-page #main-layouts section main .live-topics .live-topic-header .row .btn-slide .ic-right-arrow {
+  width: 32px;
+  height: 32px;
+}
+#home-page #main-layouts section main .live-topics .live-topic-header .row .btn-slide .ic-left-arrow {
+  content: url(../../../assets/icon/ic-arrow-left.png);
+}
+#home-page #main-layouts section main .live-topics .live-topic-header .row .btn-slide .ic-right-arrow {
+  content: url(../../../assets/icon/ic-arrow-right.png);
+}
+#home-page #main-layouts section main .live-topics .live-topic-body {
+  gap: 16px;
+  width: 100%;
+  overflow-x: hidden;
+}
+#home-page #main-layouts section main .live-topics .live-topic-body .live-topic-card {
+  flex-shrink: 0;
+  width: 290px;
+  height: auto;
+  overflow: hidden;
+}
+#home-page #main-layouts section main .live-topics .live-topic-body .live-topic-card a {
+  text-decoration: none;
+}
+#home-page #main-layouts section main .live-topics .live-topic-body .live-topic-card a .live-topic-img {
+  position: relative;
+  aspect-ratio: 4/3;
+  width: 100%;
+  height: 170px;
+  overflow: hidden;
+  margin-bottom: 8px;
+  background-color: #222934;
+}
+#home-page #main-layouts section main .live-topics .live-topic-body .live-topic-card a .live-topic-img img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  transform: scale(1);
+  transition: transform 1s;
+}
+#home-page #main-layouts section main .live-topics .live-topic-body .live-topic-card a .live-topic-img img:hover {
+  transform: scale(1.2);
+}
+#home-page #main-layouts section main .live-topics .live-topic-body .live-topic-card a .live-topic-img .ic-video,
+#home-page #main-layouts section main .live-topics .live-topic-body .live-topic-card a .live-topic-img .ic-audio {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+}
+#home-page #main-layouts section main .live-topics .live-topic-body .live-topic-card a .live-topic-img .ic-audio {
+  content: url(../../../assets/icon/ic-audio.png);
+}
+#home-page #main-layouts section main .live-topics .live-topic-body .live-topic-card a .live-topic-img .ic-video {
+  content: url(../../../assets/icon/ic-video.png);
+}
+#home-page #main-layouts section main .live-topics .live-topic-body .live-topic-card a h4 {
+  color: #d3d3d3;
+}
+#home-page #main-layouts section main .live-topics .live-topic-tag ul {
+  display: flex;
+  list-style: none;
+  gap: 0 16px;
+}
+#home-page #main-layouts section main .live-topics .live-topic-tag ul li a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  padding: 8px 16px;
+  border: 1px solid #f98e8e;
+  border-radius: 32px;
+}
+#home-page #main-layouts section main .live-topics .live-topic-tag ul li a.active {
+  background-color: #f98e8e;
+}
+#home-page #main-layouts section main .live-topics .live-topic-tag ul li a:hover {
+  background-color: #f98e8e;
+}
+#home-page #main-layouts section main .category-widget {
+  width: 100%;
+  height: auto;
+}
+#home-page #main-layouts section main .category-widget .category-widget-header {
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+#home-page #main-layouts section main .category-widget .category-widget-header h3 {
+  color: #d3d3d3;
+}
+#home-page #main-layouts section main .category-widget .category-widget-header a {
+  text-decoration: none;
+  color: #fff;
+  padding: 8px 24px;
+  background-color: #f98e8e;
+  border-radius: 50px;
+}
+#home-page #main-layouts section main .category-widget .category-widget-body {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+#home-page #main-layouts section main .category-widget .category-widget-body .category-widget-card {
+  flex-shrink: 0;
+  width: 300px;
+  height: auto;
+  overflow: hidden;
+}
+#home-page #main-layouts section main .category-widget .category-widget-body .category-widget-card a {
+  text-decoration: none;
+}
+#home-page #main-layouts section main .category-widget .category-widget-body .category-widget-card a .category-widget-img {
+  position: relative;
+  aspect-ratio: 4/3;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  margin-bottom: 8px;
+  background-color: #222934;
+}
+#home-page #main-layouts section main .category-widget .category-widget-body .category-widget-card a .category-widget-img img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  transform: scale(1);
+  transition: transform 1s;
+}
+#home-page #main-layouts section main .category-widget .category-widget-body .category-widget-card a .category-widget-img img:hover {
+  transform: scale(1.2);
+}
+#home-page #main-layouts section main .category-widget .category-widget-body .category-widget-card a .category-widget-img .ic-video,
+#home-page #main-layouts section main .category-widget .category-widget-body .category-widget-card a .category-widget-img .ic-audio {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+}
+#home-page #main-layouts section main .category-widget .category-widget-body .category-widget-card a .category-widget-img .ic-audio {
+  content: url(../../../assets/icon/ic-audio.png);
+}
+#home-page #main-layouts section main .category-widget .category-widget-body .category-widget-card a .category-widget-img .ic-video {
+  content: url(../../../assets/icon/ic-video.png);
+}
+#home-page #main-layouts section main .category-widget .category-widget-body .category-widget-card a h4 {
+  color: #d3d3d3;
+}
+
+.loading {
+  display: inline-block;
+  position: relative;
+  background-color: #dddbdd;
+}
+.loading::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  border-radius: 0.25rem;
+  transform: translateX(-100%);
+  background-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, 0.2) 20%, rgba(255, 255, 255, 0.5) 60%, rgba(255, 255, 255, 0));
+  animation: shimmer 5s infinite;
+}
+@keyframes shimmer {
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.row {
+  display: flex;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
 }/*# sourceMappingURL=styles.css.map */
