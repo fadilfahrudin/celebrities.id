@@ -2,6 +2,10 @@
   font-family: Inter;
   src: url("../../assets/fonts/Inter/static/Inter-Regular.ttf"), format("truetype");
 }
+@font-face {
+  font-family: Roboto;
+  src: url("../../assets/fonts/Roboto/Roboto-Regular.ttf"), format("truetype");
+}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -274,6 +278,14 @@ p {
   font-weight: 400;
   line-height: 150%;
   color: #d3d3d3;
+}
+#main-layouts nav #navigasi .side-nav li ul li .banner-live-stream {
+  display: flex;
+  align-items: center;
+  padding-left: 16px;
+  background-image: url(../../../assets/img/banner-live-streaming.png);
+  width: 232px;
+  height: 60px;
 }
 #main-layouts nav.clicked {
   display: block;
@@ -801,6 +813,631 @@ p {
   -webkit-box-orient: vertical;
   text-overflow: ellipsis;
   overflow: hidden;
+}
+#home-page #main-layouts section aside .live-radio {
+  gap: 16px;
+}
+#home-page #main-layouts section aside .live-radio h2 {
+  color: #fff;
+}
+#home-page #main-layouts section aside .live-radio .banner-live-radio {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+#home-page #main-layouts section aside .live-radio .banner-live-radio img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center center;
+}
+@media (max-width: 1279px) {
+  #home-page #main-layouts section main .headline a {
+    text-decoration: none;
+  }
+  #home-page #main-layouts section main .headline a .headline-img {
+    aspect-ratio: 16/9;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+  }
+  #home-page #main-layouts section main .headline a .headline-img img {
+    background-color: #222934;
+    width: 100%;
+    height: 100%;
+    object-position: center center;
+    object-fit: cover;
+    transform: scale(1);
+    transition: transform 1s;
+  }
+  #home-page #main-layouts section main .headline a .headline-img img:hover {
+    transform: scale(1.2);
+  }
+  #home-page #main-layouts section main .headline a h1 {
+    display: -webkit-box;
+    color: #d3d3d3;
+    height: 78px;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  #home-page #main-layouts section main .live-topics {
+    background-color: #262e39;
+    padding: 16px;
+    gap: 24px;
+  }
+  #home-page #main-layouts section main .live-topics .live-topic-header {
+    justify-content: space-between;
+  }
+  #home-page #main-layouts section main .live-topics .live-topic-header h3 {
+    color: #d3d3d3;
+  }
+  #home-page #main-layouts section main .live-topics .live-topic-header .row .btn-slide {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+  }
+  #home-page #main-layouts section main .live-topics .live-topic-header .row .btn-slide .ic-left-arrow,
+  #home-page #main-layouts section main .live-topics .live-topic-header .row .btn-slide .ic-right-arrow {
+    width: 32px;
+    height: 32px;
+  }
+  #home-page #main-layouts section main .live-topics .live-topic-header .row .btn-slide .ic-left-arrow {
+    content: url(../../../assets/icon/ic-arrow-left.png);
+  }
+  #home-page #main-layouts section main .live-topics .live-topic-header .row .btn-slide .ic-right-arrow {
+    content: url(../../../assets/icon/ic-arrow-right.png);
+  }
+  #home-page #main-layouts section main .live-topics .live-topic-body {
+    gap: 16px;
+    width: 100%;
+    overflow-x: hidden;
+  }
+  #home-page #main-layouts section main .live-topics .live-topic-body .live-topic-card {
+    flex-shrink: 0;
+    width: 196px;
+    height: auto;
+    overflow: hidden;
+  }
+  #home-page #main-layouts section main .live-topics .live-topic-body .live-topic-card a {
+    text-decoration: none;
+  }
+  #home-page #main-layouts section main .live-topics .live-topic-body .live-topic-card a .live-topic-img {
+    position: relative;
+    aspect-ratio: 4/3;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    margin-bottom: 8px;
+    background-color: #222934;
+  }
+  #home-page #main-layouts section main .live-topics .live-topic-body .live-topic-card a .live-topic-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    transform: scale(1);
+    transition: transform 1s;
+  }
+  #home-page #main-layouts section main .live-topics .live-topic-body .live-topic-card a .live-topic-img img:hover {
+    transform: scale(1.2);
+  }
+  #home-page #main-layouts section main .live-topics .live-topic-body .live-topic-card a .live-topic-img .ic-video,
+  #home-page #main-layouts section main .live-topics .live-topic-body .live-topic-card a .live-topic-img .ic-audio {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    right: 12px;
+    bottom: 12px;
+  }
+  #home-page #main-layouts section main .live-topics .live-topic-body .live-topic-card a .live-topic-img .ic-audio {
+    content: url(../../../assets/icon/ic-audio.png);
+  }
+  #home-page #main-layouts section main .live-topics .live-topic-body .live-topic-card a .live-topic-img .ic-video {
+    content: url(../../../assets/icon/ic-video.png);
+  }
+  #home-page #main-layouts section main .live-topics .live-topic-body .live-topic-card a h4 {
+    display: -webkit-box;
+    height: 48px;
+    color: #d3d3d3;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  #home-page #main-layouts section main .live-topics .live-topic-tag ul {
+    display: flex;
+    list-style: none;
+    gap: 0 16px;
+  }
+  #home-page #main-layouts section main .live-topics .live-topic-tag ul li a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    padding: 8px 16px;
+    font-size: 14px;
+    border: 1px solid #f98e8e;
+    border-radius: 32px;
+  }
+  #home-page #main-layouts section main .live-topics .live-topic-tag ul li a.active {
+    background-color: #f98e8e;
+  }
+  #home-page #main-layouts section main .live-topics .live-topic-tag ul li a:hover {
+    background-color: #f98e8e;
+  }
+  #home-page #main-layouts section main .category-widget {
+    width: 100%;
+    height: auto;
+  }
+  #home-page #main-layouts section main .category-widget .category-widget-header {
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+  }
+  #home-page #main-layouts section main .category-widget .category-widget-header h3 {
+    color: #d3d3d3;
+  }
+  #home-page #main-layouts section main .category-widget .category-widget-header a {
+    text-decoration: none;
+    color: #fff;
+    padding: 8px 24px;
+    background-color: #f98e8e;
+    border-radius: 50px;
+  }
+  #home-page #main-layouts section main .category-widget .category-widget-body {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  #home-page #main-layouts section main .category-widget .category-widget-body .category-widget-card {
+    flex-shrink: unset;
+    flex-basis: 208px;
+    flex-grow: 1;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+  }
+  #home-page #main-layouts section main .category-widget .category-widget-body .category-widget-card a {
+    text-decoration: none;
+  }
+  #home-page #main-layouts section main .category-widget .category-widget-body .category-widget-card a .category-widget-img {
+    position: relative;
+    aspect-ratio: 4/3;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    margin-bottom: 8px;
+    background-color: #222934;
+  }
+  #home-page #main-layouts section main .category-widget .category-widget-body .category-widget-card a .category-widget-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    transform: scale(1);
+    transition: transform 1s;
+  }
+  #home-page #main-layouts section main .category-widget .category-widget-body .category-widget-card a .category-widget-img img:hover {
+    transform: scale(1.2);
+  }
+  #home-page #main-layouts section main .category-widget .category-widget-body .category-widget-card a .category-widget-img .ic-video,
+  #home-page #main-layouts section main .category-widget .category-widget-body .category-widget-card a .category-widget-img .ic-audio {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    right: 12px;
+    bottom: 12px;
+  }
+  #home-page #main-layouts section main .category-widget .category-widget-body .category-widget-card a .category-widget-img .ic-audio {
+    content: url(../../../assets/icon/ic-audio.png);
+  }
+  #home-page #main-layouts section main .category-widget .category-widget-body .category-widget-card a .category-widget-img .ic-video {
+    content: url(../../../assets/icon/ic-video.png);
+  }
+  #home-page #main-layouts section main .category-widget .category-widget-body .category-widget-card a h4 {
+    display: -webkit-box;
+    height: 72px;
+    color: #d3d3d3;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  #home-page #main-layouts section aside .terpopuler-widget {
+    gap: 15px 0;
+  }
+  #home-page #main-layouts section aside .terpopuler-widget h2 {
+    color: #fff;
+  }
+  #home-page #main-layouts section aside .terpopuler-widget .pop-card {
+    width: 100%;
+    height: auto;
+  }
+  #home-page #main-layouts section aside .terpopuler-widget .pop-card .row {
+    align-items: center;
+  }
+  #home-page #main-layouts section aside .terpopuler-widget .pop-card a {
+    gap: 14px 7px;
+    text-decoration: none;
+    color: #d3d3d3;
+  }
+  #home-page #main-layouts section aside .terpopuler-widget .pop-card a .populer-img-1 {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    aspect-ratio: 4/3;
+  }
+  #home-page #main-layouts section aside .terpopuler-widget .pop-card a .populer-img-1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    background-color: #222934;
+    transform: scale(1);
+    transition: transform 1s ease-in-out;
+  }
+  #home-page #main-layouts section aside .terpopuler-widget .pop-card a .populer-img-1 img:hover {
+    transform: scale(1.2);
+  }
+  #home-page #main-layouts section aside .terpopuler-widget .pop-card a .populer-img-1 .ic-pop-1 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    content: url(../../../assets/icon/ic-trend-1.png);
+    width: 53px;
+    height: auto;
+  }
+  #home-page #main-layouts section aside .terpopuler-widget .pop-card a .populer-img {
+    position: relative;
+    width: 78px;
+    height: 78px;
+    flex-shrink: 0;
+    overflow: hidden;
+    aspect-ratio: 1/1;
+  }
+  #home-page #main-layouts section aside .terpopuler-widget .pop-card a .populer-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    background-color: #222934;
+    transform: scale(1);
+    transition: transform 1s ease-in-out;
+  }
+  #home-page #main-layouts section aside .terpopuler-widget .pop-card a .populer-img img:hover {
+    transform: scale(1.2);
+  }
+  #home-page #main-layouts section aside .terpopuler-widget .pop-card a .populer-img .ic-pop-2,
+  #home-page #main-layouts section aside .terpopuler-widget .pop-card a .populer-img .ic-pop-3,
+  #home-page #main-layouts section aside .terpopuler-widget .pop-card a .populer-img .ic-pop-4,
+  #home-page #main-layouts section aside .terpopuler-widget .pop-card a .populer-img .ic-pop-5 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 38px;
+    height: auto;
+  }
+  #home-page #main-layouts section aside .terpopuler-widget .pop-card a .populer-img .ic-pop-2 {
+    content: url(../../../assets/icon/ic-trend-2.png);
+  }
+  #home-page #main-layouts section aside .terpopuler-widget .pop-card a .populer-img .ic-pop-3 {
+    content: url(../../../assets/icon/ic-trend-3.png);
+  }
+  #home-page #main-layouts section aside .terpopuler-widget .pop-card a .populer-img .ic-pop-4 {
+    content: url(../../../assets/icon/ic-trend-4.png);
+  }
+  #home-page #main-layouts section aside .terpopuler-widget .pop-card a .populer-img .ic-pop-5 {
+    content: url(../../../assets/icon/ic-trend-5.png);
+  }
+  #home-page #main-layouts section aside .terpopuler-widget .pop-card a h4 {
+    height: 72px;
+    -webkit-line-clamp: 3;
+  }
+  #home-page #main-layouts section aside .terpopuler-widget .pop-card a h5 {
+    height: 84px;
+    -webkit-line-clamp: 4;
+  }
+  #home-page #main-layouts section aside .terpopuler-widget .pop-card a h4,
+  #home-page #main-layouts section aside .terpopuler-widget .pop-card a h5 {
+    display: -webkit-box;
+    color: #d3d3d3;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+}
+
+#home-page {
+  background-color: #1c222b;
+}
+#home-page #main-layouts section main .headline h1 {
+  color: #fff;
+  margin-bottom: 16px;
+  line-height: 100%;
+}
+#home-page #main-layouts section main .headline a {
+  text-decoration: none;
+}
+#home-page #main-layouts section main .headline a .headline-img {
+  aspect-ratio: 16/9;
+  width: 784px;
+  height: 441px;
+  overflow: hidden;
+}
+#home-page #main-layouts section main .headline a .headline-img img {
+  background-color: #222934;
+  width: 100%;
+  height: 100%;
+  object-position: center center;
+  object-fit: cover;
+  transform: scale(1);
+  transition: transform 1s;
+}
+#home-page #main-layouts section main .headline a .headline-img img:hover {
+  transform: scale(1.2);
+}
+#home-page #main-layouts section main .headline a h1 {
+  display: -webkit-box;
+  color: #d3d3d3;
+  height: 102px;
+  line-height: 160%;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+#home-page #main-layouts section main .category-widget {
+  width: 100%;
+  height: auto;
+}
+#home-page #main-layouts section main .category-widget .category-widget-header {
+  align-items: center;
+  margin-bottom: 16px;
+}
+#home-page #main-layouts section main .category-widget .category-widget-header h3 {
+  color: #d3d3d3;
+}
+#home-page #main-layouts section main .category-widget .category-widget-header a {
+  text-decoration: none;
+  color: #fff;
+  padding: 8px 24px;
+  background-color: #f98e8e;
+  border-radius: 50px;
+}
+#home-page #main-layouts section main .category-widget .category-widget-body {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+#home-page #main-layouts section main .category-widget .category-widget-body .category-widget-card {
+  flex-shrink: 0;
+  width: 250px;
+  height: auto;
+  overflow: hidden;
+}
+#home-page #main-layouts section main .category-widget .category-widget-body .category-widget-card a {
+  text-decoration: none;
+}
+#home-page #main-layouts section main .category-widget .category-widget-body .category-widget-card a .category-widget-img {
+  position: relative;
+  aspect-ratio: 4/3;
+  width: 100%;
+  height: 167px;
+  overflow: hidden;
+  margin-bottom: 8px;
+  background-color: #222934;
+}
+#home-page #main-layouts section main .category-widget .category-widget-body .category-widget-card a .category-widget-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  transform: scale(1);
+  transition: transform 1s;
+}
+#home-page #main-layouts section main .category-widget .category-widget-body .category-widget-card a .category-widget-img img:hover {
+  transform: scale(1.2);
+}
+#home-page #main-layouts section main .category-widget .category-widget-body .category-widget-card a .category-widget-img .ic-video,
+#home-page #main-layouts section main .category-widget .category-widget-body .category-widget-card a .category-widget-img .ic-audio {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+}
+#home-page #main-layouts section main .category-widget .category-widget-body .category-widget-card a .category-widget-img .ic-audio {
+  content: url(../../../assets/icon/ic-audio.png);
+}
+#home-page #main-layouts section main .category-widget .category-widget-body .category-widget-card a .category-widget-img .ic-video {
+  content: url(../../../assets/icon/ic-video.png);
+}
+#home-page #main-layouts section main .category-widget .category-widget-body .category-widget-card a h4 {
+  display: -webkit-box;
+  height: 72px;
+  color: #d3d3d3;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+#home-page #main-layouts section main .pagination {
+  margin: auto;
+}
+#home-page #main-layouts section main .pagination ul {
+  list-style: none;
+  display: flex;
+  gap: 0 10px;
+}
+#home-page #main-layouts section main .pagination ul li {
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#home-page #main-layouts section main .pagination ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+}
+#home-page #main-layouts section main .pagination ul li a .ic-backward,
+#home-page #main-layouts section main .pagination ul li a .ic-forward,
+#home-page #main-layouts section main .pagination ul li a .ic-prev-right,
+#home-page #main-layouts section main .pagination ul li a .ic-prev-left {
+  display: block;
+  width: 24px;
+  height: 24px;
+}
+#home-page #main-layouts section main .pagination ul li a .ic-backward {
+  content: url(../../../assets/icon/ic-backward.png);
+}
+#home-page #main-layouts section main .pagination ul li a .ic-forward {
+  content: url(../../../assets/icon/ic-forward.png);
+}
+#home-page #main-layouts section main .pagination ul li a .ic-prev-left {
+  content: url(../../../assets/icon/ic-prev-left.png);
+}
+#home-page #main-layouts section main .pagination ul li a .ic-prev-right {
+  content: url(../../../assets/icon/ic-prev-right.png);
+}
+#home-page #main-layouts section main .pagination ul li:hover {
+  background-color: #f98e8e;
+  border: #f98e8e;
+}
+#home-page #main-layouts section main .pagination ul li.active {
+  background-color: #f98e8e;
+  border: #f98e8e;
+}
+#home-page #main-layouts section aside .terpopuler-widget {
+  gap: 15px 0;
+}
+#home-page #main-layouts section aside .terpopuler-widget h2 {
+  color: #fff;
+  line-height: 120%;
+}
+#home-page #main-layouts section aside .terpopuler-widget .pop-card {
+  width: 100%;
+  height: auto;
+}
+#home-page #main-layouts section aside .terpopuler-widget .pop-card .row {
+  align-items: center;
+}
+#home-page #main-layouts section aside .terpopuler-widget .pop-card a {
+  gap: 14px 7px;
+  text-decoration: none;
+  color: #d3d3d3;
+}
+#home-page #main-layouts section aside .terpopuler-widget .pop-card a .populer-img-1 {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  aspect-ratio: 4/3;
+}
+#home-page #main-layouts section aside .terpopuler-widget .pop-card a .populer-img-1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  background-color: #222934;
+  transform: scale(1);
+  transition: transform 1s ease-in-out;
+}
+#home-page #main-layouts section aside .terpopuler-widget .pop-card a .populer-img-1 img:hover {
+  transform: scale(1.2);
+}
+#home-page #main-layouts section aside .terpopuler-widget .pop-card a .populer-img-1 .ic-pop-1 {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  content: url(../../../assets/icon/ic-trend-1.png);
+  width: 53px;
+  height: auto;
+}
+#home-page #main-layouts section aside .terpopuler-widget .pop-card a .populer-img {
+  position: relative;
+  width: 78px;
+  height: 78px;
+  flex-shrink: 0;
+  overflow: hidden;
+  aspect-ratio: 1/1;
+}
+#home-page #main-layouts section aside .terpopuler-widget .pop-card a .populer-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  background-color: #222934;
+  transform: scale(1);
+  transition: transform 1s ease-in-out;
+}
+#home-page #main-layouts section aside .terpopuler-widget .pop-card a .populer-img img:hover {
+  transform: scale(1.2);
+}
+#home-page #main-layouts section aside .terpopuler-widget .pop-card a .populer-img .ic-pop-2,
+#home-page #main-layouts section aside .terpopuler-widget .pop-card a .populer-img .ic-pop-3,
+#home-page #main-layouts section aside .terpopuler-widget .pop-card a .populer-img .ic-pop-4,
+#home-page #main-layouts section aside .terpopuler-widget .pop-card a .populer-img .ic-pop-5 {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 38px;
+  height: auto;
+}
+#home-page #main-layouts section aside .terpopuler-widget .pop-card a .populer-img .ic-pop-2 {
+  content: url(../../../assets/icon/ic-trend-2.png);
+}
+#home-page #main-layouts section aside .terpopuler-widget .pop-card a .populer-img .ic-pop-3 {
+  content: url(../../../assets/icon/ic-trend-3.png);
+}
+#home-page #main-layouts section aside .terpopuler-widget .pop-card a .populer-img .ic-pop-4 {
+  content: url(../../../assets/icon/ic-trend-4.png);
+}
+#home-page #main-layouts section aside .terpopuler-widget .pop-card a .populer-img .ic-pop-5 {
+  content: url(../../../assets/icon/ic-trend-5.png);
+}
+#home-page #main-layouts section aside .terpopuler-widget .pop-card a h4 {
+  height: 72px;
+  -webkit-line-clamp: 3;
+}
+#home-page #main-layouts section aside .terpopuler-widget .pop-card a h5 {
+  height: 84px;
+  -webkit-line-clamp: 4;
+}
+#home-page #main-layouts section aside .terpopuler-widget .pop-card a h4,
+#home-page #main-layouts section aside .terpopuler-widget .pop-card a h5 {
+  display: -webkit-box;
+  color: #d3d3d3;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+#home-page #main-layouts section aside .live-radio {
+  gap: 16px;
+}
+#home-page #main-layouts section aside .live-radio h2 {
+  color: #fff;
+}
+#home-page #main-layouts section aside .live-radio .banner-live-radio {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+#home-page #main-layouts section aside .live-radio .banner-live-radio img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center center;
 }
 @media (max-width: 1279px) {
   #home-page #main-layouts section main .headline a {

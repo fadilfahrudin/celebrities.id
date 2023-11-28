@@ -4,6 +4,11 @@
         section {
             main {
                 .headline {
+                    h1 {
+                        color: $text-white;
+                        margin-bottom: 16px;
+                        line-height: 100%;
+                    }
                     a {
                         text-decoration: none;
                         .headline-img {
@@ -28,6 +33,7 @@
                             display: -webkit-box;
                             color: $text-light;
                             height: 102px;
+                            line-height: 160%;
 
                             -webkit-box-orient: vertical;
                             -webkit-line-clamp: 2;
@@ -36,123 +42,11 @@
                         }
                     }
                 }
-                .live-topics {
-                    background-color: #262e39;
-                    padding: 16px;
-                    gap: 24px;
-                    .live-topic-header {
-                        justify-content: space-between;
-                        h3 {
-                            color: $text-light;
-                        }
-                        .row {
-                            .btn-slide {
-                                cursor: pointer;
-                                background-color: transparent;
-                                border: none;
-                                .ic-left-arrow,
-                                .ic-right-arrow {
-                                    width: 32px;
-                                    height: 32px;
-                                }
-                                .ic-left-arrow {
-                                    content: url(../../../assets/icon/ic-arrow-left.png);
-                                }
-                                .ic-right-arrow {
-                                    content: url(../../../assets/icon/ic-arrow-right.png);
-                                }
-                            }
-                        }
-                    }
-                    .live-topic-body {
-                        gap: 16px;
-                        width: 100%;
-                        overflow-x: hidden;
-                        .live-topic-card {
-                            flex-shrink: 0; //hide grow content
-                            width: 240px;
-                            height: auto;
-                            overflow: hidden;
-                            a {
-                                text-decoration: none;
-                                .live-topic-img {
-                                    position: relative;
-                                    aspect-ratio: 4/3;
-                                    width: 100%;
-                                    height: 170px;
-                                    overflow: hidden;
-                                    margin-bottom: 8px;
-                                    background-color: $color-dark-50;
-                                    img {
-                                        width: 100%;
-                                        height: 100%;
-                                        object-fit: cover;
-                                        object-position: center center;
-                                        transform: scale(1);
-                                        transition: transform 1s;
-
-                                        &:hover {
-                                            transform: scale(1.2);
-                                        }
-                                    }
-                                    .ic-video,
-                                    .ic-audio {
-                                        width: 32px;
-                                        height: 32px;
-
-                                        position: absolute;
-                                        right: 12px;
-                                        bottom: 12px;
-                                    }
-                                    .ic-audio {
-                                        content: url(../../../assets/icon/ic-audio.png);
-                                    }
-                                    .ic-video {
-                                        content: url(../../../assets/icon/ic-video.png);
-                                    }
-                                }
-                                h4 {
-                                    display: -webkit-box;
-                                    height: 48px;
-                                    color: $text-light;
-                                    -webkit-box-orient: vertical;
-                                    -webkit-line-clamp: 2;
-                                    text-overflow: ellipsis;
-                                    overflow: hidden;
-                                }
-                            }
-                        }
-                    }
-                    .live-topic-tag {
-                        ul {
-                            display: flex;
-                            list-style: none;
-                            gap: 0 16px;
-                            li {
-                                a {
-                                    display: block;
-                                    text-decoration: none;
-                                    color: $text-white;
-                                    padding: 8px 16px;
-                                    border: 1px solid $color-pink;
-                                    border-radius: 32px;
-                                    &.active {
-                                        background-color: $color-pink;
-                                    }
-                                    &:hover {
-                                        background-color: $color-pink;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
                 .category-widget {
                     width: 100%;
                     height: auto;
                     .category-widget-header {
                         align-items: center;
-                        justify-content: space-between;
                         margin-bottom: 16px;
                         h3 {
                             color: $text-light;
@@ -225,12 +119,72 @@
                         }
                     }
                 }
+                .pagination {
+                    margin: auto;
+                    ul {
+                        list-style: none;
+                        display: flex;
+                        gap: 0 10px;
+                        li {
+                            cursor: pointer;
+                            width: 32px;
+                            height: 32px;
+                            border: 1px solid $color-white;
+                            border-radius: 4px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            a {
+                                text-decoration: none;
+                                color: $text-white;
+
+                                font-family: Roboto, sans-serif;
+                                font-size: 14px;
+                                font-style: normal;
+                                font-weight: 500;
+                                line-height: 150%;
+
+                                .ic-backward,
+                                .ic-forward,
+                                .ic-prev-right,
+                                .ic-prev-left {
+                                    display: block;
+                                    width: 24px;
+                                    height: 24px;
+                                }
+
+                                .ic-backward {
+                                    content: url(../../../assets/icon/ic-backward.png);
+                                }
+                                .ic-forward {
+                                    content: url(../../../assets/icon/ic-forward.png);
+                                }
+                                .ic-prev-left {
+                                    content: url(../../../assets/icon/ic-prev-left.png);
+                                }
+                                .ic-prev-right {
+                                    content: url(../../../assets/icon/ic-prev-right.png);
+                                }
+                            }
+
+                            &:hover {
+                                background-color: $color-pink;
+                                border: $color-pink;
+                            }
+                            &.active {
+                                background-color: $color-pink;
+                                border: $color-pink;
+                            }
+                        }
+                    }
+                }
             }
             aside {
                 .terpopuler-widget {
                     gap: 15px 0;
                     h2 {
                         color: $text-white;
+                        line-height: 120%;
                     }
                     .pop-card {
                         width: 100%;

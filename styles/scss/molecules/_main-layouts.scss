@@ -173,6 +173,14 @@
                                 line-height: 150%;
                                 color: $text-light;
                             }
+                            .banner-live-stream {
+                                display: flex;
+                                align-items: center;
+                                padding-left: 16px;
+                                background-image: url(../../../assets/img/banner-live-streaming.png);
+                                width: 232px;
+                                height: 60px;
+                            }
                         }
                     }
                 }
