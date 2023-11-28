@@ -8,13 +8,15 @@
                         text-decoration: none;
                         .headline-img {
                             aspect-ratio: 16/9;
-                            width: 100%;
-                            height: auto;
+                            width: 784px;
+                            height: 441px;
                             overflow: hidden;
                             img {
                                 background-color: $color-dark-50;
                                 width: 100%;
-                                height: auto;
+                                height: 100%;
+                                object-position: center center;
+                                object-fit: cover;
                                 transform: scale(1);
                                 transition: transform 1s;
                                 &:hover {
@@ -23,7 +25,14 @@
                             }
                         }
                         h1 {
+                            display: -webkit-box;
                             color: $text-light;
+                            height: 102px;
+
+                            -webkit-box-orient: vertical;
+                            -webkit-line-clamp: 2;
+                            text-overflow: ellipsis;
+                            overflow: hidden;
                         }
                     }
                 }
@@ -61,7 +70,7 @@
                         overflow-x: hidden;
                         .live-topic-card {
                             flex-shrink: 0; //hide grow content
-                            width: 290px;
+                            width: 240px;
                             height: auto;
                             overflow: hidden;
                             a {
@@ -76,8 +85,9 @@
                                     background-color: $color-dark-50;
                                     img {
                                         width: 100%;
-                                        height: auto;
-                                        object-fit: contain;
+                                        height: 100%;
+                                        object-fit: cover;
+                                        object-position: center center;
                                         transform: scale(1);
                                         transition: transform 1s;
 
@@ -102,7 +112,13 @@
                                     }
                                 }
                                 h4 {
+                                    display: -webkit-box;
+                                    height: 48px;
                                     color: $text-light;
+                                    -webkit-box-orient: vertical;
+                                    -webkit-line-clamp: 2;
+                                    text-overflow: ellipsis;
+                                    overflow: hidden;
                                 }
                             }
                         }
@@ -155,7 +171,7 @@
                         gap: 16px;
                         .category-widget-card {
                             flex-shrink: 0; //hide grow content
-                            width: 300px;
+                            width: 250px;
                             height: auto;
                             overflow: hidden;
                             a {
@@ -164,14 +180,15 @@
                                     position: relative;
                                     aspect-ratio: 4/3;
                                     width: 100%;
-                                    height: 200px;
+                                    height: 167px;
                                     overflow: hidden;
                                     margin-bottom: 8px;
                                     background-color: $color-dark-50;
                                     img {
                                         width: 100%;
-                                        height: auto;
-                                        object-fit: contain;
+                                        height: 100%;
+                                        object-fit: cover;
+                                        object-position: center center;
                                         transform: scale(1);
                                         transition: transform 1s;
 
@@ -196,7 +213,460 @@
                                     }
                                 }
                                 h4 {
+                                    display: -webkit-box;
+                                    height: 72px;
                                     color: $text-light;
+                                    -webkit-box-orient: vertical;
+                                    -webkit-line-clamp: 3;
+                                    text-overflow: ellipsis;
+                                    overflow: hidden;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            aside {
+                .terpopuler-widget {
+                    gap: 15px 0;
+                    h2 {
+                        color: $text-white;
+                    }
+                    .pop-card {
+                        width: 100%;
+                        height: auto;
+                        .row {
+                            align-items: center;
+                        }
+                        a {
+                            gap: 14px 7px;
+                            text-decoration: none;
+                            color: $text-light;
+                            .populer-img-1 {
+                                position: relative;
+                                width: 100%;
+                                height: 200px;
+                                overflow: hidden;
+                                aspect-ratio: 4/3;
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                    object-fit: cover;
+                                    object-position: center center;
+                                    background-color: $color-dark-50;
+                                    transform: scale(1);
+                                    transition: transform 1s ease-in-out;
+
+                                    &:hover {
+                                        transform: scale(1.2);
+                                    }
+                                }
+                                .ic-pop-1 {
+                                    position: absolute;
+                                    left: 0;
+                                    bottom: 0;
+                                    content: url(../../../assets/icon/ic-trend-1.png);
+                                    width: 53px;
+                                    height: auto;
+                                }
+                            }
+                            .populer-img {
+                                position: relative;
+                                width: 78px;
+                                height: 78px;
+                                flex-shrink: 0;
+                                overflow: hidden;
+                                aspect-ratio: 1/1;
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                    object-fit: cover;
+                                    object-position: center center;
+                                    background-color: $color-dark-50;
+                                    transform: scale(1);
+                                    transition: transform 1s ease-in-out;
+
+                                    &:hover {
+                                        transform: scale(1.2);
+                                    }
+                                }
+                                .ic-pop-2,
+                                .ic-pop-3,
+                                .ic-pop-4,
+                                .ic-pop-5 {
+                                    position: absolute;
+                                    left: 0;
+                                    bottom: 0;
+                                    width: 38px;
+                                    height: auto;
+                                }
+                                .ic-pop-2 {
+                                    content: url(../../../assets/icon/ic-trend-2.png);
+                                }
+                                .ic-pop-3 {
+                                    content: url(../../../assets/icon/ic-trend-3.png);
+                                }
+                                .ic-pop-4 {
+                                    content: url(../../../assets/icon/ic-trend-4.png);
+                                }
+                                .ic-pop-5 {
+                                    content: url(../../../assets/icon/ic-trend-5.png);
+                                }
+                            }
+                            h4 {
+                                height: 72px;
+                                -webkit-line-clamp: 3;
+                            }
+                            h5 {
+                                height: 84px;
+                                -webkit-line-clamp: 4;
+                            }
+                            h4,
+                            h5 {
+                                display: -webkit-box;
+                                color: $text-light;
+                                -webkit-box-orient: vertical;
+                                text-overflow: ellipsis;
+                                overflow: hidden;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @include media.tab {
+        #main-layouts {
+            section {
+                main {
+                    .headline {
+                        a {
+                            text-decoration: none;
+                            .headline-img {
+                                aspect-ratio: 16/9;
+                                width: 100%;
+                                height: auto;
+                                overflow: hidden;
+                                img {
+                                    background-color: $color-dark-50;
+                                    width: 100%;
+                                    height: 100%;
+                                    object-position: center center;
+                                    object-fit: cover;
+                                    transform: scale(1);
+                                    transition: transform 1s;
+                                    &:hover {
+                                        transform: scale(1.2);
+                                    }
+                                }
+                            }
+                            h1 {
+                                display: -webkit-box;
+                                color: $text-light;
+                                height: 78px;
+                                -webkit-box-orient: vertical;
+                                -webkit-line-clamp: 2;
+                                text-overflow: ellipsis;
+                                overflow: hidden;
+                            }
+                        }
+                    }
+                    .live-topics {
+                        background-color: #262e39;
+                        padding: 16px;
+                        gap: 24px;
+                        .live-topic-header {
+                            justify-content: space-between;
+                            h3 {
+                                color: $text-light;
+                            }
+                            .row {
+                                .btn-slide {
+                                    cursor: pointer;
+                                    background-color: transparent;
+                                    border: none;
+                                    .ic-left-arrow,
+                                    .ic-right-arrow {
+                                        width: 32px;
+                                        height: 32px;
+                                    }
+                                    .ic-left-arrow {
+                                        content: url(../../../assets/icon/ic-arrow-left.png);
+                                    }
+                                    .ic-right-arrow {
+                                        content: url(../../../assets/icon/ic-arrow-right.png);
+                                    }
+                                }
+                            }
+                        }
+                        .live-topic-body {
+                            gap: 16px;
+                            width: 100%;
+                            overflow-x: hidden;
+                            .live-topic-card {
+                                flex-shrink: 0; //hide grow content
+                                width: 196px;
+                                height: auto;
+                                overflow: hidden;
+                                a {
+                                    text-decoration: none;
+                                    .live-topic-img {
+                                        position: relative;
+                                        aspect-ratio: 4/3;
+                                        width: 100%;
+                                        height: auto;
+                                        overflow: hidden;
+                                        margin-bottom: 8px;
+                                        background-color: $color-dark-50;
+                                        img {
+                                            width: 100%;
+                                            height: 100%;
+                                            object-fit: cover;
+                                            object-position: center center;
+                                            transform: scale(1);
+                                            transition: transform 1s;
+
+                                            &:hover {
+                                                transform: scale(1.2);
+                                            }
+                                        }
+                                        .ic-video,
+                                        .ic-audio {
+                                            width: 32px;
+                                            height: 32px;
+
+                                            position: absolute;
+                                            right: 12px;
+                                            bottom: 12px;
+                                        }
+                                        .ic-audio {
+                                            content: url(../../../assets/icon/ic-audio.png);
+                                        }
+                                        .ic-video {
+                                            content: url(../../../assets/icon/ic-video.png);
+                                        }
+                                    }
+                                    h4 {
+                                        display: -webkit-box;
+                                        height: 48px;
+                                        color: $text-light;
+                                        -webkit-box-orient: vertical;
+                                        -webkit-line-clamp: 2;
+                                        text-overflow: ellipsis;
+                                        overflow: hidden;
+                                    }
+                                }
+                            }
+                        }
+                        .live-topic-tag {
+                            ul {
+                                display: flex;
+                                list-style: none;
+                                gap: 0 16px;
+                                li {
+                                    a {
+                                        display: block;
+                                        text-decoration: none;
+                                        color: $text-white;
+                                        padding: 8px 16px;
+                                        font-size: 14px;
+                                        border: 1px solid $color-pink;
+                                        border-radius: 32px;
+                                        &.active {
+                                            background-color: $color-pink;
+                                        }
+                                        &:hover {
+                                            background-color: $color-pink;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .category-widget {
+                        width: 100%;
+                        height: auto;
+                        .category-widget-header {
+                            align-items: center;
+                            justify-content: space-between;
+                            margin-bottom: 16px;
+                            h3 {
+                                color: $text-light;
+                            }
+                            a {
+                                text-decoration: none;
+                                color: $text-white;
+                                padding: 8px 24px;
+                                background-color: $color-pink;
+                                border-radius: 50px;
+                            }
+                        }
+                        .category-widget-body {
+                            display: flex;
+                            flex-wrap: wrap;
+                            gap: 16px;
+                            .category-widget-card {
+                                flex-shrink: unset; //hide grow content
+                                flex-basis: 208px;
+                                flex-grow: 1;
+                                width: 100%;
+                                height: auto;
+                                overflow: hidden;
+                                a {
+                                    text-decoration: none;
+                                    .category-widget-img {
+                                        position: relative;
+                                        aspect-ratio: 4/3;
+                                        width: 100%;
+                                        height: auto;
+                                        overflow: hidden;
+                                        margin-bottom: 8px;
+                                        background-color: $color-dark-50;
+                                        img {
+                                            width: 100%;
+                                            height: 100%;
+                                            object-fit: cover;
+                                            object-position: center center;
+                                            transform: scale(1);
+                                            transition: transform 1s;
+
+                                            &:hover {
+                                                transform: scale(1.2);
+                                            }
+                                        }
+                                        .ic-video,
+                                        .ic-audio {
+                                            width: 32px;
+                                            height: 32px;
+
+                                            position: absolute;
+                                            right: 12px;
+                                            bottom: 12px;
+                                        }
+                                        .ic-audio {
+                                            content: url(../../../assets/icon/ic-audio.png);
+                                        }
+                                        .ic-video {
+                                            content: url(../../../assets/icon/ic-video.png);
+                                        }
+                                    }
+                                    h4 {
+                                        display: -webkit-box;
+                                        height: 72px;
+                                        color: $text-light;
+                                        -webkit-box-orient: vertical;
+                                        -webkit-line-clamp: 3;
+                                        text-overflow: ellipsis;
+                                        overflow: hidden;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                aside {
+                    .terpopuler-widget {
+                        gap: 15px 0;
+                        h2 {
+                            color: $text-white;
+                        }
+                        .pop-card {
+                            width: 100%;
+                            height: auto;
+                            .row {
+                                align-items: center;
+                            }
+                            a {
+                                gap: 14px 7px;
+                                text-decoration: none;
+                                color: $text-light;
+                                .populer-img-1 {
+                                    position: relative;
+                                    width: 100%;
+                                    height: auto;
+                                    overflow: hidden;
+                                    aspect-ratio: 4/3;
+                                    img {
+                                        width: 100%;
+                                        height: 100%;
+                                        object-fit: cover;
+                                        object-position: center center;
+                                        background-color: $color-dark-50;
+                                        transform: scale(1);
+                                        transition: transform 1s ease-in-out;
+
+                                        &:hover {
+                                            transform: scale(1.2);
+                                        }
+                                    }
+                                    .ic-pop-1 {
+                                        position: absolute;
+                                        left: 0;
+                                        bottom: 0;
+                                        content: url(../../../assets/icon/ic-trend-1.png);
+                                        width: 53px;
+                                        height: auto;
+                                    }
+                                }
+                                .populer-img {
+                                    position: relative;
+                                    width: 78px;
+                                    height: 78px;
+                                    flex-shrink: 0;
+                                    overflow: hidden;
+                                    aspect-ratio: 1/1;
+                                    img {
+                                        width: 100%;
+                                        height: 100%;
+                                        object-fit: cover;
+                                        object-position: center center;
+                                        background-color: $color-dark-50;
+                                        transform: scale(1);
+                                        transition: transform 1s ease-in-out;
+
+                                        &:hover {
+                                            transform: scale(1.2);
+                                        }
+                                    }
+                                    .ic-pop-2,
+                                    .ic-pop-3,
+                                    .ic-pop-4,
+                                    .ic-pop-5 {
+                                        position: absolute;
+                                        left: 0;
+                                        bottom: 0;
+                                        width: 38px;
+                                        height: auto;
+                                    }
+                                    .ic-pop-2 {
+                                        content: url(../../../assets/icon/ic-trend-2.png);
+                                    }
+                                    .ic-pop-3 {
+                                        content: url(../../../assets/icon/ic-trend-3.png);
+                                    }
+                                    .ic-pop-4 {
+                                        content: url(../../../assets/icon/ic-trend-4.png);
+                                    }
+                                    .ic-pop-5 {
+                                        content: url(../../../assets/icon/ic-trend-5.png);
+                                    }
+                                }
+                                h4 {
+                                    height: 72px;
+                                    -webkit-line-clamp: 3;
+                                }
+                                h5 {
+                                    height: 84px;
+                                    -webkit-line-clamp: 4;
+                                }
+                                h4,
+                                h5 {
+                                    display: -webkit-box;
+                                    color: $text-light;
+                                    -webkit-box-orient: vertical;
+                                    text-overflow: ellipsis;
+                                    overflow: hidden;
                                 }
                             }
                         }

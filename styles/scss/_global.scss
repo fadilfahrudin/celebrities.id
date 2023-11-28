@@ -85,16 +85,49 @@ p {
 
 @include media.tab {
     .container {
-        padding: 0 42px;
+        padding: 0 5%;
+    }
+    h1 {
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 160%;
+    }
+    h2 {
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 150%;
+    }
+    h3 {
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 150%;
+    }
+    h4 {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 150%;
+    }
+    h5 {
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 150%;
+    }
+    p {
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
     }
 }
+
 @include media.desktop {
     .container {
-        padding: 0 82px;
-    }
-}
-@include media.desktop-xl {
-    .container {
-        padding: 0 15%;
+        width: 1116px;
+        margin: auto;
     }
 }

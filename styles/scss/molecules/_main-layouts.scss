@@ -187,19 +187,20 @@
         display: flex;
         gap: 32px;
         main {
-            width: 100%;
+            width: 784px;
             min-height: 100vh;
             overflow: hidden;
             display: flex;
             flex-direction: column;
             gap: 32px 0;
-            // background-color: lightblue;
         }
         aside {
             width: 300px;
             min-height: 100vh;
             overflow: hidden;
-            background-color: lightgreen;
+            display: flex;
+            flex-direction: column;
+            gap: 32px 0;
         }
     }
     footer {
@@ -303,6 +304,62 @@
     }
 
     @include media.tab {
+        header {
+            position: sticky;
+            z-index: 999;
+            top: -1px;
+            width: 100%;
+            height: 108px;
+
+            background-color: $color-dark-50;
+            .container {
+                display: flex;
+                height: 100%;
+                justify-content: space-between;
+                align-items: center;
+
+                .brand-btn-wrapper {
+                    display: flex;
+                    gap: 32px;
+                    .burger-btn {
+                        background-color: unset;
+                        border: none;
+                        cursor: pointer;
+                        .ic-burger {
+                            content: url(../../../assets/icon/ic-burger.png);
+                            width: 32px;
+                            height: 32px;
+                        }
+                    }
+                }
+                .search {
+                    background-color: $color-gray;
+                    padding: 8px 16px;
+                    width: 30vw;
+                    border: none;
+                    border-radius: 360px;
+
+                    font-family: Inter, sans-serif;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    color: #707070;
+                    &::placeholder {
+                        color: #707070;
+                        text-align: right;
+                        font-family: Inter, sans-serif;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 150%;
+                    }
+
+                    &:focus {
+                        outline: none;
+                    }
+                }
+            }
+        }
         footer {
             .footer-wrapper {
                 .left-side {
