@@ -1,0 +1,319 @@
+#detail-tv-streaming {
+    background-color: $color-dark;
+    #details-layouts {
+        section {
+            main {
+                .breadcrumb {
+                    cursor: default;
+                    color: #707070;
+                    /* Caption/14 reg */
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    a {
+                        text-decoration: none;
+                        color: #707070;
+                    }
+                }
+                .tv-stream-wrapper {
+                    .tv-stream {
+                        padding-top: 15px;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        background-color: $color-dark-50;
+                        width: 100%;
+                        height: auto;
+                        .video-stream {
+                            width: 725px;
+                            height: auto;
+                            iframe {
+                                aspect-ratio: 16/9;
+                                width: 100%;
+                                height: auto;
+                                border: none;
+                            }
+                        }
+                        .channel-stream {
+                            width: 100%;
+                            height: auto;
+                            padding: 12px 16px;
+                            overflow: hidden;
+                            background-color: #262e39;
+
+                            h5 {
+                                color: $text-light;
+                            }
+                            ul {
+                                display: flex;
+                                gap: 0 16px;
+                                list-style: none;
+                                li {
+                                    position: relative;
+                                    width: 123px;
+                                    height: 82px;
+                                    background-color: $color-white;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    &.active {
+                                        position: relative;
+                                        width: 123px;
+                                        height: 82px;
+                                        &::after {
+                                            content: "Now Playing";
+                                            position: absolute;
+                                            display: flex;
+                                            justify-content: center;
+                                            align-items: center;
+                                            color: $text-white;
+                                            background-color: #7d7d7d;
+                                            opacity: 0.9;
+                                            width: 100%;
+                                            height: 100%;
+                                            border: 2px solid $color-white;
+                                        }
+                                    }
+                                    a {
+                                        display: inline-block;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .live-sign {
+                        display: block;
+                        margin-top: 24px;
+                        position: relative;
+                        color: $text-light;
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 150%; /* 27px */
+                        &::before {
+                            display: inline-block;
+                            content: "";
+                            width: 12px;
+                            height: 12px;
+                            border-radius: 50%;
+                            margin-right: 8px;
+                            background-color: #f00;
+                        }
+                    }
+                    .live-title {
+                        margin-top: 16px;
+                        color: $text-light;
+                    }
+                    p {
+                        margin-top: 12px;
+                        color: #707070;
+                        font-size: 18px;
+                        line-height: 150%;
+                    }
+                    ul {
+                        margin-top: 24px;
+                        list-style: none;
+                        display: flex;
+                        align-items: center;
+                        gap: 0 12px;
+                        label {
+                            font-size: 16px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: normal;
+                            color: $text-light;
+                        }
+                        li {
+                            a {
+                                text-decoration: none;
+                                i {
+                                    width: 32px;
+                                    height: 32px;
+                                }
+                                .ic-fb {
+                                    content: url(../../../assets/img/fb.png);
+                                }
+                                .ic-tw {
+                                    content: url(../../../assets/img/tw.png);
+                                }
+                                .ic-wa {
+                                    content: url(../../../assets/img/wa.png);
+                                }
+                                .ic-link {
+                                    content: url(../../../assets/img/link.png);
+                                }
+                            }
+                        }
+                    }
+                }
+                .card-wrapper {
+                    width: 100%;
+                    height: auto;
+                    .card-header {
+                        align-items: center;
+                        margin-bottom: 16px;
+                        h2 {
+                            color: $text-light;
+                        }
+                        a {
+                            text-decoration: none;
+                            color: $text-white;
+                            padding: 8px 24px;
+                            background-color: $color-pink;
+                            border-radius: 50px;
+                        }
+                    }
+                    .card-body {
+                        display: flex;
+                        flex-wrap: wrap;
+                        gap: 16px;
+                        .card {
+                            flex-shrink: 0; //hide grow content
+                            width: 267px;
+                            height: auto;
+                            overflow: hidden;
+                            a {
+                                text-decoration: none;
+                                .card-img {
+                                    position: relative;
+                                    aspect-ratio: 4/3;
+                                    width: 100%;
+                                    height: 167px;
+                                    overflow: hidden;
+                                    margin-bottom: 8px;
+                                    background-color: $color-dark-50;
+                                    img {
+                                        width: 100%;
+                                        height: 100%;
+                                        object-fit: cover;
+                                        object-position: center center;
+                                        transform: scale(1);
+                                        transition: transform 1s;
+
+                                        &:hover {
+                                            transform: scale(1.2);
+                                        }
+                                    }
+                                    .ic-video,
+                                    .ic-audio {
+                                        width: 32px;
+                                        height: 32px;
+
+                                        position: absolute;
+                                        right: 12px;
+                                        bottom: 12px;
+                                    }
+                                    .ic-audio {
+                                        content: url(../../../assets/icon/ic-audio.png);
+                                    }
+                                    .ic-video {
+                                        content: url(../../../assets/icon/ic-video.png);
+                                    }
+                                }
+                                h4 {
+                                    display: -webkit-box;
+                                    height: 72px;
+                                    color: $text-light;
+                                    -webkit-box-orient: vertical;
+                                    -webkit-line-clamp: 3;
+                                    text-overflow: ellipsis;
+                                    overflow: hidden;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @include media.tab {
+        #details-layouts {
+            section {
+                main {
+                    .card-wrapper {
+                        width: 100%;
+                        height: auto;
+                        .card-header {
+                            align-items: center;
+                            justify-content: space-between;
+                            margin-bottom: 16px;
+                            h3 {
+                                color: $text-light;
+                            }
+                            a {
+                                text-decoration: none;
+                                color: $text-white;
+                                padding: 8px 24px;
+                                background-color: $color-pink;
+                                border-radius: 50px;
+                            }
+                        }
+                        .card-body {
+                            display: flex;
+                            flex-wrap: wrap;
+                            gap: 16px;
+                            .card {
+                                flex-shrink: 0; //hide grow content
+                                flex-basis: 267px;
+                                flex-grow: 1;
+                                width: 100%;
+                                height: auto;
+                                overflow: hidden;
+                                a {
+                                    text-decoration: none;
+                                    .card-img {
+                                        position: relative;
+                                        aspect-ratio: 4/3;
+                                        width: 100%;
+                                        height: auto;
+                                        overflow: hidden;
+                                        margin-bottom: 8px;
+                                        background-color: $color-dark-50;
+                                        img {
+                                            width: 100%;
+                                            height: 100%;
+                                            object-fit: cover;
+                                            object-position: center center;
+                                            transform: scale(1);
+                                            transition: transform 1s;
+
+                                            &:hover {
+                                                transform: scale(1.2);
+                                            }
+                                        }
+                                        .ic-video,
+                                        .ic-audio {
+                                            width: 32px;
+                                            height: 32px;
+
+                                            position: absolute;
+                                            right: 12px;
+                                            bottom: 12px;
+                                        }
+                                        .ic-audio {
+                                            content: url(../../../assets/icon/ic-audio.png);
+                                        }
+                                        .ic-video {
+                                            content: url(../../../assets/icon/ic-video.png);
+                                        }
+                                    }
+                                    h4 {
+                                        display: -webkit-box;
+                                        height: 72px;
+                                        color: $text-light;
+                                        -webkit-box-orient: vertical;
+                                        -webkit-line-clamp: 3;
+                                        text-overflow: ellipsis;
+                                        overflow: hidden;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

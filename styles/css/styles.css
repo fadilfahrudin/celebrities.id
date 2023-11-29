@@ -676,15 +676,7 @@ p {
   gap: 32px;
 }
 #details-layouts section main {
-  width: 784px;
-  min-height: 100vh;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  gap: 32px 0;
-}
-#details-layouts section aside {
-  width: 300px;
+  width: 100%;
   min-height: 100vh;
   overflow: hidden;
   display: flex;
@@ -2133,6 +2125,1023 @@ p {
     display: -webkit-box;
     color: #d3d3d3;
     -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+}
+
+#detail-live-video {
+  background-color: #1c222b;
+}
+#detail-live-video #details-layouts section main .breadcrumb {
+  cursor: default;
+  color: #707070;
+  /* Caption/14 reg */
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+#detail-live-video #details-layouts section main .breadcrumb a {
+  text-decoration: none;
+  color: #707070;
+}
+#detail-live-video #details-layouts section main .live-stream-wrapper .live-stream {
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+#detail-live-video #details-layouts section main .live-stream-wrapper .live-stream .video-stream {
+  width: 100%;
+  height: auto;
+}
+#detail-live-video #details-layouts section main .live-stream-wrapper .live-stream .video-stream iframe {
+  aspect-ratio: 16/9;
+  width: 100%;
+  height: auto;
+  border: none;
+}
+#detail-live-video #details-layouts section main .live-stream-wrapper .live-stream .live-chat {
+  width: 50%;
+  height: auto;
+  background-color: #262e39;
+}
+#detail-live-video #details-layouts section main .live-stream-wrapper .live-stream .live-chat.hidden {
+  display: none;
+}
+#detail-live-video #details-layouts section main .live-stream-wrapper .live-sign {
+  display: block;
+  margin-top: 24px;
+  position: relative;
+  color: #d3d3d3;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 27px */
+}
+#detail-live-video #details-layouts section main .live-stream-wrapper .live-sign::before {
+  display: inline-block;
+  content: "";
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-right: 8px;
+  background-color: #f00;
+}
+#detail-live-video #details-layouts section main .live-stream-wrapper .live-title {
+  margin-top: 16px;
+  color: #d3d3d3;
+}
+#detail-live-video #details-layouts section main .live-stream-wrapper p {
+  margin-top: 12px;
+  color: #707070;
+  font-size: 18px;
+  line-height: 150%;
+}
+#detail-live-video #details-layouts section main .live-stream-wrapper ul {
+  margin-top: 24px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 0 12px;
+}
+#detail-live-video #details-layouts section main .live-stream-wrapper ul label {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: #d3d3d3;
+}
+#detail-live-video #details-layouts section main .live-stream-wrapper ul li a {
+  text-decoration: none;
+}
+#detail-live-video #details-layouts section main .live-stream-wrapper ul li a i {
+  width: 32px;
+  height: 32px;
+}
+#detail-live-video #details-layouts section main .live-stream-wrapper ul li a .ic-fb {
+  content: url(../../../assets/img/fb.png);
+}
+#detail-live-video #details-layouts section main .live-stream-wrapper ul li a .ic-tw {
+  content: url(../../../assets/img/tw.png);
+}
+#detail-live-video #details-layouts section main .live-stream-wrapper ul li a .ic-wa {
+  content: url(../../../assets/img/wa.png);
+}
+#detail-live-video #details-layouts section main .live-stream-wrapper ul li a .ic-link {
+  content: url(../../../assets/img/link.png);
+}
+#detail-live-video #details-layouts section main .card-wrapper {
+  width: 100%;
+  height: auto;
+}
+#detail-live-video #details-layouts section main .card-wrapper .card-header {
+  align-items: center;
+  margin-bottom: 16px;
+}
+#detail-live-video #details-layouts section main .card-wrapper .card-header h2 {
+  color: #d3d3d3;
+}
+#detail-live-video #details-layouts section main .card-wrapper .card-header a {
+  text-decoration: none;
+  color: #fff;
+  padding: 8px 24px;
+  background-color: #f98e8e;
+  border-radius: 50px;
+}
+#detail-live-video #details-layouts section main .card-wrapper .card-body {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+#detail-live-video #details-layouts section main .card-wrapper .card-body .card {
+  flex-shrink: 0;
+  width: 267px;
+  height: auto;
+  overflow: hidden;
+}
+#detail-live-video #details-layouts section main .card-wrapper .card-body .card a {
+  text-decoration: none;
+}
+#detail-live-video #details-layouts section main .card-wrapper .card-body .card a .card-img {
+  position: relative;
+  aspect-ratio: 4/3;
+  width: 100%;
+  height: 167px;
+  overflow: hidden;
+  margin-bottom: 8px;
+  background-color: #222934;
+}
+#detail-live-video #details-layouts section main .card-wrapper .card-body .card a .card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  transform: scale(1);
+  transition: transform 1s;
+}
+#detail-live-video #details-layouts section main .card-wrapper .card-body .card a .card-img img:hover {
+  transform: scale(1.2);
+}
+#detail-live-video #details-layouts section main .card-wrapper .card-body .card a .card-img .ic-video,
+#detail-live-video #details-layouts section main .card-wrapper .card-body .card a .card-img .ic-audio {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+}
+#detail-live-video #details-layouts section main .card-wrapper .card-body .card a .card-img .ic-audio {
+  content: url(../../../assets/icon/ic-audio.png);
+}
+#detail-live-video #details-layouts section main .card-wrapper .card-body .card a .card-img .ic-video {
+  content: url(../../../assets/icon/ic-video.png);
+}
+#detail-live-video #details-layouts section main .card-wrapper .card-body .card a h4 {
+  display: -webkit-box;
+  height: 72px;
+  color: #d3d3d3;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+@media (max-width: 1279px) {
+  #detail-live-video #details-layouts section main .card-wrapper {
+    width: 100%;
+    height: auto;
+  }
+  #detail-live-video #details-layouts section main .card-wrapper .card-header {
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+  }
+  #detail-live-video #details-layouts section main .card-wrapper .card-header h3 {
+    color: #d3d3d3;
+  }
+  #detail-live-video #details-layouts section main .card-wrapper .card-header a {
+    text-decoration: none;
+    color: #fff;
+    padding: 8px 24px;
+    background-color: #f98e8e;
+    border-radius: 50px;
+  }
+  #detail-live-video #details-layouts section main .card-wrapper .card-body {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  #detail-live-video #details-layouts section main .card-wrapper .card-body .card {
+    flex-shrink: 0;
+    flex-basis: 267px;
+    flex-grow: 1;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+  }
+  #detail-live-video #details-layouts section main .card-wrapper .card-body .card a {
+    text-decoration: none;
+  }
+  #detail-live-video #details-layouts section main .card-wrapper .card-body .card a .card-img {
+    position: relative;
+    aspect-ratio: 4/3;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    margin-bottom: 8px;
+    background-color: #222934;
+  }
+  #detail-live-video #details-layouts section main .card-wrapper .card-body .card a .card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    transform: scale(1);
+    transition: transform 1s;
+  }
+  #detail-live-video #details-layouts section main .card-wrapper .card-body .card a .card-img img:hover {
+    transform: scale(1.2);
+  }
+  #detail-live-video #details-layouts section main .card-wrapper .card-body .card a .card-img .ic-video,
+  #detail-live-video #details-layouts section main .card-wrapper .card-body .card a .card-img .ic-audio {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    right: 12px;
+    bottom: 12px;
+  }
+  #detail-live-video #details-layouts section main .card-wrapper .card-body .card a .card-img .ic-audio {
+    content: url(../../../assets/icon/ic-audio.png);
+  }
+  #detail-live-video #details-layouts section main .card-wrapper .card-body .card a .card-img .ic-video {
+    content: url(../../../assets/icon/ic-video.png);
+  }
+  #detail-live-video #details-layouts section main .card-wrapper .card-body .card a h4 {
+    display: -webkit-box;
+    height: 72px;
+    color: #d3d3d3;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+}
+
+#detail-audio {
+  background-color: #1c222b;
+}
+#detail-audio #details-layouts section main .breadcrumb {
+  cursor: default;
+  color: #707070;
+  /* Caption/14 reg */
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+#detail-audio #details-layouts section main .breadcrumb a {
+  text-decoration: none;
+  color: #707070;
+}
+#detail-audio #details-layouts section main .audio-stream-wrapper .audio-stream {
+  width: 100%;
+  height: 236px;
+}
+#detail-audio #details-layouts section main .audio-stream-wrapper .audio-stream iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background-color: #222934;
+}
+#detail-audio #details-layouts section main .audio-stream-wrapper p {
+  margin-top: 12px;
+  color: #707070;
+  font-size: 18px;
+  line-height: 150%;
+}
+#detail-audio #details-layouts section main .card-wrapper {
+  width: 100%;
+  height: auto;
+}
+#detail-audio #details-layouts section main .card-wrapper .card-header {
+  align-items: center;
+  margin-bottom: 16px;
+}
+#detail-audio #details-layouts section main .card-wrapper .card-header h2 {
+  color: #d3d3d3;
+}
+#detail-audio #details-layouts section main .card-wrapper .card-header a {
+  text-decoration: none;
+  color: #fff;
+  padding: 8px 24px;
+  background-color: #f98e8e;
+  border-radius: 50px;
+}
+#detail-audio #details-layouts section main .card-wrapper .card-body {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+#detail-audio #details-layouts section main .card-wrapper .card-body .card {
+  flex-shrink: 0;
+  width: 267px;
+  height: auto;
+  overflow: hidden;
+}
+#detail-audio #details-layouts section main .card-wrapper .card-body .card a {
+  text-decoration: none;
+}
+#detail-audio #details-layouts section main .card-wrapper .card-body .card a .card-img {
+  position: relative;
+  aspect-ratio: 4/3;
+  width: 100%;
+  height: 167px;
+  overflow: hidden;
+  margin-bottom: 8px;
+  background-color: #222934;
+}
+#detail-audio #details-layouts section main .card-wrapper .card-body .card a .card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  transform: scale(1);
+  transition: transform 1s;
+}
+#detail-audio #details-layouts section main .card-wrapper .card-body .card a .card-img img:hover {
+  transform: scale(1.2);
+}
+#detail-audio #details-layouts section main .card-wrapper .card-body .card a .card-img .ic-video,
+#detail-audio #details-layouts section main .card-wrapper .card-body .card a .card-img .ic-audio {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+}
+#detail-audio #details-layouts section main .card-wrapper .card-body .card a .card-img .ic-audio {
+  content: url(../../../assets/icon/ic-audio.png);
+}
+#detail-audio #details-layouts section main .card-wrapper .card-body .card a .card-img .ic-video {
+  content: url(../../../assets/icon/ic-video.png);
+}
+#detail-audio #details-layouts section main .card-wrapper .card-body .card a h4 {
+  display: -webkit-box;
+  height: 72px;
+  color: #d3d3d3;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+@media (max-width: 1279px) {
+  #detail-audio #details-layouts section main .card-wrapper {
+    width: 100%;
+    height: auto;
+  }
+  #detail-audio #details-layouts section main .card-wrapper .card-header {
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+  }
+  #detail-audio #details-layouts section main .card-wrapper .card-header h3 {
+    color: #d3d3d3;
+  }
+  #detail-audio #details-layouts section main .card-wrapper .card-header a {
+    text-decoration: none;
+    color: #fff;
+    padding: 8px 24px;
+    background-color: #f98e8e;
+    border-radius: 50px;
+  }
+  #detail-audio #details-layouts section main .card-wrapper .card-body {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  #detail-audio #details-layouts section main .card-wrapper .card-body .card {
+    flex-shrink: 0;
+    flex-basis: 267px;
+    flex-grow: 1;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+  }
+  #detail-audio #details-layouts section main .card-wrapper .card-body .card a {
+    text-decoration: none;
+  }
+  #detail-audio #details-layouts section main .card-wrapper .card-body .card a .card-img {
+    position: relative;
+    aspect-ratio: 4/3;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    margin-bottom: 8px;
+    background-color: #222934;
+  }
+  #detail-audio #details-layouts section main .card-wrapper .card-body .card a .card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    transform: scale(1);
+    transition: transform 1s;
+  }
+  #detail-audio #details-layouts section main .card-wrapper .card-body .card a .card-img img:hover {
+    transform: scale(1.2);
+  }
+  #detail-audio #details-layouts section main .card-wrapper .card-body .card a .card-img .ic-video,
+  #detail-audio #details-layouts section main .card-wrapper .card-body .card a .card-img .ic-audio {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    right: 12px;
+    bottom: 12px;
+  }
+  #detail-audio #details-layouts section main .card-wrapper .card-body .card a .card-img .ic-audio {
+    content: url(../../../assets/icon/ic-audio.png);
+  }
+  #detail-audio #details-layouts section main .card-wrapper .card-body .card a .card-img .ic-video {
+    content: url(../../../assets/icon/ic-video.png);
+  }
+  #detail-audio #details-layouts section main .card-wrapper .card-body .card a h4 {
+    display: -webkit-box;
+    height: 72px;
+    color: #d3d3d3;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+}
+
+#detail-tv-streaming {
+  background-color: #1c222b;
+}
+#detail-tv-streaming #details-layouts section main .breadcrumb {
+  cursor: default;
+  color: #707070;
+  /* Caption/14 reg */
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+#detail-tv-streaming #details-layouts section main .breadcrumb a {
+  text-decoration: none;
+  color: #707070;
+}
+#detail-tv-streaming #details-layouts section main .tv-stream-wrapper .tv-stream {
+  padding-top: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #222934;
+  width: 100%;
+  height: auto;
+}
+#detail-tv-streaming #details-layouts section main .tv-stream-wrapper .tv-stream .video-stream {
+  width: 725px;
+  height: auto;
+}
+#detail-tv-streaming #details-layouts section main .tv-stream-wrapper .tv-stream .video-stream iframe {
+  aspect-ratio: 16/9;
+  width: 100%;
+  height: auto;
+  border: none;
+}
+#detail-tv-streaming #details-layouts section main .tv-stream-wrapper .tv-stream .channel-stream {
+  width: 100%;
+  height: auto;
+  padding: 12px 16px;
+  overflow: hidden;
+  background-color: #262e39;
+}
+#detail-tv-streaming #details-layouts section main .tv-stream-wrapper .tv-stream .channel-stream h5 {
+  color: #d3d3d3;
+}
+#detail-tv-streaming #details-layouts section main .tv-stream-wrapper .tv-stream .channel-stream ul {
+  display: flex;
+  gap: 0 16px;
+  list-style: none;
+}
+#detail-tv-streaming #details-layouts section main .tv-stream-wrapper .tv-stream .channel-stream ul li {
+  position: relative;
+  width: 123px;
+  height: 82px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#detail-tv-streaming #details-layouts section main .tv-stream-wrapper .tv-stream .channel-stream ul li.active {
+  position: relative;
+  width: 123px;
+  height: 82px;
+}
+#detail-tv-streaming #details-layouts section main .tv-stream-wrapper .tv-stream .channel-stream ul li.active::after {
+  content: "Now Playing";
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background-color: #7d7d7d;
+  opacity: 0.9;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #fff;
+}
+#detail-tv-streaming #details-layouts section main .tv-stream-wrapper .tv-stream .channel-stream ul li a {
+  display: inline-block;
+}
+#detail-tv-streaming #details-layouts section main .tv-stream-wrapper .live-sign {
+  display: block;
+  margin-top: 24px;
+  position: relative;
+  color: #d3d3d3;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 27px */
+}
+#detail-tv-streaming #details-layouts section main .tv-stream-wrapper .live-sign::before {
+  display: inline-block;
+  content: "";
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-right: 8px;
+  background-color: #f00;
+}
+#detail-tv-streaming #details-layouts section main .tv-stream-wrapper .live-title {
+  margin-top: 16px;
+  color: #d3d3d3;
+}
+#detail-tv-streaming #details-layouts section main .tv-stream-wrapper p {
+  margin-top: 12px;
+  color: #707070;
+  font-size: 18px;
+  line-height: 150%;
+}
+#detail-tv-streaming #details-layouts section main .tv-stream-wrapper ul {
+  margin-top: 24px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 0 12px;
+}
+#detail-tv-streaming #details-layouts section main .tv-stream-wrapper ul label {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: #d3d3d3;
+}
+#detail-tv-streaming #details-layouts section main .tv-stream-wrapper ul li a {
+  text-decoration: none;
+}
+#detail-tv-streaming #details-layouts section main .tv-stream-wrapper ul li a i {
+  width: 32px;
+  height: 32px;
+}
+#detail-tv-streaming #details-layouts section main .tv-stream-wrapper ul li a .ic-fb {
+  content: url(../../../assets/img/fb.png);
+}
+#detail-tv-streaming #details-layouts section main .tv-stream-wrapper ul li a .ic-tw {
+  content: url(../../../assets/img/tw.png);
+}
+#detail-tv-streaming #details-layouts section main .tv-stream-wrapper ul li a .ic-wa {
+  content: url(../../../assets/img/wa.png);
+}
+#detail-tv-streaming #details-layouts section main .tv-stream-wrapper ul li a .ic-link {
+  content: url(../../../assets/img/link.png);
+}
+#detail-tv-streaming #details-layouts section main .card-wrapper {
+  width: 100%;
+  height: auto;
+}
+#detail-tv-streaming #details-layouts section main .card-wrapper .card-header {
+  align-items: center;
+  margin-bottom: 16px;
+}
+#detail-tv-streaming #details-layouts section main .card-wrapper .card-header h2 {
+  color: #d3d3d3;
+}
+#detail-tv-streaming #details-layouts section main .card-wrapper .card-header a {
+  text-decoration: none;
+  color: #fff;
+  padding: 8px 24px;
+  background-color: #f98e8e;
+  border-radius: 50px;
+}
+#detail-tv-streaming #details-layouts section main .card-wrapper .card-body {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+#detail-tv-streaming #details-layouts section main .card-wrapper .card-body .card {
+  flex-shrink: 0;
+  width: 267px;
+  height: auto;
+  overflow: hidden;
+}
+#detail-tv-streaming #details-layouts section main .card-wrapper .card-body .card a {
+  text-decoration: none;
+}
+#detail-tv-streaming #details-layouts section main .card-wrapper .card-body .card a .card-img {
+  position: relative;
+  aspect-ratio: 4/3;
+  width: 100%;
+  height: 167px;
+  overflow: hidden;
+  margin-bottom: 8px;
+  background-color: #222934;
+}
+#detail-tv-streaming #details-layouts section main .card-wrapper .card-body .card a .card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  transform: scale(1);
+  transition: transform 1s;
+}
+#detail-tv-streaming #details-layouts section main .card-wrapper .card-body .card a .card-img img:hover {
+  transform: scale(1.2);
+}
+#detail-tv-streaming #details-layouts section main .card-wrapper .card-body .card a .card-img .ic-video,
+#detail-tv-streaming #details-layouts section main .card-wrapper .card-body .card a .card-img .ic-audio {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+}
+#detail-tv-streaming #details-layouts section main .card-wrapper .card-body .card a .card-img .ic-audio {
+  content: url(../../../assets/icon/ic-audio.png);
+}
+#detail-tv-streaming #details-layouts section main .card-wrapper .card-body .card a .card-img .ic-video {
+  content: url(../../../assets/icon/ic-video.png);
+}
+#detail-tv-streaming #details-layouts section main .card-wrapper .card-body .card a h4 {
+  display: -webkit-box;
+  height: 72px;
+  color: #d3d3d3;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+@media (max-width: 1279px) {
+  #detail-tv-streaming #details-layouts section main .card-wrapper {
+    width: 100%;
+    height: auto;
+  }
+  #detail-tv-streaming #details-layouts section main .card-wrapper .card-header {
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+  }
+  #detail-tv-streaming #details-layouts section main .card-wrapper .card-header h3 {
+    color: #d3d3d3;
+  }
+  #detail-tv-streaming #details-layouts section main .card-wrapper .card-header a {
+    text-decoration: none;
+    color: #fff;
+    padding: 8px 24px;
+    background-color: #f98e8e;
+    border-radius: 50px;
+  }
+  #detail-tv-streaming #details-layouts section main .card-wrapper .card-body {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  #detail-tv-streaming #details-layouts section main .card-wrapper .card-body .card {
+    flex-shrink: 0;
+    flex-basis: 267px;
+    flex-grow: 1;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+  }
+  #detail-tv-streaming #details-layouts section main .card-wrapper .card-body .card a {
+    text-decoration: none;
+  }
+  #detail-tv-streaming #details-layouts section main .card-wrapper .card-body .card a .card-img {
+    position: relative;
+    aspect-ratio: 4/3;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    margin-bottom: 8px;
+    background-color: #222934;
+  }
+  #detail-tv-streaming #details-layouts section main .card-wrapper .card-body .card a .card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    transform: scale(1);
+    transition: transform 1s;
+  }
+  #detail-tv-streaming #details-layouts section main .card-wrapper .card-body .card a .card-img img:hover {
+    transform: scale(1.2);
+  }
+  #detail-tv-streaming #details-layouts section main .card-wrapper .card-body .card a .card-img .ic-video,
+  #detail-tv-streaming #details-layouts section main .card-wrapper .card-body .card a .card-img .ic-audio {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    right: 12px;
+    bottom: 12px;
+  }
+  #detail-tv-streaming #details-layouts section main .card-wrapper .card-body .card a .card-img .ic-audio {
+    content: url(../../../assets/icon/ic-audio.png);
+  }
+  #detail-tv-streaming #details-layouts section main .card-wrapper .card-body .card a .card-img .ic-video {
+    content: url(../../../assets/icon/ic-video.png);
+  }
+  #detail-tv-streaming #details-layouts section main .card-wrapper .card-body .card a h4 {
+    display: -webkit-box;
+    height: 72px;
+    color: #d3d3d3;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+}
+
+#detail-radio-streaming {
+  background-color: #1c222b;
+}
+#detail-radio-streaming #details-layouts section main .breadcrumb {
+  cursor: default;
+  color: #707070;
+  /* Caption/14 reg */
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+#detail-radio-streaming #details-layouts section main .breadcrumb a {
+  text-decoration: none;
+  color: #707070;
+}
+#detail-radio-streaming #details-layouts section main .radio-stream-wrapper .radio-stream {
+  padding-top: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #222934;
+  width: 100%;
+  height: auto;
+}
+#detail-radio-streaming #details-layouts section main .radio-stream-wrapper .radio-stream .video-stream {
+  width: 100%;
+  height: 236px;
+}
+#detail-radio-streaming #details-layouts section main .radio-stream-wrapper .radio-stream .video-stream iframe {
+  width: 100%;
+  height: auto;
+  border: none;
+}
+#detail-radio-streaming #details-layouts section main .radio-stream-wrapper .radio-stream .channel-stream {
+  width: 100%;
+  height: auto;
+  padding: 12px 16px;
+  overflow: hidden;
+  background-color: #262e39;
+}
+#detail-radio-streaming #details-layouts section main .radio-stream-wrapper .radio-stream .channel-stream h5 {
+  color: #d3d3d3;
+}
+#detail-radio-streaming #details-layouts section main .radio-stream-wrapper .radio-stream .channel-stream ul {
+  display: flex;
+  gap: 0 16px;
+  list-style: none;
+}
+#detail-radio-streaming #details-layouts section main .radio-stream-wrapper .radio-stream .channel-stream ul li {
+  position: relative;
+  width: 123px;
+  height: 82px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#detail-radio-streaming #details-layouts section main .radio-stream-wrapper .radio-stream .channel-stream ul li.active {
+  position: relative;
+  width: 123px;
+  height: 82px;
+}
+#detail-radio-streaming #details-layouts section main .radio-stream-wrapper .radio-stream .channel-stream ul li.active::after {
+  content: "Now Playing";
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background-color: #7d7d7d;
+  opacity: 0.9;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #fff;
+}
+#detail-radio-streaming #details-layouts section main .radio-stream-wrapper .radio-stream .channel-stream ul li a {
+  display: inline-block;
+}
+#detail-radio-streaming #details-layouts section main .radio-stream-wrapper p {
+  margin-top: 12px;
+  color: #707070;
+  font-size: 18px;
+  line-height: 150%;
+}
+#detail-radio-streaming #details-layouts section main .radio-stream-wrapper ul {
+  margin-top: 24px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 0 12px;
+}
+#detail-radio-streaming #details-layouts section main .radio-stream-wrapper ul label {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: #d3d3d3;
+}
+#detail-radio-streaming #details-layouts section main .radio-stream-wrapper ul li a {
+  text-decoration: none;
+}
+#detail-radio-streaming #details-layouts section main .radio-stream-wrapper ul li a i {
+  width: 32px;
+  height: 32px;
+}
+#detail-radio-streaming #details-layouts section main .radio-stream-wrapper ul li a .ic-fb {
+  content: url(../../../assets/img/fb.png);
+}
+#detail-radio-streaming #details-layouts section main .radio-stream-wrapper ul li a .ic-tw {
+  content: url(../../../assets/img/tw.png);
+}
+#detail-radio-streaming #details-layouts section main .radio-stream-wrapper ul li a .ic-wa {
+  content: url(../../../assets/img/wa.png);
+}
+#detail-radio-streaming #details-layouts section main .radio-stream-wrapper ul li a .ic-link {
+  content: url(../../../assets/img/link.png);
+}
+#detail-radio-streaming #details-layouts section main .card-wrapper {
+  width: 100%;
+  height: auto;
+}
+#detail-radio-streaming #details-layouts section main .card-wrapper .card-header {
+  align-items: center;
+  margin-bottom: 16px;
+}
+#detail-radio-streaming #details-layouts section main .card-wrapper .card-header h2 {
+  color: #d3d3d3;
+}
+#detail-radio-streaming #details-layouts section main .card-wrapper .card-header a {
+  text-decoration: none;
+  color: #fff;
+  padding: 8px 24px;
+  background-color: #f98e8e;
+  border-radius: 50px;
+}
+#detail-radio-streaming #details-layouts section main .card-wrapper .card-body {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+#detail-radio-streaming #details-layouts section main .card-wrapper .card-body .card {
+  flex-shrink: 0;
+  width: 267px;
+  height: auto;
+  overflow: hidden;
+}
+#detail-radio-streaming #details-layouts section main .card-wrapper .card-body .card a {
+  text-decoration: none;
+}
+#detail-radio-streaming #details-layouts section main .card-wrapper .card-body .card a .card-img {
+  position: relative;
+  aspect-ratio: 4/3;
+  width: 100%;
+  height: 167px;
+  overflow: hidden;
+  margin-bottom: 8px;
+  background-color: #222934;
+}
+#detail-radio-streaming #details-layouts section main .card-wrapper .card-body .card a .card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  transform: scale(1);
+  transition: transform 1s;
+}
+#detail-radio-streaming #details-layouts section main .card-wrapper .card-body .card a .card-img img:hover {
+  transform: scale(1.2);
+}
+#detail-radio-streaming #details-layouts section main .card-wrapper .card-body .card a .card-img .ic-video,
+#detail-radio-streaming #details-layouts section main .card-wrapper .card-body .card a .card-img .ic-audio {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+}
+#detail-radio-streaming #details-layouts section main .card-wrapper .card-body .card a .card-img .ic-audio {
+  content: url(../../../assets/icon/ic-audio.png);
+}
+#detail-radio-streaming #details-layouts section main .card-wrapper .card-body .card a .card-img .ic-video {
+  content: url(../../../assets/icon/ic-video.png);
+}
+#detail-radio-streaming #details-layouts section main .card-wrapper .card-body .card a h4 {
+  display: -webkit-box;
+  height: 72px;
+  color: #d3d3d3;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+@media (max-width: 1279px) {
+  #detail-radio-streaming #details-layouts section main .card-wrapper {
+    width: 100%;
+    height: auto;
+  }
+  #detail-radio-streaming #details-layouts section main .card-wrapper .card-header {
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+  }
+  #detail-radio-streaming #details-layouts section main .card-wrapper .card-header h3 {
+    color: #d3d3d3;
+  }
+  #detail-radio-streaming #details-layouts section main .card-wrapper .card-header a {
+    text-decoration: none;
+    color: #fff;
+    padding: 8px 24px;
+    background-color: #f98e8e;
+    border-radius: 50px;
+  }
+  #detail-radio-streaming #details-layouts section main .card-wrapper .card-body {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  #detail-radio-streaming #details-layouts section main .card-wrapper .card-body .card {
+    flex-shrink: 0;
+    flex-basis: 267px;
+    flex-grow: 1;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+  }
+  #detail-radio-streaming #details-layouts section main .card-wrapper .card-body .card a {
+    text-decoration: none;
+  }
+  #detail-radio-streaming #details-layouts section main .card-wrapper .card-body .card a .card-img {
+    position: relative;
+    aspect-ratio: 4/3;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    margin-bottom: 8px;
+    background-color: #222934;
+  }
+  #detail-radio-streaming #details-layouts section main .card-wrapper .card-body .card a .card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    transform: scale(1);
+    transition: transform 1s;
+  }
+  #detail-radio-streaming #details-layouts section main .card-wrapper .card-body .card a .card-img img:hover {
+    transform: scale(1.2);
+  }
+  #detail-radio-streaming #details-layouts section main .card-wrapper .card-body .card a .card-img .ic-video,
+  #detail-radio-streaming #details-layouts section main .card-wrapper .card-body .card a .card-img .ic-audio {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    right: 12px;
+    bottom: 12px;
+  }
+  #detail-radio-streaming #details-layouts section main .card-wrapper .card-body .card a .card-img .ic-audio {
+    content: url(../../../assets/icon/ic-audio.png);
+  }
+  #detail-radio-streaming #details-layouts section main .card-wrapper .card-body .card a .card-img .ic-video {
+    content: url(../../../assets/icon/ic-video.png);
+  }
+  #detail-radio-streaming #details-layouts section main .card-wrapper .card-body .card a h4 {
+    display: -webkit-box;
+    height: 72px;
+    color: #d3d3d3;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
     text-overflow: ellipsis;
     overflow: hidden;
   }
