@@ -4059,6 +4059,217 @@ p {
   }
 }
 
+#page-tags {
+  background-color: #1c222b;
+}
+#page-tags #details-layouts section main .breadcrumb {
+  cursor: default;
+  color: #707070;
+  /* Caption/14 reg */
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+#page-tags #details-layouts section main .breadcrumb a {
+  text-decoration: none;
+  color: #707070;
+}
+#page-tags #details-layouts section main .banner-wrapper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 116px;
+  background-color: #fde2e9;
+}
+#page-tags #details-layouts section main .banner-wrapper .banner {
+  width: auto;
+  height: 100%;
+  aspect-ratio: 5/3;
+  overflow: hidden;
+}
+#page-tags #details-layouts section main .banner-wrapper .banner img {
+  object-fit: cover;
+  object-position: center center;
+}
+#page-tags #details-layouts section main .banner-wrapper .banner-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 24px;
+}
+#page-tags #details-layouts section main .banner-wrapper .banner-info p {
+  color: #1c222b;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+#page-tags #details-layouts section main .banner-wrapper .banner-info h2 {
+  color: #1c222b;
+}
+#page-tags #details-layouts section main .tags {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px 10px;
+}
+#page-tags #details-layouts section main .tags li .tag {
+  display: block;
+  padding: 8px 16px;
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #f98e8e;
+  border-radius: 32px;
+}
+#page-tags #details-layouts section main .tags li .tag.active {
+  background-color: #f98e8e;
+}
+#page-tags #details-layouts section main .tags li .tag:hover {
+  background-color: #f98e8e;
+}
+#page-tags #details-layouts section main .card-wrapper {
+  width: 100%;
+  height: auto;
+}
+#page-tags #details-layouts section main .card-wrapper .card-body {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+#page-tags #details-layouts section main .card-wrapper .card-body .card {
+  flex-shrink: 0;
+  width: 267px;
+  height: auto;
+  overflow: hidden;
+}
+#page-tags #details-layouts section main .card-wrapper .card-body .card a {
+  text-decoration: none;
+}
+#page-tags #details-layouts section main .card-wrapper .card-body .card a .card-img {
+  position: relative;
+  aspect-ratio: 4/3;
+  width: 100%;
+  height: 167px;
+  overflow: hidden;
+  margin-bottom: 8px;
+  background-color: #222934;
+}
+#page-tags #details-layouts section main .card-wrapper .card-body .card a .card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  transform: scale(1);
+  transition: transform 1s;
+}
+#page-tags #details-layouts section main .card-wrapper .card-body .card a .card-img img:hover {
+  transform: scale(1.2);
+}
+#page-tags #details-layouts section main .card-wrapper .card-body .card a .card-img .ic-video,
+#page-tags #details-layouts section main .card-wrapper .card-body .card a .card-img .ic-audio {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+}
+#page-tags #details-layouts section main .card-wrapper .card-body .card a .card-img .ic-audio {
+  content: url(../../../assets/icon/ic-audio.png);
+}
+#page-tags #details-layouts section main .card-wrapper .card-body .card a .card-img .ic-video {
+  content: url(../../../assets/icon/ic-video.png);
+}
+#page-tags #details-layouts section main .card-wrapper .card-body .card a h4 {
+  display: -webkit-box;
+  height: 72px;
+  color: #d3d3d3;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+@media (max-width: 1279px) {
+  #page-tags #details-layouts section main .card-wrapper {
+    width: 100%;
+    height: auto;
+  }
+  #page-tags #details-layouts section main .card-wrapper .card-header {
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+  }
+  #page-tags #details-layouts section main .card-wrapper .card-header h3 {
+    color: #d3d3d3;
+  }
+  #page-tags #details-layouts section main .card-wrapper .card-header a {
+    text-decoration: none;
+    color: #fff;
+    padding: 8px 24px;
+    background-color: #f98e8e;
+    border-radius: 50px;
+  }
+  #page-tags #details-layouts section main .card-wrapper .card-body {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  #page-tags #details-layouts section main .card-wrapper .card-body .card {
+    flex-shrink: 0;
+    flex-basis: 267px;
+    flex-grow: 1;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+  }
+  #page-tags #details-layouts section main .card-wrapper .card-body .card a {
+    text-decoration: none;
+  }
+  #page-tags #details-layouts section main .card-wrapper .card-body .card a .card-img {
+    position: relative;
+    aspect-ratio: 4/3;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    margin-bottom: 8px;
+    background-color: #222934;
+  }
+  #page-tags #details-layouts section main .card-wrapper .card-body .card a .card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    transform: scale(1);
+    transition: transform 1s;
+  }
+  #page-tags #details-layouts section main .card-wrapper .card-body .card a .card-img img:hover {
+    transform: scale(1.2);
+  }
+  #page-tags #details-layouts section main .card-wrapper .card-body .card a .card-img .ic-video,
+  #page-tags #details-layouts section main .card-wrapper .card-body .card a .card-img .ic-audio {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    right: 12px;
+    bottom: 12px;
+  }
+  #page-tags #details-layouts section main .card-wrapper .card-body .card a .card-img .ic-audio {
+    content: url(../../../assets/icon/ic-audio.png);
+  }
+  #page-tags #details-layouts section main .card-wrapper .card-body .card a .card-img .ic-video {
+    content: url(../../../assets/icon/ic-video.png);
+  }
+  #page-tags #details-layouts section main .card-wrapper .card-body .card a h4 {
+    display: -webkit-box;
+    height: 72px;
+    color: #d3d3d3;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+}
+
 .loading {
   display: inline-block;
   position: relative;
