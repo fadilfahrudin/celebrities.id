@@ -1,0 +1,970 @@
+#detail-video {
+    background-color: $color-dark;
+
+    header {
+        position: sticky;
+        z-index: 999;
+        top: -1px;
+        width: 100%;
+        height: 108px;
+
+        background-color: $color-dark-50;
+        .container {
+            display: flex;
+            height: 100%;
+            justify-content: space-between;
+            align-items: center;
+
+            .brand-btn-wrapper {
+                display: flex;
+                gap: 32px;
+                .burger-btn {
+                    background-color: unset;
+                    border: none;
+                    cursor: pointer;
+                    .ic-burger {
+                        content: url(../../../assets/icon/ic-burger.png);
+                        width: 32px;
+                        height: 32px;
+                    }
+                }
+            }
+            .search {
+                background-color: $color-gray;
+                padding: 8px 16px;
+                width: 350px;
+                border: none;
+                border-radius: 360px;
+
+                font-family: Inter, sans-serif;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                color: #707070;
+                &::placeholder {
+                    color: #707070;
+                    text-align: right;
+                    font-family: Inter, sans-serif;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 150%;
+                }
+
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+    }
+
+    nav {
+        position: fixed;
+        z-index: 9999;
+        background: rgba(0, 0, 0, 0.5);
+        width: 100%;
+        height: 100vh;
+        display: none;
+        #navigasi {
+            position: fixed;
+            top: 0;
+            left: 0;
+            padding: 24px;
+            background-color: $color-dark-50;
+            width: 280px;
+            height: 100vh;
+            overflow-y: scroll;
+            animation: navClose 0.5s linear forwards;
+
+            // /* Crome, safari */
+            &::-webkit-scrollbar {
+                width: 2px;
+            }
+            &::-webkit-scrollbar-thumb {
+                background-color: $color-pink;
+                border-radius: 2px;
+            }
+
+            &.clicked {
+                animation: navOpen 0.5s linear forwards;
+            }
+
+            @keyframes navOpen {
+                from {
+                    transform: translateX(-300px);
+                }
+                to {
+                    transform: translateX(0);
+                }
+            }
+            @keyframes navClose {
+                from {
+                    transform: translateX(0);
+                }
+                to {
+                    transform: translateX(-300px);
+                }
+            }
+
+            .close-nav {
+                float: right;
+                cursor: pointer;
+                width: max-content;
+                border: none;
+                background-color: transparent;
+                .ic-close-nav {
+                    content: url("../../../assets/icon/ic-close-nav.png");
+                    width: 24px;
+                    height: 24px;
+                }
+            }
+            .side-nav {
+                margin-top: 24px;
+                display: flex;
+                flex-direction: column;
+                gap: 32px;
+                list-style: none;
+
+                li {
+                    label {
+                        display: flex;
+                        align-items: center;
+                        gap: 4px;
+
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 150%;
+                        color: $text-pink;
+
+                        margin-bottom: 16px;
+
+                        .ic-play,
+                        .ic-category,
+                        .ic-radio {
+                            width: 16px;
+                            height: 16px;
+                        }
+
+                        .ic-play {
+                            content: url(../../../assets/icon/ic-play.png);
+                        }
+                        .ic-category {
+                            content: url(../../../assets/icon/ic-category.png);
+                        }
+                        .ic-radio {
+                            content: url(../../../assets/icon/ic-radio.png);
+                        }
+                    }
+
+                    ul {
+                        list-style: none;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 16px;
+                        li {
+                            a {
+                                text-decoration: none;
+                                font-size: 16px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: 150%;
+                                color: $text-light;
+                            }
+                            .banner-live-stream {
+                                display: flex;
+                                align-items: center;
+                                padding-left: 16px;
+                                background-image: url(../../../assets/img/banner-live-streaming.png);
+                                width: 232px;
+                                height: 60px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &.clicked {
+            display: block;
+        }
+    }
+    section {
+        display: flex;
+        justify-content: center;
+        gap: 0 32px;
+        padding-top: 16px;
+        padding-right: 16px;
+        main {
+            position: sticky;
+            top: 35px;
+            width: 837px;
+            height: 752px;
+            background-color: #1c1c1c;
+            display: flex;
+            flex-direction: column;
+            gap: 16px 0;
+            padding: 0 24px;
+            padding-top: 72px;
+            .video-player {
+                width: 100%;
+                height: auto;
+                iframe {
+                    width: 100%;
+                    height: auto;
+                    aspect-ratio: 16/9;
+                    border: none;
+                }
+            }
+            ul {
+                list-style: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 0 12px;
+                label {
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    color: $text-light;
+                }
+                li {
+                    a {
+                        text-decoration: none;
+                        i {
+                            width: 32px;
+                            height: 32px;
+                        }
+                        .ic-fb {
+                            content: url(../../../assets/img/fb.png);
+                        }
+                        .ic-tw {
+                            content: url(../../../assets/img/tw.png);
+                        }
+                        .ic-wa {
+                            content: url(../../../assets/img/wa.png);
+                        }
+                        .ic-link {
+                            content: url(../../../assets/img/link.png);
+                        }
+                    }
+                }
+            }
+        }
+        aside {
+            overflow: hidden;
+            width: 335px;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            gap: 24px 0;
+            .video-summary {
+                width: 100%;
+                height: auto;
+                .breadcrumb {
+                    color: #707070;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    margin-bottom: 24px;
+                    a {
+                        text-decoration: none;
+                        color: #707070;
+                    }
+                }
+                .video-title {
+                    color: $text-light;
+                    margin-bottom: 12px;
+                }
+                .author-wrapper {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 12px 0;
+                    .author {
+                        display: flex;
+                        align-items: center;
+                        gap: 0 10px;
+                        .author-img {
+                            width: 40px;
+                            height: 40px;
+                            aspect-ratio: 1/1;
+                            img {
+                                object-fit: cover;
+                            }
+                        }
+                        .author-name {
+                            color: #9b9b9b;
+                            font-size: 16px;
+                            font-style: normal;
+                            font-weight: 600;
+                            line-height: 150%;
+                        }
+                    }
+                    .created-date {
+                        color: #707070;
+                        font-family: Roboto, sans-serif;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 170%;
+                    }
+                }
+                .description {
+                    p {
+                        color: $text-light;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 150%; /* 24px */
+                        margin-bottom: 20px;
+
+                        .b-pink {
+                            color: $text-pink;
+                        }
+                    }
+                }
+                .video-tags {
+                    margin-bottom: 24px;
+                    h3 {
+                        color: $text-light;
+                        margin-bottom: 20px;
+                    }
+                    ul {
+                        list-style: none;
+                        display: flex;
+                        flex-wrap: wrap;
+                        gap: 16px 10px;
+                        li {
+                            .tag {
+                                display: block;
+                                padding: 8px 16px;
+                                text-decoration: none;
+                                color: $text-white;
+                                border: 1px solid $color-pink;
+                                border-radius: 32px;
+
+                                &.active {
+                                    background-color: $color-pink;
+                                }
+                                &:hover {
+                                    background-color: $color-pink;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .card-wrapper {
+                width: 100%;
+                height: auto;
+                .card-header {
+                    align-items: center;
+                    margin-bottom: 16px;
+                    h2 {
+                        color: $text-light;
+                    }
+                    a {
+                        text-decoration: none;
+                        color: $text-white;
+                        padding: 8px 24px;
+                        background-color: $color-pink;
+                        border-radius: 50px;
+                    }
+                }
+                .card-body {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 20px;
+                    .card {
+                        width: 100%;
+                        height: auto;
+                        overflow: hidden;
+                        a {
+                            text-decoration: none;
+                            .card-img {
+                                position: relative;
+                                aspect-ratio: 4/3;
+                                width: 100%;
+                                height: 252px;
+                                overflow: hidden;
+                                margin-bottom: 8px;
+                                background-color: $color-dark-50;
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                    object-fit: cover;
+                                    object-position: center center;
+                                    transform: scale(1);
+                                    transition: transform 1s;
+
+                                    &:hover {
+                                        transform: scale(1.2);
+                                    }
+                                }
+                                .ic-video,
+                                .ic-audio {
+                                    width: 32px;
+                                    height: 32px;
+
+                                    position: absolute;
+                                    right: 12px;
+                                    bottom: 12px;
+                                }
+                                .ic-audio {
+                                    content: url(../../../assets/icon/ic-audio.png);
+                                }
+                                .ic-video {
+                                    content: url(../../../assets/icon/ic-video.png);
+                                }
+                            }
+                            h4 {
+                                display: -webkit-box;
+                                height: 48px;
+                                color: $text-light;
+                                -webkit-box-orient: vertical;
+                                -webkit-line-clamp: 2;
+                                text-overflow: ellipsis;
+                                overflow: hidden;
+                            }
+                        }
+                    }
+                }
+            }
+            footer {
+                .container-footer {
+                    width: 100%;
+                    height: auto;
+                    background-color: $color-dark-50;
+                    padding: 24px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 40px 0;
+                    .footer-header {
+                        display: block;
+                        width: 243px;
+                        height: auto;
+                        margin: auto;
+                    }
+                    .list-info {
+                        display: flex;
+                        flex-wrap: wrap;
+                        gap: 48px 20px;
+                        ul {
+                            list-style: none;
+                            display: flex;
+                            flex-basis: 162px;
+                            flex-direction: column;
+                            gap: 24px 0;
+                            li {
+                                a {
+                                    text-decoration: none;
+                                    color: $text-light;
+                                    font-size: 16px;
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    line-height: 150%;
+                                }
+                            }
+                        }
+                    }
+                    .social-app {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        gap: 40px;
+
+                        .socmed {
+                            list-style: none;
+                            display: flex;
+                            gap: 0 12px;
+                            li {
+                                a {
+                                    display: block;
+                                    text-decoration: none;
+                                    i {
+                                        width: 32px;
+                                        height: 32px;
+                                    }
+
+                                    .ic-fb {
+                                        content: url(../../../assets/img/fb.png);
+                                    }
+                                    .ic-tw {
+                                        content: url(../../../assets/img/tw.png);
+                                    }
+                                    .ic-ig {
+                                        content: url(../../../assets/img/ig.png);
+                                    }
+                                    .ic-yt {
+                                        content: url(../../../assets/img/yt.png);
+                                    }
+                                    .ic-tt {
+                                        content: url(../../../assets/img/tt.png);
+                                    }
+                                }
+                            }
+                        }
+                        .platform {
+                            h4 {
+                                color: $text-light;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: 150%;
+                                text-align: center;
+                            }
+                            .get-app {
+                                margin-top: 24px;
+                                display: flex;
+                                gap: 0 12px;
+                                a {
+                                    img {
+                                        width: 120px;
+                                        height: 37px;
+                                        flex-shrink: 0;
+                                    }
+                                }
+                            }
+                        }
+                        .mnc-portal-img {
+                            img {
+                                width: 194px;
+                                height: 49px;
+                            }
+                        }
+                    }
+                }
+                .license {
+                    background-color: $color-dark-25;
+                    width: 100%;
+                    padding: 12px 8px;
+                    text-align: center;
+                    color: $text-light;
+                    font-family: Roboto, sans-serif;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 150%;
+                }
+            }
+        }
+    }
+
+    @include media.tab {
+        header {
+            position: sticky;
+            z-index: 999;
+            top: -1px;
+            width: 100%;
+            height: 108px;
+
+            background-color: $color-dark-50;
+            .container {
+                display: flex;
+                height: 100%;
+                justify-content: space-between;
+                align-items: center;
+
+                .brand-btn-wrapper {
+                    display: flex;
+                    gap: 32px;
+                    .burger-btn {
+                        background-color: unset;
+                        border: none;
+                        cursor: pointer;
+                        .ic-burger {
+                            content: url(../../../assets/icon/ic-burger.png);
+                            width: 32px;
+                            height: 32px;
+                        }
+                    }
+                }
+                .search {
+                    background-color: $color-gray;
+                    padding: 8px 16px;
+                    width: 30vw;
+                    border: none;
+                    border-radius: 360px;
+
+                    font-family: Inter, sans-serif;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    color: #707070;
+                    &::placeholder {
+                        color: #707070;
+                        text-align: right;
+                        font-family: Inter, sans-serif;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 150%;
+                    }
+
+                    &:focus {
+                        outline: none;
+                    }
+                }
+            }
+        }
+        section {
+            display: flex;
+            justify-content: unset;
+            gap: 0 32px;
+            padding-top: 16px;
+            padding-right: 16px;
+            main {
+                position: sticky;
+                top: 108px;
+                width: 100%;
+                height: 40vh;
+                background-color: #1c1c1c;
+                display: flex;
+                flex-direction: column;
+                gap: 16px 0;
+                padding: 0 24px;
+                padding-top: 72px;
+                .video-player {
+                    width: 100%;
+                    height: auto;
+                    iframe {
+                        width: 100%;
+                        height: auto;
+                        aspect-ratio: 16/9;
+                        border: none;
+                    }
+                }
+                ul {
+                    list-style: none;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 0 12px;
+                    label {
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                        color: $text-light;
+                    }
+                    li {
+                        a {
+                            text-decoration: none;
+                            i {
+                                width: 32px;
+                                height: 32px;
+                            }
+                            .ic-fb {
+                                content: url(../../../assets/img/fb.png);
+                            }
+                            .ic-tw {
+                                content: url(../../../assets/img/tw.png);
+                            }
+                            .ic-wa {
+                                content: url(../../../assets/img/wa.png);
+                            }
+                            .ic-link {
+                                content: url(../../../assets/img/link.png);
+                            }
+                        }
+                    }
+                }
+            }
+            aside {
+                overflow: hidden;
+                width: 60%;
+                min-height: 100vh;
+                display: flex;
+                flex-direction: column;
+                gap: 24px 0;
+                .video-summary {
+                    width: 100%;
+                    height: auto;
+                    .breadcrumb {
+                        color: #707070;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                        margin-bottom: 24px;
+                        a {
+                            text-decoration: none;
+                            color: #707070;
+                        }
+                    }
+                    .video-title {
+                        color: $text-light;
+                        margin-bottom: 12px;
+                    }
+                    .author-wrapper {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 12px 0;
+                        .author {
+                            display: flex;
+                            align-items: center;
+                            gap: 0 10px;
+                            .author-img {
+                                width: 40px;
+                                height: 40px;
+                                aspect-ratio: 1/1;
+                                img {
+                                    object-fit: cover;
+                                }
+                            }
+                            .author-name {
+                                color: #9b9b9b;
+                                font-size: 16px;
+                                font-style: normal;
+                                font-weight: 600;
+                                line-height: 150%;
+                            }
+                        }
+                        .created-date {
+                            color: #707070;
+                            font-family: Roboto, sans-serif;
+                            font-size: 16px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: 170%;
+                        }
+                    }
+                    .description {
+                        p {
+                            color: $text-light;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: 150%; /* 24px */
+                            margin-bottom: 20px;
+
+                            .b-pink {
+                                color: $text-pink;
+                            }
+                        }
+                    }
+                    .video-tags {
+                        margin-bottom: 24px;
+                        h3 {
+                            color: $text-light;
+                            margin-bottom: 20px;
+                        }
+                        ul {
+                            list-style: none;
+                            display: flex;
+                            flex-wrap: wrap;
+                            gap: 16px 10px;
+                            li {
+                                .tag {
+                                    display: block;
+                                    padding: 8px 16px;
+                                    text-decoration: none;
+                                    color: $text-white;
+                                    border: 1px solid $color-pink;
+                                    border-radius: 32px;
+
+                                    &.active {
+                                        background-color: $color-pink;
+                                    }
+                                    &:hover {
+                                        background-color: $color-pink;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .card-wrapper {
+                    width: 100%;
+                    height: auto;
+                    .card-header {
+                        align-items: center;
+                        margin-bottom: 16px;
+                        h2 {
+                            color: $text-light;
+                        }
+                        a {
+                            text-decoration: none;
+                            color: $text-white;
+                            padding: 8px 24px;
+                            background-color: $color-pink;
+                            border-radius: 50px;
+                        }
+                    }
+                    .card-body {
+                        display: flex;
+                        flex-wrap: wrap;
+                        gap: 20px;
+                        .card {
+                            width: 100%;
+                            height: auto;
+                            overflow: hidden;
+                            a {
+                                text-decoration: none;
+                                .card-img {
+                                    position: relative;
+                                    aspect-ratio: 4/3;
+                                    width: 100%;
+                                    height: auto;
+                                    overflow: hidden;
+                                    margin-bottom: 8px;
+                                    background-color: $color-dark-50;
+                                    img {
+                                        width: 100%;
+                                        height: 100%;
+                                        object-fit: cover;
+                                        object-position: center center;
+                                        transform: scale(1);
+                                        transition: transform 1s;
+
+                                        &:hover {
+                                            transform: scale(1.2);
+                                        }
+                                    }
+                                    .ic-video,
+                                    .ic-audio {
+                                        width: 32px;
+                                        height: 32px;
+
+                                        position: absolute;
+                                        right: 12px;
+                                        bottom: 12px;
+                                    }
+                                    .ic-audio {
+                                        content: url(../../../assets/icon/ic-audio.png);
+                                    }
+                                    .ic-video {
+                                        content: url(../../../assets/icon/ic-video.png);
+                                    }
+                                }
+                                h4 {
+                                    display: -webkit-box;
+                                    height: 48px;
+                                    color: $text-light;
+                                    -webkit-box-orient: vertical;
+                                    -webkit-line-clamp: 2;
+                                    text-overflow: ellipsis;
+                                    overflow: hidden;
+                                }
+                            }
+                        }
+                    }
+                }
+                footer {
+                    .container-footer {
+                        width: 100%;
+                        height: auto;
+                        background-color: $color-dark-50;
+                        padding: 24px;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 40px 0;
+                        .footer-header {
+                            display: block;
+                            width: 100%;
+                            height: auto;
+                            margin: auto;
+                        }
+                        .list-info {
+                            display: flex;
+                            flex-wrap: wrap;
+                            gap: 48px 20px;
+                            ul {
+                                list-style: none;
+                                display: flex;
+                                flex-basis: 162px;
+                                flex-direction: column;
+                                gap: 24px 0;
+                                li {
+                                    a {
+                                        text-decoration: none;
+                                        color: $text-light;
+                                        font-size: 16px;
+                                        font-style: normal;
+                                        font-weight: 400;
+                                        line-height: 150%;
+                                    }
+                                }
+                            }
+                        }
+                        .social-app {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            gap: 40px;
+
+                            .socmed {
+                                list-style: none;
+                                display: flex;
+                                gap: 0 12px;
+                                li {
+                                    a {
+                                        display: block;
+                                        text-decoration: none;
+                                        i {
+                                            width: 32px;
+                                            height: 32px;
+                                        }
+
+                                        .ic-fb {
+                                            content: url(../../../assets/img/fb.png);
+                                        }
+                                        .ic-tw {
+                                            content: url(../../../assets/img/tw.png);
+                                        }
+                                        .ic-ig {
+                                            content: url(../../../assets/img/ig.png);
+                                        }
+                                        .ic-yt {
+                                            content: url(../../../assets/img/yt.png);
+                                        }
+                                        .ic-tt {
+                                            content: url(../../../assets/img/tt.png);
+                                        }
+                                    }
+                                }
+                            }
+                            .platform {
+                                h4 {
+                                    color: $text-light;
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    line-height: 150%;
+                                    text-align: center;
+                                }
+                                .get-app {
+                                    margin-top: 24px;
+                                    display: flex;
+                                    gap: 0 12px;
+                                    a {
+                                        img {
+                                            width: 100%;
+                                            height: auto;
+                                            flex-shrink: 0;
+                                        }
+                                    }
+                                }
+                            }
+                            .mnc-portal-img {
+                                img {
+                                    width: 194px;
+                                    height: 49px;
+                                }
+                            }
+                        }
+                    }
+                    .license {
+                        background-color: $color-dark-25;
+                        width: 100%;
+                        padding: 12px 8px;
+                        text-align: center;
+                        color: $text-light;
+                        font-family: Roboto, sans-serif;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 150%;
+                    }
+                }
+            }
+        }
+    }
+}
