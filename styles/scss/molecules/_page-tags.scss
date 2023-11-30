@@ -1,6 +1,6 @@
 #page-tags {
     background-color: $color-dark;
-    #details-layouts {
+    #main-layouts {
         section {
             main {
                 .breadcrumb {
@@ -81,7 +81,7 @@
                         gap: 16px;
                         .card {
                             flex-shrink: 0; //hide grow content
-                            width: 267px;
+                            width: 250px;
                             height: auto;
                             overflow: hidden;
                             a {
@@ -136,11 +136,135 @@
                     }
                 }
             }
+            aside {
+                .terpopuler-widget {
+                    gap: 15px 0;
+                    h2 {
+                        color: $text-white;
+                    }
+                    .pop-card {
+                        width: 100%;
+                        height: auto;
+                        .row {
+                            align-items: center;
+                        }
+                        a {
+                            gap: 14px 7px;
+                            text-decoration: none;
+                            color: $text-light;
+                            .populer-img-1 {
+                                position: relative;
+                                width: 100%;
+                                height: 200px;
+                                overflow: hidden;
+                                aspect-ratio: 4/3;
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                    object-fit: cover;
+                                    object-position: center center;
+                                    background-color: $color-dark-50;
+                                    transform: scale(1);
+                                    transition: transform 1s ease-in-out;
+
+                                    &:hover {
+                                        transform: scale(1.2);
+                                    }
+                                }
+                                .ic-pop-1 {
+                                    position: absolute;
+                                    left: 0;
+                                    bottom: 0;
+                                    content: url(../../../assets/icon/ic-trend-1.png);
+                                    width: 53px;
+                                    height: auto;
+                                }
+                            }
+                            .populer-img {
+                                position: relative;
+                                width: 78px;
+                                height: 78px;
+                                flex-shrink: 0;
+                                overflow: hidden;
+                                aspect-ratio: 1/1;
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                    object-fit: cover;
+                                    object-position: center center;
+                                    background-color: $color-dark-50;
+                                    transform: scale(1);
+                                    transition: transform 1s ease-in-out;
+
+                                    &:hover {
+                                        transform: scale(1.2);
+                                    }
+                                }
+                                .ic-pop-2,
+                                .ic-pop-3,
+                                .ic-pop-4,
+                                .ic-pop-5 {
+                                    position: absolute;
+                                    left: 0;
+                                    bottom: 0;
+                                    width: 38px;
+                                    height: auto;
+                                }
+                                .ic-pop-2 {
+                                    content: url(../../../assets/icon/ic-trend-2.png);
+                                }
+                                .ic-pop-3 {
+                                    content: url(../../../assets/icon/ic-trend-3.png);
+                                }
+                                .ic-pop-4 {
+                                    content: url(../../../assets/icon/ic-trend-4.png);
+                                }
+                                .ic-pop-5 {
+                                    content: url(../../../assets/icon/ic-trend-5.png);
+                                }
+                            }
+                            h4 {
+                                height: 72px;
+                                -webkit-line-clamp: 3;
+                            }
+                            h5 {
+                                height: 84px;
+                                -webkit-line-clamp: 4;
+                            }
+                            h4,
+                            h5 {
+                                display: -webkit-box;
+                                color: $text-light;
+                                -webkit-box-orient: vertical;
+                                text-overflow: ellipsis;
+                                overflow: hidden;
+                            }
+                        }
+                    }
+                }
+                .live-radio {
+                    gap: 16px;
+                    h2 {
+                        color: $text-white;
+                    }
+                    .banner-live-radio {
+                        width: 100%;
+                        height: auto;
+                        overflow: hidden;
+                        img {
+                            width: 100%;
+                            height: auto;
+                            object-fit: cover;
+                            object-position: center center;
+                        }
+                    }
+                }
+            }
         }
     }
 
     @include media.tab {
-        #details-layouts {
+        #main-layouts {
             section {
                 main {
                     .card-wrapper {
@@ -166,9 +290,9 @@
                             flex-wrap: wrap;
                             gap: 16px;
                             .card {
-                                flex-shrink: 0; //hide grow content
-                                flex-basis: 267px;
-                                flex-grow: 1;
+                                flex-shrink: 1; //hide grow content
+                                flex-basis: 208px;
+                                flex-grow: 2;
                                 width: 100%;
                                 height: auto;
                                 overflow: hidden;
@@ -219,6 +343,113 @@
                                         text-overflow: ellipsis;
                                         overflow: hidden;
                                     }
+                                }
+                            }
+                        }
+                    }
+                }
+                aside {
+                    .terpopuler-widget {
+                        gap: 15px 0;
+                        h2 {
+                            color: $text-white;
+                        }
+                        .pop-card {
+                            width: 100%;
+                            height: auto;
+                            .row {
+                                align-items: center;
+                            }
+                            a {
+                                gap: 14px 7px;
+                                text-decoration: none;
+                                color: $text-light;
+                                .populer-img-1 {
+                                    position: relative;
+                                    width: 100%;
+                                    height: auto;
+                                    overflow: hidden;
+                                    aspect-ratio: 4/3;
+                                    img {
+                                        width: 100%;
+                                        height: 100%;
+                                        object-fit: cover;
+                                        object-position: center center;
+                                        background-color: $color-dark-50;
+                                        transform: scale(1);
+                                        transition: transform 1s ease-in-out;
+
+                                        &:hover {
+                                            transform: scale(1.2);
+                                        }
+                                    }
+                                    .ic-pop-1 {
+                                        position: absolute;
+                                        left: 0;
+                                        bottom: 0;
+                                        content: url(../../../assets/icon/ic-trend-1.png);
+                                        width: 53px;
+                                        height: auto;
+                                    }
+                                }
+                                .populer-img {
+                                    position: relative;
+                                    width: 78px;
+                                    height: 78px;
+                                    flex-shrink: 0;
+                                    overflow: hidden;
+                                    aspect-ratio: 1/1;
+                                    img {
+                                        width: 100%;
+                                        height: 100%;
+                                        object-fit: cover;
+                                        object-position: center center;
+                                        background-color: $color-dark-50;
+                                        transform: scale(1);
+                                        transition: transform 1s ease-in-out;
+
+                                        &:hover {
+                                            transform: scale(1.2);
+                                        }
+                                    }
+                                    .ic-pop-2,
+                                    .ic-pop-3,
+                                    .ic-pop-4,
+                                    .ic-pop-5 {
+                                        position: absolute;
+                                        left: 0;
+                                        bottom: 0;
+                                        width: 38px;
+                                        height: auto;
+                                    }
+                                    .ic-pop-2 {
+                                        content: url(../../../assets/icon/ic-trend-2.png);
+                                    }
+                                    .ic-pop-3 {
+                                        content: url(../../../assets/icon/ic-trend-3.png);
+                                    }
+                                    .ic-pop-4 {
+                                        content: url(../../../assets/icon/ic-trend-4.png);
+                                    }
+                                    .ic-pop-5 {
+                                        content: url(../../../assets/icon/ic-trend-5.png);
+                                    }
+                                }
+                                h4 {
+                                    height: 72px;
+                                    -webkit-line-clamp: 3;
+                                }
+                                h5 {
+                                    height: 84px;
+                                    -webkit-line-clamp: 4;
+                                }
+                                h4,
+                                h5 {
+                                    display: -webkit-box;
+                                    color: $text-light;
+                                    -webkit-box-orient: vertical;
+                                    text-overflow: ellipsis;
+                                    overflow: hidden;
                                 }
                             }
                         }

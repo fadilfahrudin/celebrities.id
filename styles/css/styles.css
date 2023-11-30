@@ -4062,7 +4062,7 @@ p {
 #page-tags {
   background-color: #1c222b;
 }
-#page-tags #details-layouts section main .breadcrumb {
+#page-tags #main-layouts section main .breadcrumb {
   cursor: default;
   color: #707070;
   /* Caption/14 reg */
@@ -4071,50 +4071,50 @@ p {
   font-weight: 400;
   line-height: normal;
 }
-#page-tags #details-layouts section main .breadcrumb a {
+#page-tags #main-layouts section main .breadcrumb a {
   text-decoration: none;
   color: #707070;
 }
-#page-tags #details-layouts section main .banner-wrapper {
+#page-tags #main-layouts section main .banner-wrapper {
   display: flex;
   align-items: center;
   width: 100%;
   height: 116px;
   background-color: #fde2e9;
 }
-#page-tags #details-layouts section main .banner-wrapper .banner {
+#page-tags #main-layouts section main .banner-wrapper .banner {
   width: auto;
   height: 100%;
   aspect-ratio: 5/3;
   overflow: hidden;
 }
-#page-tags #details-layouts section main .banner-wrapper .banner img {
+#page-tags #main-layouts section main .banner-wrapper .banner img {
   object-fit: cover;
   object-position: center center;
 }
-#page-tags #details-layouts section main .banner-wrapper .banner-info {
+#page-tags #main-layouts section main .banner-wrapper .banner-info {
   display: flex;
   flex-direction: column;
   gap: 8px;
   padding: 24px;
 }
-#page-tags #details-layouts section main .banner-wrapper .banner-info p {
+#page-tags #main-layouts section main .banner-wrapper .banner-info p {
   color: #1c222b;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
 }
-#page-tags #details-layouts section main .banner-wrapper .banner-info h2 {
+#page-tags #main-layouts section main .banner-wrapper .banner-info h2 {
   color: #1c222b;
 }
-#page-tags #details-layouts section main .tags {
+#page-tags #main-layouts section main .tags {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
   gap: 16px 10px;
 }
-#page-tags #details-layouts section main .tags li .tag {
+#page-tags #main-layouts section main .tags li .tag {
   display: block;
   padding: 8px 16px;
   text-decoration: none;
@@ -4122,31 +4122,31 @@ p {
   border: 1px solid #f98e8e;
   border-radius: 32px;
 }
-#page-tags #details-layouts section main .tags li .tag.active {
+#page-tags #main-layouts section main .tags li .tag.active {
   background-color: #f98e8e;
 }
-#page-tags #details-layouts section main .tags li .tag:hover {
+#page-tags #main-layouts section main .tags li .tag:hover {
   background-color: #f98e8e;
 }
-#page-tags #details-layouts section main .card-wrapper {
+#page-tags #main-layouts section main .card-wrapper {
   width: 100%;
   height: auto;
 }
-#page-tags #details-layouts section main .card-wrapper .card-body {
+#page-tags #main-layouts section main .card-wrapper .card-body {
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
 }
-#page-tags #details-layouts section main .card-wrapper .card-body .card {
+#page-tags #main-layouts section main .card-wrapper .card-body .card {
   flex-shrink: 0;
-  width: 267px;
+  width: 250px;
   height: auto;
   overflow: hidden;
 }
-#page-tags #details-layouts section main .card-wrapper .card-body .card a {
+#page-tags #main-layouts section main .card-wrapper .card-body .card a {
   text-decoration: none;
 }
-#page-tags #details-layouts section main .card-wrapper .card-body .card a .card-img {
+#page-tags #main-layouts section main .card-wrapper .card-body .card a .card-img {
   position: relative;
   aspect-ratio: 4/3;
   width: 100%;
@@ -4155,7 +4155,7 @@ p {
   margin-bottom: 8px;
   background-color: #222934;
 }
-#page-tags #details-layouts section main .card-wrapper .card-body .card a .card-img img {
+#page-tags #main-layouts section main .card-wrapper .card-body .card a .card-img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -4163,24 +4163,24 @@ p {
   transform: scale(1);
   transition: transform 1s;
 }
-#page-tags #details-layouts section main .card-wrapper .card-body .card a .card-img img:hover {
+#page-tags #main-layouts section main .card-wrapper .card-body .card a .card-img img:hover {
   transform: scale(1.2);
 }
-#page-tags #details-layouts section main .card-wrapper .card-body .card a .card-img .ic-video,
-#page-tags #details-layouts section main .card-wrapper .card-body .card a .card-img .ic-audio {
+#page-tags #main-layouts section main .card-wrapper .card-body .card a .card-img .ic-video,
+#page-tags #main-layouts section main .card-wrapper .card-body .card a .card-img .ic-audio {
   width: 32px;
   height: 32px;
   position: absolute;
   right: 12px;
   bottom: 12px;
 }
-#page-tags #details-layouts section main .card-wrapper .card-body .card a .card-img .ic-audio {
+#page-tags #main-layouts section main .card-wrapper .card-body .card a .card-img .ic-audio {
   content: url(../../../assets/icon/ic-audio.png);
 }
-#page-tags #details-layouts section main .card-wrapper .card-body .card a .card-img .ic-video {
+#page-tags #main-layouts section main .card-wrapper .card-body .card a .card-img .ic-video {
   content: url(../../../assets/icon/ic-video.png);
 }
-#page-tags #details-layouts section main .card-wrapper .card-body .card a h4 {
+#page-tags #main-layouts section main .card-wrapper .card-body .card a h4 {
   display: -webkit-box;
   height: 72px;
   color: #d3d3d3;
@@ -4189,43 +4189,163 @@ p {
   text-overflow: ellipsis;
   overflow: hidden;
 }
+#page-tags #main-layouts section aside .terpopuler-widget {
+  gap: 15px 0;
+}
+#page-tags #main-layouts section aside .terpopuler-widget h2 {
+  color: #fff;
+}
+#page-tags #main-layouts section aside .terpopuler-widget .pop-card {
+  width: 100%;
+  height: auto;
+}
+#page-tags #main-layouts section aside .terpopuler-widget .pop-card .row {
+  align-items: center;
+}
+#page-tags #main-layouts section aside .terpopuler-widget .pop-card a {
+  gap: 14px 7px;
+  text-decoration: none;
+  color: #d3d3d3;
+}
+#page-tags #main-layouts section aside .terpopuler-widget .pop-card a .populer-img-1 {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  aspect-ratio: 4/3;
+}
+#page-tags #main-layouts section aside .terpopuler-widget .pop-card a .populer-img-1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  background-color: #222934;
+  transform: scale(1);
+  transition: transform 1s ease-in-out;
+}
+#page-tags #main-layouts section aside .terpopuler-widget .pop-card a .populer-img-1 img:hover {
+  transform: scale(1.2);
+}
+#page-tags #main-layouts section aside .terpopuler-widget .pop-card a .populer-img-1 .ic-pop-1 {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  content: url(../../../assets/icon/ic-trend-1.png);
+  width: 53px;
+  height: auto;
+}
+#page-tags #main-layouts section aside .terpopuler-widget .pop-card a .populer-img {
+  position: relative;
+  width: 78px;
+  height: 78px;
+  flex-shrink: 0;
+  overflow: hidden;
+  aspect-ratio: 1/1;
+}
+#page-tags #main-layouts section aside .terpopuler-widget .pop-card a .populer-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  background-color: #222934;
+  transform: scale(1);
+  transition: transform 1s ease-in-out;
+}
+#page-tags #main-layouts section aside .terpopuler-widget .pop-card a .populer-img img:hover {
+  transform: scale(1.2);
+}
+#page-tags #main-layouts section aside .terpopuler-widget .pop-card a .populer-img .ic-pop-2,
+#page-tags #main-layouts section aside .terpopuler-widget .pop-card a .populer-img .ic-pop-3,
+#page-tags #main-layouts section aside .terpopuler-widget .pop-card a .populer-img .ic-pop-4,
+#page-tags #main-layouts section aside .terpopuler-widget .pop-card a .populer-img .ic-pop-5 {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 38px;
+  height: auto;
+}
+#page-tags #main-layouts section aside .terpopuler-widget .pop-card a .populer-img .ic-pop-2 {
+  content: url(../../../assets/icon/ic-trend-2.png);
+}
+#page-tags #main-layouts section aside .terpopuler-widget .pop-card a .populer-img .ic-pop-3 {
+  content: url(../../../assets/icon/ic-trend-3.png);
+}
+#page-tags #main-layouts section aside .terpopuler-widget .pop-card a .populer-img .ic-pop-4 {
+  content: url(../../../assets/icon/ic-trend-4.png);
+}
+#page-tags #main-layouts section aside .terpopuler-widget .pop-card a .populer-img .ic-pop-5 {
+  content: url(../../../assets/icon/ic-trend-5.png);
+}
+#page-tags #main-layouts section aside .terpopuler-widget .pop-card a h4 {
+  height: 72px;
+  -webkit-line-clamp: 3;
+}
+#page-tags #main-layouts section aside .terpopuler-widget .pop-card a h5 {
+  height: 84px;
+  -webkit-line-clamp: 4;
+}
+#page-tags #main-layouts section aside .terpopuler-widget .pop-card a h4,
+#page-tags #main-layouts section aside .terpopuler-widget .pop-card a h5 {
+  display: -webkit-box;
+  color: #d3d3d3;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+#page-tags #main-layouts section aside .live-radio {
+  gap: 16px;
+}
+#page-tags #main-layouts section aside .live-radio h2 {
+  color: #fff;
+}
+#page-tags #main-layouts section aside .live-radio .banner-live-radio {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+#page-tags #main-layouts section aside .live-radio .banner-live-radio img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center center;
+}
 @media (max-width: 1279px) {
-  #page-tags #details-layouts section main .card-wrapper {
+  #page-tags #main-layouts section main .card-wrapper {
     width: 100%;
     height: auto;
   }
-  #page-tags #details-layouts section main .card-wrapper .card-header {
+  #page-tags #main-layouts section main .card-wrapper .card-header {
     align-items: center;
     justify-content: space-between;
     margin-bottom: 16px;
   }
-  #page-tags #details-layouts section main .card-wrapper .card-header h3 {
+  #page-tags #main-layouts section main .card-wrapper .card-header h3 {
     color: #d3d3d3;
   }
-  #page-tags #details-layouts section main .card-wrapper .card-header a {
+  #page-tags #main-layouts section main .card-wrapper .card-header a {
     text-decoration: none;
     color: #fff;
     padding: 8px 24px;
     background-color: #f98e8e;
     border-radius: 50px;
   }
-  #page-tags #details-layouts section main .card-wrapper .card-body {
+  #page-tags #main-layouts section main .card-wrapper .card-body {
     display: flex;
     flex-wrap: wrap;
     gap: 16px;
   }
-  #page-tags #details-layouts section main .card-wrapper .card-body .card {
-    flex-shrink: 0;
-    flex-basis: 267px;
-    flex-grow: 1;
+  #page-tags #main-layouts section main .card-wrapper .card-body .card {
+    flex-shrink: 1;
+    flex-basis: 208px;
+    flex-grow: 2;
     width: 100%;
     height: auto;
     overflow: hidden;
   }
-  #page-tags #details-layouts section main .card-wrapper .card-body .card a {
+  #page-tags #main-layouts section main .card-wrapper .card-body .card a {
     text-decoration: none;
   }
-  #page-tags #details-layouts section main .card-wrapper .card-body .card a .card-img {
+  #page-tags #main-layouts section main .card-wrapper .card-body .card a .card-img {
     position: relative;
     aspect-ratio: 4/3;
     width: 100%;
@@ -4234,7 +4354,7 @@ p {
     margin-bottom: 8px;
     background-color: #222934;
   }
-  #page-tags #details-layouts section main .card-wrapper .card-body .card a .card-img img {
+  #page-tags #main-layouts section main .card-wrapper .card-body .card a .card-img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -4242,29 +4362,132 @@ p {
     transform: scale(1);
     transition: transform 1s;
   }
-  #page-tags #details-layouts section main .card-wrapper .card-body .card a .card-img img:hover {
+  #page-tags #main-layouts section main .card-wrapper .card-body .card a .card-img img:hover {
     transform: scale(1.2);
   }
-  #page-tags #details-layouts section main .card-wrapper .card-body .card a .card-img .ic-video,
-  #page-tags #details-layouts section main .card-wrapper .card-body .card a .card-img .ic-audio {
+  #page-tags #main-layouts section main .card-wrapper .card-body .card a .card-img .ic-video,
+  #page-tags #main-layouts section main .card-wrapper .card-body .card a .card-img .ic-audio {
     width: 32px;
     height: 32px;
     position: absolute;
     right: 12px;
     bottom: 12px;
   }
-  #page-tags #details-layouts section main .card-wrapper .card-body .card a .card-img .ic-audio {
+  #page-tags #main-layouts section main .card-wrapper .card-body .card a .card-img .ic-audio {
     content: url(../../../assets/icon/ic-audio.png);
   }
-  #page-tags #details-layouts section main .card-wrapper .card-body .card a .card-img .ic-video {
+  #page-tags #main-layouts section main .card-wrapper .card-body .card a .card-img .ic-video {
     content: url(../../../assets/icon/ic-video.png);
   }
-  #page-tags #details-layouts section main .card-wrapper .card-body .card a h4 {
+  #page-tags #main-layouts section main .card-wrapper .card-body .card a h4 {
     display: -webkit-box;
     height: 72px;
     color: #d3d3d3;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  #page-tags #main-layouts section aside .terpopuler-widget {
+    gap: 15px 0;
+  }
+  #page-tags #main-layouts section aside .terpopuler-widget h2 {
+    color: #fff;
+  }
+  #page-tags #main-layouts section aside .terpopuler-widget .pop-card {
+    width: 100%;
+    height: auto;
+  }
+  #page-tags #main-layouts section aside .terpopuler-widget .pop-card .row {
+    align-items: center;
+  }
+  #page-tags #main-layouts section aside .terpopuler-widget .pop-card a {
+    gap: 14px 7px;
+    text-decoration: none;
+    color: #d3d3d3;
+  }
+  #page-tags #main-layouts section aside .terpopuler-widget .pop-card a .populer-img-1 {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    aspect-ratio: 4/3;
+  }
+  #page-tags #main-layouts section aside .terpopuler-widget .pop-card a .populer-img-1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    background-color: #222934;
+    transform: scale(1);
+    transition: transform 1s ease-in-out;
+  }
+  #page-tags #main-layouts section aside .terpopuler-widget .pop-card a .populer-img-1 img:hover {
+    transform: scale(1.2);
+  }
+  #page-tags #main-layouts section aside .terpopuler-widget .pop-card a .populer-img-1 .ic-pop-1 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    content: url(../../../assets/icon/ic-trend-1.png);
+    width: 53px;
+    height: auto;
+  }
+  #page-tags #main-layouts section aside .terpopuler-widget .pop-card a .populer-img {
+    position: relative;
+    width: 78px;
+    height: 78px;
+    flex-shrink: 0;
+    overflow: hidden;
+    aspect-ratio: 1/1;
+  }
+  #page-tags #main-layouts section aside .terpopuler-widget .pop-card a .populer-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    background-color: #222934;
+    transform: scale(1);
+    transition: transform 1s ease-in-out;
+  }
+  #page-tags #main-layouts section aside .terpopuler-widget .pop-card a .populer-img img:hover {
+    transform: scale(1.2);
+  }
+  #page-tags #main-layouts section aside .terpopuler-widget .pop-card a .populer-img .ic-pop-2,
+  #page-tags #main-layouts section aside .terpopuler-widget .pop-card a .populer-img .ic-pop-3,
+  #page-tags #main-layouts section aside .terpopuler-widget .pop-card a .populer-img .ic-pop-4,
+  #page-tags #main-layouts section aside .terpopuler-widget .pop-card a .populer-img .ic-pop-5 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 38px;
+    height: auto;
+  }
+  #page-tags #main-layouts section aside .terpopuler-widget .pop-card a .populer-img .ic-pop-2 {
+    content: url(../../../assets/icon/ic-trend-2.png);
+  }
+  #page-tags #main-layouts section aside .terpopuler-widget .pop-card a .populer-img .ic-pop-3 {
+    content: url(../../../assets/icon/ic-trend-3.png);
+  }
+  #page-tags #main-layouts section aside .terpopuler-widget .pop-card a .populer-img .ic-pop-4 {
+    content: url(../../../assets/icon/ic-trend-4.png);
+  }
+  #page-tags #main-layouts section aside .terpopuler-widget .pop-card a .populer-img .ic-pop-5 {
+    content: url(../../../assets/icon/ic-trend-5.png);
+  }
+  #page-tags #main-layouts section aside .terpopuler-widget .pop-card a h4 {
+    height: 72px;
+    -webkit-line-clamp: 3;
+  }
+  #page-tags #main-layouts section aside .terpopuler-widget .pop-card a h5 {
+    height: 84px;
+    -webkit-line-clamp: 4;
+  }
+  #page-tags #main-layouts section aside .terpopuler-widget .pop-card a h4,
+  #page-tags #main-layouts section aside .terpopuler-widget .pop-card a h5 {
+    display: -webkit-box;
+    color: #d3d3d3;
+    -webkit-box-orient: vertical;
     text-overflow: ellipsis;
     overflow: hidden;
   }
