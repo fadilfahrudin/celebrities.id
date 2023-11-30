@@ -2627,19 +2627,25 @@ p {
 }
 #detail-tv-streaming #details-layouts section main .tv-stream-wrapper .tv-stream .channel-stream ul li {
   position: relative;
-  width: 123px;
+  width: 124px;
   height: 82px;
+  overflow: hidden;
   background-color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#detail-tv-streaming #details-layouts section main .tv-stream-wrapper .tv-stream .channel-stream ul li.active {
-  position: relative;
-  width: 123px;
-  height: 82px;
+#detail-tv-streaming #details-layouts section main .tv-stream-wrapper .tv-stream .channel-stream ul li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-#detail-tv-streaming #details-layouts section main .tv-stream-wrapper .tv-stream .channel-stream ul li.active::after {
+#detail-tv-streaming #details-layouts section main .tv-stream-wrapper .tv-stream .channel-stream ul li a.active {
+  position: relative;
+  width: 120px;
+  height: 78px;
+}
+#detail-tv-streaming #details-layouts section main .tv-stream-wrapper .tv-stream .channel-stream ul li a.active::after {
   content: "Now Playing";
   position: absolute;
   display: flex;
@@ -2652,8 +2658,10 @@ p {
   height: 100%;
   border: 2px solid #fff;
 }
-#detail-tv-streaming #details-layouts section main .tv-stream-wrapper .tv-stream .channel-stream ul li a {
-  display: inline-block;
+#detail-tv-streaming #details-layouts section main .tv-stream-wrapper .tv-stream .channel-stream ul li a .channel-stream {
+  width: 124px;
+  height: 82px;
+  object-fit: cover;
 }
 #detail-tv-streaming #details-layouts section main .tv-stream-wrapper .live-sign {
   display: block;
@@ -2924,19 +2932,25 @@ p {
 }
 #detail-radio-streaming #details-layouts section main .radio-stream-wrapper .radio-stream .channel-stream ul li {
   position: relative;
-  width: 123px;
+  width: 124px;
   height: 82px;
+  overflow: hidden;
   background-color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#detail-radio-streaming #details-layouts section main .radio-stream-wrapper .radio-stream .channel-stream ul li.active {
-  position: relative;
-  width: 123px;
-  height: 82px;
+#detail-radio-streaming #details-layouts section main .radio-stream-wrapper .radio-stream .channel-stream ul li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-#detail-radio-streaming #details-layouts section main .radio-stream-wrapper .radio-stream .channel-stream ul li.active::after {
+#detail-radio-streaming #details-layouts section main .radio-stream-wrapper .radio-stream .channel-stream ul li a.active {
+  position: relative;
+  width: 120px;
+  height: 78px;
+}
+#detail-radio-streaming #details-layouts section main .radio-stream-wrapper .radio-stream .channel-stream ul li a.active::after {
   content: "Now Playing";
   position: absolute;
   display: flex;
@@ -2949,8 +2963,9 @@ p {
   height: 100%;
   border: 2px solid #fff;
 }
-#detail-radio-streaming #details-layouts section main .radio-stream-wrapper .radio-stream .channel-stream ul li a {
-  display: inline-block;
+#detail-radio-streaming #details-layouts section main .radio-stream-wrapper .radio-stream .channel-stream ul li a .channel-radio {
+  width: 124px;
+  height: 82px;
 }
 #detail-radio-streaming #details-layouts section main .radio-stream-wrapper p {
   margin-top: 12px;

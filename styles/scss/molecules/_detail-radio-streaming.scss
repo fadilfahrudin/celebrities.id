@@ -50,32 +50,39 @@
                                 list-style: none;
                                 li {
                                     position: relative;
-                                    width: 123px;
+                                    width: 124px;
                                     height: 82px;
+                                    overflow: hidden;
                                     background-color: $color-white;
                                     display: flex;
                                     justify-content: center;
                                     align-items: center;
-                                    &.active {
-                                        position: relative;
-                                        width: 123px;
-                                        height: 82px;
-                                        &::after {
-                                            content: "Now Playing";
-                                            position: absolute;
-                                            display: flex;
-                                            justify-content: center;
-                                            align-items: center;
-                                            color: $text-white;
-                                            background-color: #7d7d7d;
-                                            opacity: 0.9;
-                                            width: 100%;
-                                            height: 100%;
-                                            border: 2px solid $color-white;
-                                        }
-                                    }
                                     a {
-                                        display: inline-block;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        &.active {
+                                            position: relative;
+                                            width: 120px;
+                                            height: 78px;
+                                            &::after {
+                                                content: "Now Playing";
+                                                position: absolute;
+                                                display: flex;
+                                                justify-content: center;
+                                                align-items: center;
+                                                color: $text-white;
+                                                background-color: #7d7d7d;
+                                                opacity: 0.9;
+                                                width: 100%;
+                                                height: 100%;
+                                                border: 2px solid $color-white;
+                                            }
+                                        }
+                                        .channel-radio {
+                                            width: 124px;
+                                            height: 82px;
+                                        }
                                     }
                                 }
                             }
