@@ -48,9 +48,11 @@
                     .category-widget-header {
                         align-items: center;
                         margin-bottom: 16px;
-                        h3 {
-                            color: $text-light;
-                        }
+                        color: $text-light;
+                        font-size: 20px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 150%;
                         a {
                             text-decoration: none;
                             color: $text-white;

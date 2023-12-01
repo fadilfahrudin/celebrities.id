@@ -1653,9 +1653,11 @@ p {
 #home-page #main-layouts section main .category-widget .category-widget-header {
   align-items: center;
   margin-bottom: 16px;
-}
-#home-page #main-layouts section main .category-widget .category-widget-header h3 {
   color: #d3d3d3;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
 }
 #home-page #main-layouts section main .category-widget .category-widget-header a {
   text-decoration: none;
