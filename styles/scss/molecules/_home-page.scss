@@ -36,14 +36,73 @@
                         }
                     }
                 }
+                .live-stream {
+                    background-color: #262e39;
+                    padding: 16px;
+                    gap: 24px;
+                    .live-header {
+                        display: flex;
+                        align-items: center;
+                        gap: 0 8px;
+                        color: $text-light;
+                        font-size: 24px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 150%;
+                        &::before {
+                            content: "";
+                            width: 12px;
+                            height: 12px;
+                            border-radius: 50%;
+                            background-color: #d92f51;
+                        }
+                    }
+                    .live-card {
+                        display: flex;
+                        gap: 0 16px;
+                        .live-card-video {
+                            width: 100%;
+                            height: auto;
+                            iframe {
+                                background: $color-dark-50;
+                                width: 100%;
+                                height: auto;
+                                aspect-ratio: 16/9;
+                                border: none;
+                            }
+                            .live-card-title {
+                                display: block;
+                                text-decoration: none;
+                                color: $text-light;
+                                margin-top: 16px;
+                                font-size: 18px;
+                                font-style: normal;
+                                font-weight: 700;
+                                line-height: 150%;
+                            }
+                        }
+                        .live-chat {
+                            background-color: $color-dark-50;
+                            width: 60%;
+                            height: 100%;
+                            &.hidden {
+                                display: none;
+                            }
+                        }
+                    }
+                }
                 .live-topics {
                     background-color: #262e39;
                     padding: 16px;
                     gap: 24px;
                     .live-topic-header {
                         justify-content: space-between;
-                        h3 {
+                        .live-topic-title {
                             color: $text-light;
+                            font-size: 20px;
+                            font-style: normal;
+                            font-weight: 700;
+                            line-height: 150%;
                         }
                         .row {
                             .btn-slide {
@@ -111,10 +170,15 @@
                                         content: url(../../../assets/icon/ic-video.png);
                                     }
                                 }
-                                h4 {
+                                .live-topic-card-title {
                                     display: -webkit-box;
                                     height: 48px;
                                     color: $text-light;
+                                    font-size: 16px;
+                                    font-style: normal;
+                                    font-weight: 700;
+                                    line-height: 150%;
+
                                     -webkit-box-orient: vertical;
                                     -webkit-line-clamp: 2;
                                     text-overflow: ellipsis;
@@ -154,8 +218,12 @@
                         align-items: center;
                         justify-content: space-between;
                         margin-bottom: 16px;
-                        h3 {
+                        .category-title {
                             color: $text-light;
+                            font-size: 20px;
+                            font-style: normal;
+                            font-weight: 700;
+                            line-height: 150%;
                         }
                         a {
                             text-decoration: none;
@@ -212,10 +280,15 @@
                                         content: url(../../../assets/icon/ic-video.png);
                                     }
                                 }
-                                h4 {
+                                .card-title {
                                     display: -webkit-box;
                                     height: 72px;
                                     color: $text-light;
+                                    font-size: 16px;
+                                    font-style: normal;
+                                    font-weight: 700;
+                                    line-height: 150%;
+
                                     -webkit-box-orient: vertical;
                                     -webkit-line-clamp: 3;
                                     text-overflow: ellipsis;
@@ -229,7 +302,11 @@
             aside {
                 .terpopuler-widget {
                     gap: 15px 0;
-                    h2 {
+                    .widget-title {
+                        font-size: 24px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 150%;
                         color: $text-white;
                     }
                     .pop-card {
@@ -313,21 +390,37 @@
                                     content: url(../../../assets/icon/ic-trend-5.png);
                                 }
                             }
-                            h4 {
-                                height: 72px;
-                                -webkit-line-clamp: 3;
-                            }
-                            h5 {
-                                height: 84px;
-                                -webkit-line-clamp: 4;
-                            }
-                            h4,
-                            h5 {
+                            .pop-title {
                                 display: -webkit-box;
                                 color: $text-light;
+                                font-size: 14px;
+                                font-style: normal;
+                                font-weight: 700;
+                                line-height: 150%;
+
+                                height: 84px;
+                                -webkit-line-clamp: 4;
                                 -webkit-box-orient: vertical;
                                 text-overflow: ellipsis;
                                 overflow: hidden;
+                            }
+                        }
+                        &:nth-child(2) {
+                            a {
+                                .pop-title {
+                                    display: -webkit-box;
+                                    color: $text-light;
+                                    font-size: 16px;
+                                    font-style: normal;
+                                    font-weight: 700;
+                                    line-height: 150%;
+
+                                    height: 72px;
+                                    -webkit-line-clamp: 3;
+                                    -webkit-box-orient: vertical;
+                                    text-overflow: ellipsis;
+                                    overflow: hidden;
+                                }
                             }
                         }
                     }

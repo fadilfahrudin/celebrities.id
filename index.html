@@ -20,7 +20,7 @@
         <header>
             <div class="container">
                 <div class="brand-btn-wrapper">
-                    <button type="button" class="burger-btn"><i class="ic-burger"></i></button>
+                    <button type="button" class="burger-btn" aria-label="burger-btn"><i class="ic-burger"></i></button>
                     <a href="index.html">
                         <img class="brand" src="./assets/img/logo-header.png" width="100%" height="100%"
                             alt="Celebrities.id" />
@@ -72,62 +72,77 @@
                 <!-- Headline Section -->
                 <div class="headline">
                     <a href="#">
-                        <div class="headline-img">
+                        <div class="headline-img loading">
                             <img src="./assets/img/img-headline.png" alt="headline" width="100%" height="100%"
                                 loading="lazy">
                         </div>
-                        <h1>Potret Kate Middleton Pakai Tiara Super Langka, Hampir 100 Tahun Tak Terlihat di Publik!
+                        <h1>Potret Kate Middleton Pakai Tiara Super Langka, Hampir 100 Tahun Tak
+                            Terlihat di Publik!
                         </h1>
                     </a>
                 </div>
                 <!-- Live Topics Section -->
+                <div class="live-stream col">
+                    <div class="live-header">Live</div>
+                    <div class="live-card">
+                        <div class="live-card-video">
+                            <iframe src="https://www.youtube.com/embed/XhaKn_8VF3c?si=Vucad6imYHQbE6QH"
+                                title="YouTube video player"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                            <a href="#" class="live-card-title">Apa Kata Netizen Soal War Tiket Coldplay</a>
+                        </div>
+                        <div class="live-chat "></div>
+                    </div>
+                </div>
+                <!-- Live Topics Section -->
                 <div class="live-topics col">
                     <div class="live-topic-header row">
-                        <h3>Taeyang Live in LMAC</h3>
+                        <div class="live-topic-title">Taeyang Live in LMAC</div>
                         <div class="row">
-                            <button class="btn-slide"><i class="ic-left-arrow"></i></button>
-                            <button class="btn-slide"><i class="ic-right-arrow"></i></button>
+                            <button class="btn-slide" aria-label="arrow-left"><i class="ic-left-arrow"></i></button>
+                            <button class="btn-slide" aria-label="arrow-right"><i class="ic-right-arrow"></i></button>
                         </div>
                     </div>
                     <div class="live-topic-body row">
                         <div class="live-topic-card">
                             <a href="#">
-                                <div class="live-topic-img">
+                                <div class="live-topic-img loading">
                                     <img src="./assets/img/img-card-2.png" alt="img-card" width="100%" height="100%"
                                         loading="lazy">
                                     <i class="ic-video"></i>
                                 </div>
-                                <h4>Menakjubkan! Penampilan Taeyang di LMAC Bogor</h4>
+                                <div class="live-topic-card-title">Menakjubkan! Penampilan Taeyang di LMAC Bogor</div>
                             </a>
                         </div>
                         <div class="live-topic-card">
                             <a href="#">
-                                <div class="live-topic-img">
+                                <div class="live-topic-img loading">
                                     <img src="./assets/img/img-card-2.png" alt="img-card" width="100%" height="100%"
                                         loading="lazy">
                                     <i class="ic-video"></i>
                                 </div>
-                                <h4>Menakjubkan! Penampilan Taeyang di LMAC Bogor</h4>
+                                <div class="live-topic-card-title">Menakjubkan! Penampilan Taeyang di LMAC Bogor</div>
                             </a>
                         </div>
                         <div class="live-topic-card">
                             <a href="#">
-                                <div class="live-topic-img">
+                                <div class="live-topic-img loading">
                                     <img src="./assets/img/img-card-2.png" alt="img-card" width="100%" height="100%"
                                         loading="lazy">
-                                    <i class="ic-audio"></i>
+                                    <i class="ic-video"></i>
                                 </div>
-                                <h4>Menakjubkan! Penampilan Taeyang di LMAC Bogor</h4>
+                                <div class="live-topic-card-title">Menakjubkan! Penampilan Taeyang di LMAC Bogor</div>
                             </a>
                         </div>
                         <div class="live-topic-card">
                             <a href="#">
-                                <div class="live-topic-img">
-                                    <img src="./assets/img/img-card.png" alt="img-card" width="100%" height="100%"
+                                <div class="live-topic-img loading">
+                                    <img src="./assets/img/img-card-2.png" alt="img-card" width="100%" height="100%"
                                         loading="lazy">
-                                    <i class="ic-audio"></i>
+                                    <i class="ic-video"></i>
                                 </div>
-                                <h4>Menakjubkan! Penampilan Taeyang di LMAC Bogor</h4>
+                                <div class="live-topic-card-title">Menakjubkan! Penampilan Taeyang di LMAC Bogor</div>
                             </a>
                         </div>
                     </div>
@@ -144,70 +159,66 @@
                 <!-- Ex. Idol -->
                 <div class="category-widget">
                     <div class="category-widget-header row">
-                        <h3>Idol</h3>
+                        <div class="category-title">Idol</div>
                         <a href="">More</a>
                     </div>
                     <div class="category-widget-body">
                         <div class="category-widget-card">
                             <a href="#">
-                                <div class="category-widget-img">
-                                    <img src="./assets/img/img-card-4.png" width="100%" height="100%" alt="idol-img">
-                                    <i class="ic-video"></i>
-                                </div>
-                                <h4>6 Artis Hollywood yang Jadi Mermaid Cantik Pakai Teknologi AI, Sedang Viral di Media
-                                    Sosial</h4>
-                            </a>
-                        </div>
-                        <div class="category-widget-card">
-                            <a href="#">
-                                <div class="category-widget-img">
+                                <div class="category-widget-img loading">
                                     <img src="./assets/img/img-card-4.png" width="100%" height="100%" alt="idol-img">
                                     <i class="ic-audio"></i>
                                 </div>
-                                <h4>6 Artis Hollywood yang Jadi Mermaid Cantik Pakai Teknologi AI, Sedang Viral di Media
-                                    Sosial</h4>
+                                <div class="card-title">6 Artis Hollywood yang Jadi Mermaid Cantik Pakai Teknologi AI,
+                                    Sedang Viral di Media
+                                    Sosial</div>
                             </a>
                         </div>
                         <div class="category-widget-card">
                             <a href="#">
-                                <div class="category-widget-img">
-                                    <img src="./assets/img/img-card-2.png" width="100%" height="100%" alt="idol-img">
-                                    <i class="ic-video"></i>
-                                </div>
-                                <h4>6 Artis Hollywood yang Jadi Mermaid Cantik Pakai Teknologi AI, Sedang Viral di Media
-                                    Sosial</h4>
-                            </a>
-                        </div>
-                        <div class="category-widget-card">
-                            <a href="#">
-                                <div class="category-widget-img">
-                                    <img src="./assets/img/img-card-2.png" width="100%" height="100%" alt="idol-img">
-                                    <i class="ic-video"></i>
-                                </div>
-                                <h4>6 Artis Hollywood yang Jadi Mermaid Cantik Pakai Teknologi AI, Sedang Viral di Media
-                                    Sosial</h4>
-                            </a>
-                        </div>
-                        <div class="category-widget-card">
-                            <a href="#">
-                                <div class="category-widget-img">
+                                <div class="category-widget-img loading">
                                     <img src="./assets/img/img-card-4.png" width="100%" height="100%" alt="idol-img">
-                                    <i class="ic-video"></i>
+                                    <i class="ic-audio"></i>
                                 </div>
-                                <h4>6 Artis Hollywood yang Jadi Mermaid Cantik Pakai Teknologi AI, Sedang Viral di Media
-                                    Sosial</h4>
+                                <div class="card-title">6 Artis Hollywood yang Jadi Mermaid Cantik Pakai Teknologi AI,
+                                    Sedang Viral di Media
+                                    Sosial</div>
                             </a>
                         </div>
                         <div class="category-widget-card">
                             <a href="#">
-                                <div class="category-widget-img">
-                                    <img src="./assets/img/img-card-5.png" width="100%" height="100%" alt="idol-img">
-                                    <i class="ic-video"></i>
+                                <div class="category-widget-img loading">
+                                    <img src="./assets/img/img-card-4.png" width="100%" height="100%" alt="idol-img">
+                                    <i class="ic-audio"></i>
                                 </div>
-                                <h4>6 Artis Hollywood yang Jadi Mermaid Cantik Pakai Teknologi AI, Sedang Viral di Media
-                                    Sosial</h4>
+                                <div class="card-title">6 Artis Hollywood yang Jadi Mermaid Cantik Pakai Teknologi AI,
+                                    Sedang Viral di Media
+                                    Sosial</div>
                             </a>
                         </div>
+                        <div class="category-widget-card">
+                            <a href="#">
+                                <div class="category-widget-img loading">
+                                    <img src="./assets/img/img-card-4.png" width="100%" height="100%" alt="idol-img">
+                                    <i class="ic-audio"></i>
+                                </div>
+                                <div class="card-title">6 Artis Hollywood yang Jadi Mermaid Cantik Pakai Teknologi AI,
+                                    Sedang Viral di Media
+                                    Sosial</div>
+                            </a>
+                        </div>
+                        <div class="category-widget-card">
+                            <a href="#">
+                                <div class="category-widget-img loading">
+                                    <img src="./assets/img/img-card-4.png" width="100%" height="100%" alt="idol-img">
+                                    <i class="ic-audio"></i>
+                                </div>
+                                <div class="card-title">6 Artis Hollywood yang Jadi Mermaid Cantik Pakai Teknologi AI,
+                                    Sedang Viral di Media
+                                    Sosial</div>
+                            </a>
+                        </div>
+
                     </div>
                 </div>
             </main>
@@ -216,55 +227,61 @@
             <!-- Aside -->
             <aside>
                 <div class="terpopuler-widget col">
-                    <h2>Terpopuler</h2>
+                    <div class="widget-title">Terpopuler</div>
                     <div class="pop-card">
                         <a href="" class="col">
-                            <div class="populer-img-1">
+                            <div class="populer-img-1 loading">
                                 <img src="./assets/img/img-card-6.png" alt="terpopuler-1" width="100%" height="100%">
                                 <i class="ic-pop-1"></i>
                             </div>
-                            <h4>Mpok Atiek Sering Dikirimi Uang oleh Raffi Ahmad Tanpa Diminta, Sekali Transfer Rp5 Juta
-                            </h4>
+                            <div class="pop-title">Mpok Atiek Sering Dikirimi Uang oleh Raffi Ahmad Tanpa Diminta,
+                                Sekali
+                                Transfer Rp5 Juta
+                            </div>
                         </a>
                     </div>
                     <div class="pop-card">
                         <a href="" class="row">
-                            <div class="populer-img">
+                            <div class="populer-img loading">
                                 <img src="./assets/img/img-card-7.png" alt="terpopuler-1" width="100%" height="100%">
                                 <i class="ic-pop-2"></i>
                             </div>
-                            <h5>Tangis Ibunda Inge Anugrah Pecah saat sang Anak Masuk Ruang Sidang Cerai: Inginnya Sih
-                                Sama-Sama Lagi</h5>
+                            <div class="pop-title">Tangis Ibunda Inge Anugrah Pecah saat sang Anak Masuk Ruang Sidang
+                                Cerai: Inginnya Sih
+                                Sama-Sama Lagi</div>
                         </a>
                     </div>
                     <div class="pop-card">
                         <a href="" class="row">
-                            <div class="populer-img">
+                            <div class="populer-img loading">
                                 <img src="./assets/img/img-card-5.png" alt="terpopuler-1" width="100%" height="100%">
                                 <i class="ic-pop-3"></i>
                             </div>
-                            <h5>Tangis Ibunda Inge Anugrah Pecah saat sang Anak Masuk Ruang Sidang Cerai: Inginnya Sih
-                                Sama-Sama Lagi</h5>
+                            <div class="pop-title">Tangis Ibunda Inge Anugrah Pecah saat sang Anak Masuk Ruang Sidang
+                                Cerai: Inginnya Sih
+                                Sama-Sama Lagi</div>
                         </a>
                     </div>
                     <div class="pop-card">
                         <a href="" class="row">
-                            <div class="populer-img">
+                            <div class="populer-img loading">
                                 <img src="./assets/img/img-card-2.png" alt="terpopuler-1" width="100%" height="100%">
                                 <i class="ic-pop-4"></i>
                             </div>
-                            <h5>Tangis Ibunda Inge Anugrah Pecah saat sang Anak Masuk Ruang Sidang Cerai: Inginnya Sih
-                                Sama-Sama Lagi</h5>
+                            <div class="pop-title">Tangis Ibunda Inge Anugrah Pecah saat sang Anak Masuk Ruang Sidang
+                                Cerai: Inginnya Sih
+                                Sama-Sama Lagi</div>
                         </a>
                     </div>
                     <div class="pop-card">
                         <a href="" class="row">
-                            <div class="populer-img">
+                            <div class="populer-img loading">
                                 <img src="./assets/img/img-card-4.png" alt="terpopuler-1" width="100%" height="100%">
                                 <i class="ic-pop-5"></i>
                             </div>
-                            <h5>Tangis Ibunda Inge Anugrah Pecah saat sang Anak Masuk Ruang Sidang Cerai: Inginnya Sih
-                                Sama-Sama Lagi</h5>
+                            <div class="pop-title">Tangis Ibunda Inge Anugrah Pecah saat sang Anak Masuk Ruang Sidang
+                                Cerai: Inginnya Sih
+                                Sama-Sama Lagi</div>
                         </a>
                     </div>
 
@@ -272,12 +289,12 @@
                 <div class="live-radio col">
                     <h2>Live Radio</h2>
                     <a href="#">
-                        <div class="banner-live-radio">
+                        <div class="banner-live-radio loading">
                             <img src="./assets/img/banner-live-radio.png" alt="live radio" width="100%" height="100%">
                         </div>
                     </a>
                     <a href="#">
-                        <div class="banner-live-radio">
+                        <div class="banner-live-radio loading">
                             <img src="./assets/img/banner-live-radio2.png" alt="live radio" width="100%" height="100%">
                         </div>
                     </a>
@@ -317,17 +334,21 @@
                             </li>
                         </ul>
                         <ul class="socmed">
-                            <li><a href="#"><i class="ic-fb"></i></a></li>
-                            <li><a href="#"><i class="ic-tw"></i></a></li>
-                            <li><a href="#"><i class="ic-ig"></i></a></li>
-                            <li><a href="#"><i class="ic-yt"></i></a></li>
-                            <li><a href="#"><i class="ic-tt"></i></a></li>
+                            <li><a href="#" aria-label="facebook"><i class="ic-fb"></i></a></li>
+                            <li><a href="#" aria-label="x"><i class="ic-tw"></i></a></li>
+                            <li><a href="#" aria-label="instagram"><i class="ic-ig"></i></a></li>
+                            <li><a href="#" aria-label="youtube"><i class="ic-yt"></i></a></li>
+                            <li><a href="#" aria-label="tiktok"><i class="ic-tt"></i></a></li>
                     </div>
                     <div class="right-side">
                         <span>Also available on</span>
                         <div class="row">
-                            <img src="./assets/img/google-play.png" alt="google-play" width="120" height="37">
-                            <img src="./assets/img/app-store.png" alt="app-store" width="120" height="37">
+                            <a href="#" aria-label="google-play">
+                                <img src="./assets/img/google-play.png" alt="google-play" width="120" height="37">
+                            </a>
+                            <a href="#" aria-label="app-store">
+                                <img src="./assets/img/app-store.png" alt="app-store" width="120" height="37">
+                            </a>
                         </div>
                         <img src="./assets/img/mnc-portal.png" alt="mnc-portal" width="194" height="49">
                     </div>

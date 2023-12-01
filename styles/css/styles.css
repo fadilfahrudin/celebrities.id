@@ -905,6 +905,61 @@ p {
   text-overflow: ellipsis;
   overflow: hidden;
 }
+#home-page #main-layouts section main .live-stream {
+  background-color: #262e39;
+  padding: 16px;
+  gap: 24px;
+}
+#home-page #main-layouts section main .live-stream .live-header {
+  display: flex;
+  align-items: center;
+  gap: 0 8px;
+  color: #d3d3d3;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+#home-page #main-layouts section main .live-stream .live-header::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #d92f51;
+}
+#home-page #main-layouts section main .live-stream .live-card {
+  display: flex;
+  gap: 0 16px;
+}
+#home-page #main-layouts section main .live-stream .live-card .live-card-video {
+  width: 100%;
+  height: auto;
+}
+#home-page #main-layouts section main .live-stream .live-card .live-card-video iframe {
+  background: #222934;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+  border: none;
+}
+#home-page #main-layouts section main .live-stream .live-card .live-card-video .live-card-title {
+  display: block;
+  text-decoration: none;
+  color: #d3d3d3;
+  margin-top: 16px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+#home-page #main-layouts section main .live-stream .live-card .live-chat {
+  background-color: #222934;
+  width: 60%;
+  height: 100%;
+}
+#home-page #main-layouts section main .live-stream .live-card .live-chat.hidden {
+  display: none;
+}
 #home-page #main-layouts section main .live-topics {
   background-color: #262e39;
   padding: 16px;
@@ -913,8 +968,12 @@ p {
 #home-page #main-layouts section main .live-topics .live-topic-header {
   justify-content: space-between;
 }
-#home-page #main-layouts section main .live-topics .live-topic-header h3 {
+#home-page #main-layouts section main .live-topics .live-topic-header .live-topic-title {
   color: #d3d3d3;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
 }
 #home-page #main-layouts section main .live-topics .live-topic-header .row .btn-slide {
   cursor: pointer;
@@ -980,10 +1039,14 @@ p {
 #home-page #main-layouts section main .live-topics .live-topic-body .live-topic-card a .live-topic-img .ic-video {
   content: url(../../../assets/icon/ic-video.png);
 }
-#home-page #main-layouts section main .live-topics .live-topic-body .live-topic-card a h4 {
+#home-page #main-layouts section main .live-topics .live-topic-body .live-topic-card a .live-topic-card-title {
   display: -webkit-box;
   height: 48px;
   color: #d3d3d3;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
   text-overflow: ellipsis;
@@ -1017,8 +1080,12 @@ p {
   justify-content: space-between;
   margin-bottom: 16px;
 }
-#home-page #main-layouts section main .category-widget .category-widget-header h3 {
+#home-page #main-layouts section main .category-widget .category-widget-header .category-title {
   color: #d3d3d3;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
 }
 #home-page #main-layouts section main .category-widget .category-widget-header a {
   text-decoration: none;
@@ -1075,10 +1142,14 @@ p {
 #home-page #main-layouts section main .category-widget .category-widget-body .category-widget-card a .category-widget-img .ic-video {
   content: url(../../../assets/icon/ic-video.png);
 }
-#home-page #main-layouts section main .category-widget .category-widget-body .category-widget-card a h4 {
+#home-page #main-layouts section main .category-widget .category-widget-body .category-widget-card a .card-title {
   display: -webkit-box;
   height: 72px;
   color: #d3d3d3;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
   text-overflow: ellipsis;
@@ -1087,7 +1158,11 @@ p {
 #home-page #main-layouts section aside .terpopuler-widget {
   gap: 15px 0;
 }
-#home-page #main-layouts section aside .terpopuler-widget h2 {
+#home-page #main-layouts section aside .terpopuler-widget .widget-title {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
   color: #fff;
 }
 #home-page #main-layouts section aside .terpopuler-widget .pop-card {
@@ -1171,18 +1246,28 @@ p {
 #home-page #main-layouts section aside .terpopuler-widget .pop-card a .populer-img .ic-pop-5 {
   content: url(../../../assets/icon/ic-trend-5.png);
 }
-#home-page #main-layouts section aside .terpopuler-widget .pop-card a h4 {
-  height: 72px;
-  -webkit-line-clamp: 3;
-}
-#home-page #main-layouts section aside .terpopuler-widget .pop-card a h5 {
-  height: 84px;
-  -webkit-line-clamp: 4;
-}
-#home-page #main-layouts section aside .terpopuler-widget .pop-card a h4,
-#home-page #main-layouts section aside .terpopuler-widget .pop-card a h5 {
+#home-page #main-layouts section aside .terpopuler-widget .pop-card a .pop-title {
   display: -webkit-box;
   color: #d3d3d3;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  height: 84px;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+#home-page #main-layouts section aside .terpopuler-widget .pop-card:nth-child(2) a .pop-title {
+  display: -webkit-box;
+  color: #d3d3d3;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  height: 72px;
+  -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -5003,9 +5088,7 @@ p {
 }
 
 .loading {
-  display: inline-block;
   position: relative;
-  background-color: #dddbdd;
 }
 .loading::before {
   content: "";
@@ -5015,14 +5098,16 @@ p {
   width: 100%;
   height: 100%;
   z-index: 100;
-  border-radius: 0.25rem;
-  transform: translateX(-100%);
-  background-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, 0.2) 20%, rgba(255, 255, 255, 0.5) 60%, rgba(255, 255, 255, 0));
-  animation: shimmer 5s infinite;
+  background-image: linear-gradient(90deg, #222934, #323d4c, #222934);
+  background-size: 200%;
+  animation: shimmer 2s infinite;
 }
 @keyframes shimmer {
+  0% {
+    background-position: 100% 0;
+  }
   100% {
-    transform: translateX(100%);
+    background-position: -100% 0;
   }
 }
 
