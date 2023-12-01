@@ -209,14 +209,14 @@
                 width: 100%;
                 height: auto;
                 iframe {
+                    background-color: $color-dark-50;
                     width: 100%;
                     height: auto;
                     aspect-ratio: 16/9;
                     border: none;
                 }
             }
-            ul {
-                list-style: none;
+            .socmed {
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -228,24 +228,31 @@
                     line-height: normal;
                     color: $text-light;
                 }
-                li {
-                    a {
-                        text-decoration: none;
-                        i {
-                            width: 32px;
-                            height: 32px;
-                        }
-                        .ic-fb {
-                            content: url(../../../assets/img/fb.png);
-                        }
-                        .ic-tw {
-                            content: url(../../../assets/img/tw.png);
-                        }
-                        .ic-wa {
-                            content: url(../../../assets/img/wa.png);
-                        }
-                        .ic-link {
-                            content: url(../../../assets/img/link.png);
+                ul {
+                    list-style: none;
+                    display: flex;
+                    align-items: center;
+                    gap: 0 12px;
+
+                    li {
+                        a {
+                            text-decoration: none;
+                            i {
+                                width: 32px;
+                                height: 32px;
+                            }
+                            .ic-fb {
+                                content: url(../../../assets/img/fb.png);
+                            }
+                            .ic-tw {
+                                content: url(../../../assets/img/tw.png);
+                            }
+                            .ic-wa {
+                                content: url(../../../assets/img/wa.png);
+                            }
+                            .ic-link {
+                                content: url(../../../assets/img/link.png);
+                            }
                         }
                     }
                 }
@@ -253,7 +260,7 @@
         }
         aside {
             overflow: hidden;
-            width: 335px;
+            width: 392px;
             min-height: 100vh;
             display: flex;
             flex-direction: column;
@@ -275,6 +282,10 @@
                 }
                 .video-title {
                     color: $text-light;
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 150%;
                     margin-bottom: 12px;
                 }
                 .author-wrapper {
@@ -358,18 +369,12 @@
                 width: 100%;
                 height: auto;
                 .card-header {
-                    align-items: center;
                     margin-bottom: 16px;
-                    h2 {
-                        color: $text-light;
-                    }
-                    a {
-                        text-decoration: none;
-                        color: $text-white;
-                        padding: 8px 24px;
-                        background-color: $color-pink;
-                        border-radius: 50px;
-                    }
+                    color: $text-white;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 150%;
                 }
                 .card-body {
                     display: flex;
@@ -417,10 +422,15 @@
                                     content: url(../../../assets/icon/ic-video.png);
                                 }
                             }
-                            h4 {
+                            .card-title {
                                 display: -webkit-box;
                                 height: 48px;
                                 color: $text-light;
+                                font-size: 16px;
+                                font-style: normal;
+                                font-weight: 700;
+                                line-height: 150%;
+
                                 -webkit-box-orient: vertical;
                                 -webkit-line-clamp: 2;
                                 text-overflow: ellipsis;

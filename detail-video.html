@@ -19,7 +19,7 @@
     <header>
         <div class="container">
             <div class="brand-btn-wrapper">
-                <button type="button" class="burger-btn"><i class="ic-burger"></i></button>
+                <button type="button" class="burger-btn" aria-label="burger-btn"><i class="ic-burger"></i></button>
                 <a href="index.html">
                     <img class="brand" src="./assets/img/logo-header.png" width="100%" height="100%"
                         alt="Celebrities.id" />
@@ -68,18 +68,20 @@
     <section>
         <!-- Main -->
         <main>
-            <div class="video-player">
+            <div class="video-player loading">
                 <iframe src="https://www.youtube.com/embed/XhaKn_8VF3c?si=Vucad6imYHQbE6QH" title="YouTube video player"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowfullscreen></iframe>
             </div>
-            <ul>
+            <div class="socmed">
                 <label for="socmed">Share</label>
-                <li id="socmed"><a href="#"><i class="ic-fb"></i></a></li>
-                <li id="socmed"><a href="#"><i class="ic-tw"></i></a></li>
-                <li id="socmed"><a href="#"><i class="ic-wa"></i></a></li>
-                <li id="socmed"><a href="#"><i class="ic-link"></i></a></li>
-            </ul>
+                <ul>
+                    <li id="socmed"><a href="#" aria-label="facebook"><i class="ic-fb"></i></a></li>
+                    <li id="socmed"><a href="#" aria-label="x"><i class="ic-tw"></i></a></li>
+                    <li id="socmed"><a href="#" aria-label="whatsapp"><i class="ic-wa"></i></a></li>
+                    <li id="socmed"><a href="#" aria-label="link"><i class="ic-link"></i></a></li>
+                </ul>
+            </div>
         </main>
         <!-- End Main -->
 
@@ -87,8 +89,8 @@
         <aside>
             <div class="video-summary">
                 <div class="breadcrumb"><a href="index.html">Home</a> / <a href="#">Idol</a> / Detail Video</div>
-                <h2 class="video-title">Daftar Idol K-Pop yang Hadiri Konser Bruno Mars di Seoul, Ada BLACKPINK hingga
-                    NCT</h2>
+                <div class="video-title">Daftar Idol K-Pop yang Hadiri Konser Bruno Mars di Seoul, Ada BLACKPINK hingga
+                    NCT</div>
                 <div class="author-wrapper">
                     <div class="author">
                         <div class="author-img">
@@ -124,71 +126,87 @@
             </div>
             <!-- More Card -->
             <div class="card-wrapper">
-                <div class="card-header ">
-                    <h2>More to Catch Up</h2>
-                </div>
+                <div class="card-header">More to Catch Up</div>
                 <div class="card-body">
                     <div class="card">
                         <a href="#">
-                            <div class="card-img">
+                            <div class="card-img loading">
                                 <img src="./assets/img/img-card-4.png" width="100%" height="100%" alt="idol-img">
                                 <i class="ic-video"></i>
                             </div>
-                            <h4>6 Artis Hollywood yang Jadi Mermaid Cantik Pakai Teknologi AI, Sedang Viral di Media
-                                Sosial</h4>
+                            <div class="card-title">6 Artis Hollywood yang Jadi Mermaid Cantik Pakai Teknologi AI,
+                                Sedang Viral di Media
+                                Sosial</div>
                         </a>
                     </div>
                     <div class="card">
                         <a href="#">
-                            <div class="card-img">
-                                <img src="./assets/img/img-card-2.png" width="100%" height="100%" alt="idol-img">
+                            <div class="card-img loading">
+                                <img src="./assets/img/img-card-4.png" width="100%" height="100%" alt="idol-img">
                                 <i class="ic-video"></i>
                             </div>
-                            <h4>6 Artis Hollywood yang Jadi Mermaid Cantik Pakai Teknologi AI, Sedang Viral di Media
-                                Sosial</h4>
+                            <div class="card-title">6 Artis Hollywood yang Jadi Mermaid Cantik Pakai Teknologi AI,
+                                Sedang Viral di Media
+                                Sosial</div>
                         </a>
                     </div>
                     <div class="card">
                         <a href="#">
-                            <div class="card-img">
-                                <img src="./assets/img/img-card-2.png" width="100%" height="100%" alt="idol-img">
+                            <div class="card-img loading">
+                                <img src="./assets/img/img-card-4.png" width="100%" height="100%" alt="idol-img">
                                 <i class="ic-video"></i>
                             </div>
-                            <h4>6 Artis Hollywood yang Jadi Mermaid Cantik Pakai Teknologi AI, Sedang Viral di Media
-                                Sosial</h4>
+                            <div class="card-title">6 Artis Hollywood yang Jadi Mermaid Cantik Pakai Teknologi AI,
+                                Sedang Viral di Media
+                                Sosial</div>
                         </a>
                     </div>
                     <div class="card">
                         <a href="#">
-                            <div class="card-img">
-                                <img src="./assets/img/img-card-5.png" width="100%" height="100%" alt="idol-img">
+                            <div class="card-img loading">
+                                <img src="./assets/img/img-card-4.png" width="100%" height="100%" alt="idol-img">
                                 <i class="ic-video"></i>
                             </div>
-                            <h4>6 Artis Hollywood yang Jadi Mermaid Cantik Pakai Teknologi AI, Sedang Viral di Media
-                                Sosial</h4>
+                            <div class="card-title">6 Artis Hollywood yang Jadi Mermaid Cantik Pakai Teknologi AI,
+                                Sedang Viral di Media
+                                Sosial</div>
                         </a>
                     </div>
                     <div class="card">
                         <a href="#">
-                            <div class="card-img">
-                                <img src="./assets/img/img-card-7.png" width="100%" height="100%" alt="idol-img">
+                            <div class="card-img loading">
+                                <img src="./assets/img/img-card-4.png" width="100%" height="100%" alt="idol-img">
                                 <i class="ic-video"></i>
                             </div>
-                            <h4>6 Artis Hollywood yang Jadi Mermaid Cantik Pakai Teknologi AI, Sedang Viral di Media
-                                Sosial</h4>
+                            <div class="card-title">6 Artis Hollywood yang Jadi Mermaid Cantik Pakai Teknologi AI,
+                                Sedang Viral di Media
+                                Sosial</div>
                         </a>
                     </div>
                     <div class="card">
                         <a href="#">
-                            <div class="card-img">
-                                <img src="./assets/img/img-card-3.png" width="100%" height="100%" alt="idol-img">
+                            <div class="card-img loading">
+                                <img src="./assets/img/img-card-4.png" width="100%" height="100%" alt="idol-img">
                                 <i class="ic-video"></i>
                             </div>
-                            <h4>6 Artis Hollywood yang Jadi Mermaid Cantik Pakai Teknologi AI, Sedang Viral di Media
-                                Sosial</h4>
+                            <div class="card-title">6 Artis Hollywood yang Jadi Mermaid Cantik Pakai Teknologi AI,
+                                Sedang Viral di Media
+                                Sosial</div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="#">
+                            <div class="card-img loading">
+                                <img src="./assets/img/img-card-4.png" width="100%" height="100%" alt="idol-img">
+                                <i class="ic-video"></i>
+                            </div>
+                            <div class="card-title">6 Artis Hollywood yang Jadi Mermaid Cantik Pakai Teknologi AI,
+                                Sedang Viral di Media
+                                Sosial</div>
                         </a>
                     </div>
                 </div>
+            </div>
             </div>
 
             <!-- Footer -->
@@ -217,11 +235,11 @@
                     </div>
                     <div class="social-app">
                         <ul class="socmed">
-                            <li><a href="#"><i class="ic-fb"></i></a></li>
-                            <li><a href="#"><i class="ic-tw"></i></a></li>
-                            <li><a href="#"><i class="ic-ig"></i></a></li>
-                            <li><a href="#"><i class="ic-yt"></i></a></li>
-                            <li><a href="#"><i class="ic-tt"></i></a></li>
+                            <li><a href="#" aria-label="facebook"><i class="ic-fb"></i></a></li>
+                            <li><a href="#" aria-label="x"><i class="ic-tw"></i></a></li>
+                            <li><a href="#" aria-label="instagram"><i class="ic-ig"></i></a></li>
+                            <li><a href="#" aria-label="youtube"><i class="ic-yt"></i></a></li>
+                            <li><a href="#" aria-label="tiktok"><i class="ic-tt"></i></a></li>
                         </ul>
 
                         <div class="platform">

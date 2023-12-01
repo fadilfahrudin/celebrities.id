@@ -3443,47 +3443,53 @@ p {
   height: auto;
 }
 #detail-video section main .video-player iframe {
+  background-color: #222934;
   width: 100%;
   height: auto;
   aspect-ratio: 16/9;
   border: none;
 }
-#detail-video section main ul {
-  list-style: none;
+#detail-video section main .socmed {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 0 12px;
 }
-#detail-video section main ul label {
+#detail-video section main .socmed label {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   color: #d3d3d3;
 }
-#detail-video section main ul li a {
+#detail-video section main .socmed ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 0 12px;
+}
+#detail-video section main .socmed ul li a {
   text-decoration: none;
 }
-#detail-video section main ul li a i {
+#detail-video section main .socmed ul li a i {
   width: 32px;
   height: 32px;
 }
-#detail-video section main ul li a .ic-fb {
+#detail-video section main .socmed ul li a .ic-fb {
   content: url(../../../assets/img/fb.png);
 }
-#detail-video section main ul li a .ic-tw {
+#detail-video section main .socmed ul li a .ic-tw {
   content: url(../../../assets/img/tw.png);
 }
-#detail-video section main ul li a .ic-wa {
+#detail-video section main .socmed ul li a .ic-wa {
   content: url(../../../assets/img/wa.png);
 }
-#detail-video section main ul li a .ic-link {
+#detail-video section main .socmed ul li a .ic-link {
   content: url(../../../assets/img/link.png);
 }
 #detail-video section aside {
   overflow: hidden;
-  width: 335px;
+  width: 392px;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -3507,6 +3513,10 @@ p {
 }
 #detail-video section aside .video-summary .video-title {
   color: #d3d3d3;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
   margin-bottom: 12px;
 }
 #detail-video section aside .video-summary .author-wrapper {
@@ -3584,18 +3594,12 @@ p {
   height: auto;
 }
 #detail-video section aside .card-wrapper .card-header {
-  align-items: center;
   margin-bottom: 16px;
-}
-#detail-video section aside .card-wrapper .card-header h2 {
-  color: #d3d3d3;
-}
-#detail-video section aside .card-wrapper .card-header a {
-  text-decoration: none;
   color: #fff;
-  padding: 8px 24px;
-  background-color: #f98e8e;
-  border-radius: 50px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
 }
 #detail-video section aside .card-wrapper .card-body {
   display: flex;
@@ -3644,10 +3648,14 @@ p {
 #detail-video section aside .card-wrapper .card-body .card a .card-img .ic-video {
   content: url(../../../assets/icon/ic-video.png);
 }
-#detail-video section aside .card-wrapper .card-body .card a h4 {
+#detail-video section aside .card-wrapper .card-body .card a .card-title {
   display: -webkit-box;
   height: 48px;
   color: #d3d3d3;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
   text-overflow: ellipsis;
