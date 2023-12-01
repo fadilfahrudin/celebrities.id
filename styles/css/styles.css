@@ -2692,6 +2692,7 @@ p {
   height: auto;
 }
 #detail-tv-streaming #details-layouts section main .tv-stream-wrapper .tv-stream .video-stream iframe {
+  background-color: #222934;
   aspect-ratio: 16/9;
   width: 100%;
   height: auto;
@@ -2704,8 +2705,12 @@ p {
   overflow: hidden;
   background-color: #262e39;
 }
-#detail-tv-streaming #details-layouts section main .tv-stream-wrapper .tv-stream .channel-stream h5 {
+#detail-tv-streaming #details-layouts section main .tv-stream-wrapper .tv-stream .channel-stream .channel-title {
   color: #d3d3d3;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
 }
 #detail-tv-streaming #details-layouts section main .tv-stream-wrapper .tv-stream .channel-stream ul {
   display: flex;
@@ -2772,6 +2777,10 @@ p {
 #detail-tv-streaming #details-layouts section main .tv-stream-wrapper .live-title {
   margin-top: 16px;
   color: #d3d3d3;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
 }
 #detail-tv-streaming #details-layouts section main .tv-stream-wrapper p {
   margin-top: 12px;
@@ -2779,37 +2788,42 @@ p {
   font-size: 18px;
   line-height: 150%;
 }
-#detail-tv-streaming #details-layouts section main .tv-stream-wrapper ul {
+#detail-tv-streaming #details-layouts section main .tv-stream-wrapper .socmed {
   margin-top: 24px;
-  list-style: none;
   display: flex;
   align-items: center;
   gap: 0 12px;
 }
-#detail-tv-streaming #details-layouts section main .tv-stream-wrapper ul label {
+#detail-tv-streaming #details-layouts section main .tv-stream-wrapper .socmed label {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   color: #d3d3d3;
 }
-#detail-tv-streaming #details-layouts section main .tv-stream-wrapper ul li a {
+#detail-tv-streaming #details-layouts section main .tv-stream-wrapper .socmed ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 0 12px;
+}
+#detail-tv-streaming #details-layouts section main .tv-stream-wrapper .socmed ul li a {
   text-decoration: none;
 }
-#detail-tv-streaming #details-layouts section main .tv-stream-wrapper ul li a i {
+#detail-tv-streaming #details-layouts section main .tv-stream-wrapper .socmed ul li a i {
   width: 32px;
   height: 32px;
 }
-#detail-tv-streaming #details-layouts section main .tv-stream-wrapper ul li a .ic-fb {
+#detail-tv-streaming #details-layouts section main .tv-stream-wrapper .socmed ul li a .ic-fb {
   content: url(../../../assets/img/fb.png);
 }
-#detail-tv-streaming #details-layouts section main .tv-stream-wrapper ul li a .ic-tw {
+#detail-tv-streaming #details-layouts section main .tv-stream-wrapper .socmed ul li a .ic-tw {
   content: url(../../../assets/img/tw.png);
 }
-#detail-tv-streaming #details-layouts section main .tv-stream-wrapper ul li a .ic-wa {
+#detail-tv-streaming #details-layouts section main .tv-stream-wrapper .socmed ul li a .ic-wa {
   content: url(../../../assets/img/wa.png);
 }
-#detail-tv-streaming #details-layouts section main .tv-stream-wrapper ul li a .ic-link {
+#detail-tv-streaming #details-layouts section main .tv-stream-wrapper .socmed ul li a .ic-link {
   content: url(../../../assets/img/link.png);
 }
 #detail-tv-streaming #details-layouts section main .card-wrapper {
@@ -2819,16 +2833,11 @@ p {
 #detail-tv-streaming #details-layouts section main .card-wrapper .card-header {
   align-items: center;
   margin-bottom: 16px;
-}
-#detail-tv-streaming #details-layouts section main .card-wrapper .card-header h2 {
   color: #d3d3d3;
-}
-#detail-tv-streaming #details-layouts section main .card-wrapper .card-header a {
-  text-decoration: none;
-  color: #fff;
-  padding: 8px 24px;
-  background-color: #f98e8e;
-  border-radius: 50px;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
 }
 #detail-tv-streaming #details-layouts section main .card-wrapper .card-body {
   display: flex;
@@ -2878,10 +2887,14 @@ p {
 #detail-tv-streaming #details-layouts section main .card-wrapper .card-body .card a .card-img .ic-video {
   content: url(../../../assets/icon/ic-video.png);
 }
-#detail-tv-streaming #details-layouts section main .card-wrapper .card-body .card a h4 {
+#detail-tv-streaming #details-layouts section main .card-wrapper .card-body .card a .card-title {
   display: -webkit-box;
   height: 72px;
   color: #d3d3d3;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
   text-overflow: ellipsis;
@@ -2896,9 +2909,6 @@ p {
     align-items: center;
     justify-content: space-between;
     margin-bottom: 16px;
-  }
-  #detail-tv-streaming #details-layouts section main .card-wrapper .card-header h3 {
-    color: #d3d3d3;
   }
   #detail-tv-streaming #details-layouts section main .card-wrapper .card-header a {
     text-decoration: none;
@@ -2956,15 +2966,6 @@ p {
   }
   #detail-tv-streaming #details-layouts section main .card-wrapper .card-body .card a .card-img .ic-video {
     content: url(../../../assets/icon/ic-video.png);
-  }
-  #detail-tv-streaming #details-layouts section main .card-wrapper .card-body .card a h4 {
-    display: -webkit-box;
-    height: 72px;
-    color: #d3d3d3;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 3;
-    text-overflow: ellipsis;
-    overflow: hidden;
   }
 }
 
