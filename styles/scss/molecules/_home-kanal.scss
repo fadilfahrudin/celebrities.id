@@ -108,10 +108,14 @@
                                         content: url(../../../assets/icon/ic-video.png);
                                     }
                                 }
-                                h4 {
+                                .card-title {
                                     display: -webkit-box;
                                     height: 72px;
                                     color: $text-light;
+                                    font-size: 16px;
+                                    font-style: normal;
+                                    font-weight: 700;
+                                    line-height: 150%;
                                     -webkit-box-orient: vertical;
                                     -webkit-line-clamp: 3;
                                     text-overflow: ellipsis;
