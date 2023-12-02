@@ -38,21 +38,37 @@
                     font-weight: 700;
                     line-height: 150%; /* 30px */
                 }
-                .card-wrapper {
+                .category-widget {
                     width: 100%;
                     height: auto;
-                    .card-body {
+                    .category-widget-header {
+                        align-items: center;
+                        margin-bottom: 16px;
+                        color: $text-light;
+                        font-size: 20px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 150%;
+                        a {
+                            text-decoration: none;
+                            color: $text-white;
+                            padding: 8px 24px;
+                            background-color: $color-pink;
+                            border-radius: 50px;
+                        }
+                    }
+                    .category-widget-body {
                         display: flex;
                         flex-wrap: wrap;
                         gap: 16px;
-                        .card {
+                        .category-widget-card {
                             flex-shrink: 0; //hide grow content
                             width: 250px;
                             height: auto;
                             overflow: hidden;
                             a {
                                 text-decoration: none;
-                                .card-img {
+                                .category-widget-img {
                                     position: relative;
                                     aspect-ratio: 4/3;
                                     width: 100%;
@@ -88,10 +104,14 @@
                                         content: url(../../../assets/icon/ic-video.png);
                                     }
                                 }
-                                h4 {
+                                .card-title {
                                     display: -webkit-box;
                                     height: 72px;
                                     color: $text-light;
+                                    font-size: 16px;
+                                    font-style: normal;
+                                    font-weight: 700;
+                                    line-height: 150%;
                                     -webkit-box-orient: vertical;
                                     -webkit-line-clamp: 3;
                                     text-overflow: ellipsis;
@@ -164,7 +184,11 @@
             aside {
                 .terpopuler-widget {
                     gap: 15px 0;
-                    h2 {
+                    .widget-title {
+                        font-size: 24px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 150%;
                         color: $text-white;
                     }
                     .pop-card {
@@ -248,39 +272,38 @@
                                     content: url(../../../assets/icon/ic-trend-5.png);
                                 }
                             }
-                            h4 {
-                                height: 72px;
-                                -webkit-line-clamp: 3;
-                            }
-                            h5 {
-                                height: 84px;
-                                -webkit-line-clamp: 4;
-                            }
-                            h4,
-                            h5 {
+                            .pop-title {
                                 display: -webkit-box;
                                 color: $text-light;
+                                font-size: 14px;
+                                font-style: normal;
+                                font-weight: 700;
+                                line-height: 150%;
+
+                                height: 84px;
+                                -webkit-line-clamp: 4;
                                 -webkit-box-orient: vertical;
                                 text-overflow: ellipsis;
                                 overflow: hidden;
                             }
                         }
-                    }
-                }
-                .live-radio {
-                    gap: 16px;
-                    h2 {
-                        color: $text-white;
-                    }
-                    .banner-live-radio {
-                        width: 100%;
-                        height: auto;
-                        overflow: hidden;
-                        img {
-                            width: 100%;
-                            height: auto;
-                            object-fit: cover;
-                            object-position: center center;
+                        &:nth-child(2) {
+                            a {
+                                .pop-title {
+                                    display: -webkit-box;
+                                    color: $text-light;
+                                    font-size: 16px;
+                                    font-style: normal;
+                                    font-weight: 700;
+                                    line-height: 150%;
+
+                                    height: 72px;
+                                    -webkit-line-clamp: 3;
+                                    -webkit-box-orient: vertical;
+                                    text-overflow: ellipsis;
+                                    overflow: hidden;
+                                }
+                            }
                         }
                     }
                 }
@@ -292,10 +315,10 @@
         #main-layouts {
             section {
                 main {
-                    .card-wrapper {
+                    .category-widget {
                         width: 100%;
                         height: auto;
-                        .card-header {
+                        .category-widget-header {
                             align-items: center;
                             justify-content: space-between;
                             margin-bottom: 16px;
@@ -310,20 +333,25 @@
                                 border-radius: 50px;
                             }
                         }
-                        .card-body {
+                        .category-widget-body {
                             display: flex;
                             flex-wrap: wrap;
                             gap: 16px;
-                            .card {
-                                flex-shrink: 1; //hide grow content
+                            flex-shrink: 1; //hide grow content
+                            .category-widget-card {
                                 flex-basis: 208px;
-                                flex-grow: 2;
+                                flex-grow: 1;
                                 width: 100%;
                                 height: auto;
                                 overflow: hidden;
+
+                                &:last-child {
+                                    flex-basis: calc((100% / 2) - 8px);
+                                    flex-grow: 0;
+                                }
                                 a {
                                     text-decoration: none;
-                                    .card-img {
+                                    .category-widget-img {
                                         position: relative;
                                         aspect-ratio: 4/3;
                                         width: 100%;
