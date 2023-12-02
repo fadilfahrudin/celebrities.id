@@ -3010,8 +3010,13 @@ p {
   overflow: hidden;
   background-color: #262e39;
 }
-#detail-radio-streaming #details-layouts section main .radio-stream-wrapper .radio-stream .channel-stream h5 {
-  color: #d3d3d3;
+#detail-radio-streaming #details-layouts section main .radio-stream-wrapper .radio-stream .channel-stream .channel-title {
+  color: #fff;
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%;
 }
 #detail-radio-streaming #details-layouts section main .radio-stream-wrapper .radio-stream .channel-stream ul {
   display: flex;
@@ -3099,11 +3104,12 @@ p {
   height: auto;
 }
 #detail-radio-streaming #details-layouts section main .card-wrapper .card-header {
-  align-items: center;
   margin-bottom: 16px;
-}
-#detail-radio-streaming #details-layouts section main .card-wrapper .card-header h2 {
   color: #d3d3d3;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
 }
 #detail-radio-streaming #details-layouts section main .card-wrapper .card-header a {
   text-decoration: none;
@@ -3160,10 +3166,14 @@ p {
 #detail-radio-streaming #details-layouts section main .card-wrapper .card-body .card a .card-img .ic-video {
   content: url(../../../assets/icon/ic-video.png);
 }
-#detail-radio-streaming #details-layouts section main .card-wrapper .card-body .card a h4 {
+#detail-radio-streaming #details-layouts section main .card-wrapper .card-body .card a .card-title {
   display: -webkit-box;
   height: 72px;
   color: #d3d3d3;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
   text-overflow: ellipsis;
