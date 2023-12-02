@@ -623,6 +623,11 @@
                                 width: 100%;
                                 height: auto;
                                 overflow: hidden;
+
+                                &:last-child {
+                                    flex-basis: calc((100% / 2) - 8px);
+                                    flex-grow: 0;
+                                }
                                 a {
                                     text-decoration: none;
                                     .category-widget-img {

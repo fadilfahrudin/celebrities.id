@@ -254,6 +254,10 @@
                                 width: 100%;
                                 height: auto;
                                 overflow: hidden;
+                                &:last-child {
+                                    flex-basis: calc((100% / 2) - 8px);
+                                    flex-grow: 0;
+                                }
                                 a {
                                     text-decoration: none;
                                     .card-img {
@@ -301,6 +305,24 @@
                                         text-overflow: ellipsis;
                                         overflow: hidden;
                                     }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media (min-width: 1024px) {
+        #details-layouts {
+            section {
+                main {
+                    .card-wrapper {
+                        .card-body {
+                            .card {
+                                &:last-child {
+                                    flex-basis: calc((100% / 3) - 8px);
+                                    flex-grow: 0;
                                 }
                             }
                         }
