@@ -70,9 +70,8 @@
                         font-size: 18px;
                         line-height: 150%;
                     }
-                    ul {
+                    .socmed {
                         margin-top: 24px;
-                        list-style: none;
                         display: flex;
                         align-items: center;
                         gap: 0 12px;
@@ -83,24 +82,31 @@
                             line-height: normal;
                             color: $text-light;
                         }
-                        li {
-                            a {
-                                text-decoration: none;
-                                i {
-                                    width: 32px;
-                                    height: 32px;
-                                }
-                                .ic-fb {
-                                    content: url(../../../assets/img/fb.png);
-                                }
-                                .ic-tw {
-                                    content: url(../../../assets/img/tw.png);
-                                }
-                                .ic-wa {
-                                    content: url(../../../assets/img/wa.png);
-                                }
-                                .ic-link {
-                                    content: url(../../../assets/img/link.png);
+                        ul {
+                            list-style: none;
+                            display: flex;
+                            align-items: center;
+                            gap: 0 12px;
+
+                            li {
+                                a {
+                                    text-decoration: none;
+                                    i {
+                                        width: 32px;
+                                        height: 32px;
+                                    }
+                                    .ic-fb {
+                                        content: url(../../../assets/img/fb.png);
+                                    }
+                                    .ic-tw {
+                                        content: url(../../../assets/img/tw.png);
+                                    }
+                                    .ic-wa {
+                                        content: url(../../../assets/img/wa.png);
+                                    }
+                                    .ic-link {
+                                        content: url(../../../assets/img/link.png);
+                                    }
                                 }
                             }
                         }
@@ -110,11 +116,12 @@
                     width: 100%;
                     height: auto;
                     .card-header {
-                        align-items: center;
                         margin-bottom: 16px;
-                        h2 {
-                            color: $text-light;
-                        }
+                        color: $text-light;
+                        font-size: 24px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 150%;
                         a {
                             text-decoration: none;
                             color: $text-white;
@@ -170,10 +177,14 @@
                                         content: url(../../../assets/icon/ic-video.png);
                                     }
                                 }
-                                h4 {
+                                .card-title {
                                     display: -webkit-box;
                                     height: 72px;
                                     color: $text-light;
+                                    font-size: 16px;
+                                    font-style: normal;
+                                    font-weight: 700;
+                                    line-height: 150%;
                                     -webkit-box-orient: vertical;
                                     -webkit-line-clamp: 3;
                                     text-overflow: ellipsis;

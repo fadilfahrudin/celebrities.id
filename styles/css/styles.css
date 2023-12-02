@@ -2285,37 +2285,42 @@ p {
   font-size: 18px;
   line-height: 150%;
 }
-#detail-live-video #details-layouts section main .live-stream-wrapper ul {
+#detail-live-video #details-layouts section main .live-stream-wrapper .socmed {
   margin-top: 24px;
-  list-style: none;
   display: flex;
   align-items: center;
   gap: 0 12px;
 }
-#detail-live-video #details-layouts section main .live-stream-wrapper ul label {
+#detail-live-video #details-layouts section main .live-stream-wrapper .socmed label {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   color: #d3d3d3;
 }
-#detail-live-video #details-layouts section main .live-stream-wrapper ul li a {
+#detail-live-video #details-layouts section main .live-stream-wrapper .socmed ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 0 12px;
+}
+#detail-live-video #details-layouts section main .live-stream-wrapper .socmed ul li a {
   text-decoration: none;
 }
-#detail-live-video #details-layouts section main .live-stream-wrapper ul li a i {
+#detail-live-video #details-layouts section main .live-stream-wrapper .socmed ul li a i {
   width: 32px;
   height: 32px;
 }
-#detail-live-video #details-layouts section main .live-stream-wrapper ul li a .ic-fb {
+#detail-live-video #details-layouts section main .live-stream-wrapper .socmed ul li a .ic-fb {
   content: url(../../../assets/img/fb.png);
 }
-#detail-live-video #details-layouts section main .live-stream-wrapper ul li a .ic-tw {
+#detail-live-video #details-layouts section main .live-stream-wrapper .socmed ul li a .ic-tw {
   content: url(../../../assets/img/tw.png);
 }
-#detail-live-video #details-layouts section main .live-stream-wrapper ul li a .ic-wa {
+#detail-live-video #details-layouts section main .live-stream-wrapper .socmed ul li a .ic-wa {
   content: url(../../../assets/img/wa.png);
 }
-#detail-live-video #details-layouts section main .live-stream-wrapper ul li a .ic-link {
+#detail-live-video #details-layouts section main .live-stream-wrapper .socmed ul li a .ic-link {
   content: url(../../../assets/img/link.png);
 }
 #detail-live-video #details-layouts section main .card-wrapper {
@@ -2323,11 +2328,12 @@ p {
   height: auto;
 }
 #detail-live-video #details-layouts section main .card-wrapper .card-header {
-  align-items: center;
   margin-bottom: 16px;
-}
-#detail-live-video #details-layouts section main .card-wrapper .card-header h2 {
   color: #d3d3d3;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
 }
 #detail-live-video #details-layouts section main .card-wrapper .card-header a {
   text-decoration: none;
@@ -2384,10 +2390,14 @@ p {
 #detail-live-video #details-layouts section main .card-wrapper .card-body .card a .card-img .ic-video {
   content: url(../../../assets/icon/ic-video.png);
 }
-#detail-live-video #details-layouts section main .card-wrapper .card-body .card a h4 {
+#detail-live-video #details-layouts section main .card-wrapper .card-body .card a .card-title {
   display: -webkit-box;
   height: 72px;
   color: #d3d3d3;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
   text-overflow: ellipsis;
