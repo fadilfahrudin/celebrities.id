@@ -2495,7 +2495,7 @@ p {
     overflow: hidden;
   }
 }
-@media (min-width: 1024px) {
+@media (max-width: 1024px) {
   #detail-live-video #details-layouts section main .card-wrapper .card-body .card:last-child {
     flex-basis: calc(33.3333333333% - 8px);
     flex-grow: 0;
@@ -2693,7 +2693,7 @@ p {
     overflow: hidden;
   }
 }
-@media (min-width: 1024px) {
+@media (max-width: 1024px) {
   #detail-audio #details-layouts section main .card-wrapper .card-body .card:last-child {
     flex-basis: calc(33.3333333333% - 8px);
     flex-grow: 0;
@@ -3010,7 +3010,7 @@ p {
     content: url(../../../assets/icon/ic-video.png);
   }
 }
-@media (min-width: 1024px) {
+@media (max-width: 1024px) {
   #detail-tv-streaming #details-layouts section main .card-wrapper .card-body .card:last-child {
     flex-basis: calc(33.3333333333% - 8px);
     flex-grow: 0;
@@ -3311,7 +3311,7 @@ p {
     overflow: hidden;
   }
 }
-@media (min-width: 1024px) {
+@media (max-width: 1024px) {
   #detail-radio-streaming #details-layouts section main .card-wrapper .card-body .card:last-child {
     flex-basis: calc(33.3333333333% - 8px);
     flex-grow: 0;
