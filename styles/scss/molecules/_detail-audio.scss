@@ -38,11 +38,12 @@
                     width: 100%;
                     height: auto;
                     .card-header {
-                        align-items: center;
                         margin-bottom: 16px;
-                        h2 {
-                            color: $text-light;
-                        }
+                        color: $text-light;
+                        font-size: 24px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 150%;
                         a {
                             text-decoration: none;
                             color: $text-white;
@@ -98,10 +99,14 @@
                                         content: url(../../../assets/icon/ic-video.png);
                                     }
                                 }
-                                h4 {
+                                .card-title {
                                     display: -webkit-box;
                                     height: 72px;
                                     color: $text-light;
+                                    font-size: 16px;
+                                    font-style: normal;
+                                    font-weight: 700;
+                                    line-height: 150%;
                                     -webkit-box-orient: vertical;
                                     -webkit-line-clamp: 3;
                                     text-overflow: ellipsis;
