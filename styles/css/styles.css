@@ -2539,11 +2539,12 @@ p {
   height: auto;
 }
 #detail-audio #details-layouts section main .card-wrapper .card-header {
-  align-items: center;
   margin-bottom: 16px;
-}
-#detail-audio #details-layouts section main .card-wrapper .card-header h2 {
   color: #d3d3d3;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
 }
 #detail-audio #details-layouts section main .card-wrapper .card-header a {
   text-decoration: none;
@@ -2600,10 +2601,14 @@ p {
 #detail-audio #details-layouts section main .card-wrapper .card-body .card a .card-img .ic-video {
   content: url(../../../assets/icon/ic-video.png);
 }
-#detail-audio #details-layouts section main .card-wrapper .card-body .card a h4 {
+#detail-audio #details-layouts section main .card-wrapper .card-body .card a .card-title {
   display: -webkit-box;
   height: 72px;
   color: #d3d3d3;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
   text-overflow: ellipsis;
