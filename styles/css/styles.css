@@ -147,7 +147,7 @@ p {
   cursor: pointer;
 }
 #main-layouts header .container .brand-btn-wrapper .burger-btn .ic-burger {
-  content: url(../../../assets/icon/ic-burger.png);
+  content: url(../../assets/icon/ic-burger.png);
   width: 32px;
   height: 32px;
 }
@@ -257,13 +257,13 @@ p {
   height: 16px;
 }
 #main-layouts nav #navigasi .side-nav li label .ic-play {
-  content: url(../../../assets/icon/ic-play.png);
+  content: url(../../assets/icon/ic-play.png);
 }
 #main-layouts nav #navigasi .side-nav li label .ic-category {
-  content: url(../../../assets/icon/ic-category.png);
+  content: url(../../assets/icon/ic-category.png);
 }
 #main-layouts nav #navigasi .side-nav li label .ic-radio {
-  content: url(../../../assets/icon/ic-radio.png);
+  content: url(../../assets/icon/ic-radio.png);
 }
 #main-layouts nav #navigasi .side-nav li ul {
   list-style: none;
@@ -360,19 +360,19 @@ p {
   height: 32px;
 }
 #main-layouts footer .footer-wrapper .left-side .socmed li a .ic-fb {
-  content: url(../../../assets/img/fb.png);
+  content: url(../../assets/img/fb.png);
 }
 #main-layouts footer .footer-wrapper .left-side .socmed li a .ic-tw {
-  content: url(../../../assets/img/tw.png);
+  content: url(../../assets/img/tw.png);
 }
 #main-layouts footer .footer-wrapper .left-side .socmed li a .ic-ig {
-  content: url(../../../assets/img/ig.png);
+  content: url(../../assets/img/ig.png);
 }
 #main-layouts footer .footer-wrapper .left-side .socmed li a .ic-yt {
-  content: url(../../../assets/img/yt.png);
+  content: url(../../assets/img/yt.png);
 }
 #main-layouts footer .footer-wrapper .left-side .socmed li a .ic-tt {
-  content: url(../../../assets/img/tt.png);
+  content: url(../../assets/img/tt.png);
 }
 #main-layouts footer .footer-wrapper .right-side {
   width: 252px;
@@ -430,7 +430,7 @@ p {
     cursor: pointer;
   }
   #main-layouts header .container .brand-btn-wrapper .burger-btn .ic-burger {
-    content: url(../../../assets/icon/ic-burger.png);
+    content: url(../../assets/icon/ic-burger.png);
     width: 32px;
     height: 32px;
   }
@@ -528,7 +528,7 @@ p {
   cursor: pointer;
 }
 #details-layouts header .container .brand-btn-wrapper .burger-btn .ic-burger {
-  content: url(../../../assets/icon/ic-burger.png);
+  content: url(../../assets/icon/ic-burger.png);
   width: 32px;
   height: 32px;
 }
@@ -638,13 +638,13 @@ p {
   height: 16px;
 }
 #details-layouts nav #navigasi .side-nav li label .ic-play {
-  content: url(../../../assets/icon/ic-play.png);
+  content: url(../../assets/icon/ic-play.png);
 }
 #details-layouts nav #navigasi .side-nav li label .ic-category {
-  content: url(../../../assets/icon/ic-category.png);
+  content: url(../../assets/icon/ic-category.png);
 }
 #details-layouts nav #navigasi .side-nav li label .ic-radio {
-  content: url(../../../assets/icon/ic-radio.png);
+  content: url(../../assets/icon/ic-radio.png);
 }
 #details-layouts nav #navigasi .side-nav li ul {
   list-style: none;
@@ -733,19 +733,19 @@ p {
   height: 32px;
 }
 #details-layouts footer .footer-wrapper .left-side .socmed li a .ic-fb {
-  content: url(../../../assets/img/fb.png);
+  content: url(../../assets/img/fb.png);
 }
 #details-layouts footer .footer-wrapper .left-side .socmed li a .ic-tw {
-  content: url(../../../assets/img/tw.png);
+  content: url(../../assets/img/tw.png);
 }
 #details-layouts footer .footer-wrapper .left-side .socmed li a .ic-ig {
-  content: url(../../../assets/img/ig.png);
+  content: url(../../assets/img/ig.png);
 }
 #details-layouts footer .footer-wrapper .left-side .socmed li a .ic-yt {
-  content: url(../../../assets/img/yt.png);
+  content: url(../../assets/img/yt.png);
 }
 #details-layouts footer .footer-wrapper .left-side .socmed li a .ic-tt {
-  content: url(../../../assets/img/tt.png);
+  content: url(../../assets/img/tt.png);
 }
 #details-layouts footer .footer-wrapper .right-side {
   width: 252px;
@@ -803,7 +803,7 @@ p {
     cursor: pointer;
   }
   #details-layouts header .container .brand-btn-wrapper .burger-btn .ic-burger {
-    content: url(../../../assets/icon/ic-burger.png);
+    content: url(../../assets/icon/ic-burger.png);
     width: 32px;
     height: 32px;
   }
@@ -986,10 +986,10 @@ p {
   height: 32px;
 }
 #home-page #main-layouts section main .live-topics .live-topic-header .row .btn-slide .ic-left-arrow {
-  content: url(../../../assets/icon/ic-arrow-left.png);
+  content: url(../../assets/icon/ic-arrow-left.png);
 }
 #home-page #main-layouts section main .live-topics .live-topic-header .row .btn-slide .ic-right-arrow {
-  content: url(../../../assets/icon/ic-arrow-right.png);
+  content: url(../../assets/icon/ic-arrow-right.png);
 }
 #home-page #main-layouts section main .live-topics .live-topic-body {
   gap: 16px;
@@ -1034,10 +1034,10 @@ p {
   bottom: 12px;
 }
 #home-page #main-layouts section main .live-topics .live-topic-body .live-topic-card a .live-topic-img .ic-audio {
-  content: url(../../../assets/icon/ic-audio.png);
+  content: url(../../assets/icon/ic-audio.png);
 }
 #home-page #main-layouts section main .live-topics .live-topic-body .live-topic-card a .live-topic-img .ic-video {
-  content: url(../../../assets/icon/ic-video.png);
+  content: url(../../assets/icon/ic-video.png);
 }
 #home-page #main-layouts section main .live-topics .live-topic-body .live-topic-card a .live-topic-card-title {
   display: -webkit-box;
@@ -1137,10 +1137,10 @@ p {
   bottom: 12px;
 }
 #home-page #main-layouts section main .category-widget .category-widget-body .category-widget-card a .category-widget-img .ic-audio {
-  content: url(../../../assets/icon/ic-audio.png);
+  content: url(../../assets/icon/ic-audio.png);
 }
 #home-page #main-layouts section main .category-widget .category-widget-body .category-widget-card a .category-widget-img .ic-video {
-  content: url(../../../assets/icon/ic-video.png);
+  content: url(../../assets/icon/ic-video.png);
 }
 #home-page #main-layouts section main .category-widget .category-widget-body .category-widget-card a .card-title {
   display: -webkit-box;
@@ -1200,7 +1200,7 @@ p {
   position: absolute;
   left: 0;
   bottom: 0;
-  content: url(../../../assets/icon/ic-trend-1.png);
+  content: url(../../assets/icon/ic-trend-1.png);
   width: 53px;
   height: auto;
 }
@@ -1235,16 +1235,16 @@ p {
   height: auto;
 }
 #home-page #main-layouts section aside .terpopuler-widget .pop-card a .populer-img .ic-pop-2 {
-  content: url(../../../assets/icon/ic-trend-2.png);
+  content: url(../../assets/icon/ic-trend-2.png);
 }
 #home-page #main-layouts section aside .terpopuler-widget .pop-card a .populer-img .ic-pop-3 {
-  content: url(../../../assets/icon/ic-trend-3.png);
+  content: url(../../assets/icon/ic-trend-3.png);
 }
 #home-page #main-layouts section aside .terpopuler-widget .pop-card a .populer-img .ic-pop-4 {
-  content: url(../../../assets/icon/ic-trend-4.png);
+  content: url(../../assets/icon/ic-trend-4.png);
 }
 #home-page #main-layouts section aside .terpopuler-widget .pop-card a .populer-img .ic-pop-5 {
-  content: url(../../../assets/icon/ic-trend-5.png);
+  content: url(../../assets/icon/ic-trend-5.png);
 }
 #home-page #main-layouts section aside .terpopuler-widget .pop-card a .pop-title {
   display: -webkit-box;
@@ -1342,10 +1342,10 @@ p {
     height: 32px;
   }
   #home-page #main-layouts section main .live-topics .live-topic-header .row .btn-slide .ic-left-arrow {
-    content: url(../../../assets/icon/ic-arrow-left.png);
+    content: url(../../assets/icon/ic-arrow-left.png);
   }
   #home-page #main-layouts section main .live-topics .live-topic-header .row .btn-slide .ic-right-arrow {
-    content: url(../../../assets/icon/ic-arrow-right.png);
+    content: url(../../assets/icon/ic-arrow-right.png);
   }
   #home-page #main-layouts section main .live-topics .live-topic-body {
     gap: 16px;
@@ -1390,10 +1390,10 @@ p {
     bottom: 12px;
   }
   #home-page #main-layouts section main .live-topics .live-topic-body .live-topic-card a .live-topic-img .ic-audio {
-    content: url(../../../assets/icon/ic-audio.png);
+    content: url(../../assets/icon/ic-audio.png);
   }
   #home-page #main-layouts section main .live-topics .live-topic-body .live-topic-card a .live-topic-img .ic-video {
-    content: url(../../../assets/icon/ic-video.png);
+    content: url(../../assets/icon/ic-video.png);
   }
   #home-page #main-layouts section main .live-topics .live-topic-body .live-topic-card a h4 {
     display: -webkit-box;
@@ -1492,10 +1492,10 @@ p {
     bottom: 12px;
   }
   #home-page #main-layouts section main .category-widget .category-widget-body .category-widget-card a .category-widget-img .ic-audio {
-    content: url(../../../assets/icon/ic-audio.png);
+    content: url(../../assets/icon/ic-audio.png);
   }
   #home-page #main-layouts section main .category-widget .category-widget-body .category-widget-card a .category-widget-img .ic-video {
-    content: url(../../../assets/icon/ic-video.png);
+    content: url(../../assets/icon/ic-video.png);
   }
   #home-page #main-layouts section main .category-widget .category-widget-body .category-widget-card a h4 {
     display: -webkit-box;
@@ -1547,7 +1547,7 @@ p {
     position: absolute;
     left: 0;
     bottom: 0;
-    content: url(../../../assets/icon/ic-trend-1.png);
+    content: url(../../assets/icon/ic-trend-1.png);
     width: 53px;
     height: auto;
   }
@@ -1582,16 +1582,16 @@ p {
     height: auto;
   }
   #home-page #main-layouts section aside .terpopuler-widget .pop-card a .populer-img .ic-pop-2 {
-    content: url(../../../assets/icon/ic-trend-2.png);
+    content: url(../../assets/icon/ic-trend-2.png);
   }
   #home-page #main-layouts section aside .terpopuler-widget .pop-card a .populer-img .ic-pop-3 {
-    content: url(../../../assets/icon/ic-trend-3.png);
+    content: url(../../assets/icon/ic-trend-3.png);
   }
   #home-page #main-layouts section aside .terpopuler-widget .pop-card a .populer-img .ic-pop-4 {
-    content: url(../../../assets/icon/ic-trend-4.png);
+    content: url(../../assets/icon/ic-trend-4.png);
   }
   #home-page #main-layouts section aside .terpopuler-widget .pop-card a .populer-img .ic-pop-5 {
-    content: url(../../../assets/icon/ic-trend-5.png);
+    content: url(../../assets/icon/ic-trend-5.png);
   }
   #home-page #main-layouts section aside .terpopuler-widget .pop-card a h4 {
     height: 72px;
@@ -1713,10 +1713,10 @@ p {
   bottom: 12px;
 }
 #home-page #main-layouts section main .category-widget .category-widget-body .category-widget-card a .category-widget-img .ic-audio {
-  content: url(../../../assets/icon/ic-audio.png);
+  content: url(../../assets/icon/ic-audio.png);
 }
 #home-page #main-layouts section main .category-widget .category-widget-body .category-widget-card a .category-widget-img .ic-video {
-  content: url(../../../assets/icon/ic-video.png);
+  content: url(../../assets/icon/ic-video.png);
 }
 #home-page #main-layouts section main .category-widget .category-widget-body .category-widget-card a .card-title {
   display: -webkit-box;
@@ -1767,16 +1767,16 @@ p {
   height: 24px;
 }
 #home-page #main-layouts section main .pagination ul li a .ic-backward {
-  content: url(../../../assets/icon/ic-backward.png);
+  content: url(../../assets/icon/ic-backward.png);
 }
 #home-page #main-layouts section main .pagination ul li a .ic-forward {
-  content: url(../../../assets/icon/ic-forward.png);
+  content: url(../../assets/icon/ic-forward.png);
 }
 #home-page #main-layouts section main .pagination ul li a .ic-prev-left {
-  content: url(../../../assets/icon/ic-prev-left.png);
+  content: url(../../assets/icon/ic-prev-left.png);
 }
 #home-page #main-layouts section main .pagination ul li a .ic-prev-right {
-  content: url(../../../assets/icon/ic-prev-right.png);
+  content: url(../../assets/icon/ic-prev-right.png);
 }
 #home-page #main-layouts section main .pagination ul li:hover {
   background-color: #f98e8e;
@@ -1828,7 +1828,7 @@ p {
   position: absolute;
   left: 0;
   bottom: 0;
-  content: url(../../../assets/icon/ic-trend-1.png);
+  content: url(../../assets/icon/ic-trend-1.png);
   width: 53px;
   height: auto;
 }
@@ -1863,16 +1863,16 @@ p {
   height: auto;
 }
 #home-page #main-layouts section aside .terpopuler-widget .pop-card a .populer-img .ic-pop-2 {
-  content: url(../../../assets/icon/ic-trend-2.png);
+  content: url(../../assets/icon/ic-trend-2.png);
 }
 #home-page #main-layouts section aside .terpopuler-widget .pop-card a .populer-img .ic-pop-3 {
-  content: url(../../../assets/icon/ic-trend-3.png);
+  content: url(../../assets/icon/ic-trend-3.png);
 }
 #home-page #main-layouts section aside .terpopuler-widget .pop-card a .populer-img .ic-pop-4 {
-  content: url(../../../assets/icon/ic-trend-4.png);
+  content: url(../../assets/icon/ic-trend-4.png);
 }
 #home-page #main-layouts section aside .terpopuler-widget .pop-card a .populer-img .ic-pop-5 {
-  content: url(../../../assets/icon/ic-trend-5.png);
+  content: url(../../assets/icon/ic-trend-5.png);
 }
 #home-page #main-layouts section aside .terpopuler-widget .pop-card a h4 {
   height: 72px;
@@ -1960,10 +1960,10 @@ p {
     height: 32px;
   }
   #home-page #main-layouts section main .live-topics .live-topic-header .row .btn-slide .ic-left-arrow {
-    content: url(../../../assets/icon/ic-arrow-left.png);
+    content: url(../../assets/icon/ic-arrow-left.png);
   }
   #home-page #main-layouts section main .live-topics .live-topic-header .row .btn-slide .ic-right-arrow {
-    content: url(../../../assets/icon/ic-arrow-right.png);
+    content: url(../../assets/icon/ic-arrow-right.png);
   }
   #home-page #main-layouts section main .live-topics .live-topic-body {
     gap: 16px;
@@ -2008,10 +2008,10 @@ p {
     bottom: 12px;
   }
   #home-page #main-layouts section main .live-topics .live-topic-body .live-topic-card a .live-topic-img .ic-audio {
-    content: url(../../../assets/icon/ic-audio.png);
+    content: url(../../assets/icon/ic-audio.png);
   }
   #home-page #main-layouts section main .live-topics .live-topic-body .live-topic-card a .live-topic-img .ic-video {
-    content: url(../../../assets/icon/ic-video.png);
+    content: url(../../assets/icon/ic-video.png);
   }
   #home-page #main-layouts section main .live-topics .live-topic-body .live-topic-card a h4 {
     display: -webkit-box;
@@ -2106,10 +2106,10 @@ p {
     bottom: 12px;
   }
   #home-page #main-layouts section main .category-widget .category-widget-body .category-widget-card a .category-widget-img .ic-audio {
-    content: url(../../../assets/icon/ic-audio.png);
+    content: url(../../assets/icon/ic-audio.png);
   }
   #home-page #main-layouts section main .category-widget .category-widget-body .category-widget-card a .category-widget-img .ic-video {
-    content: url(../../../assets/icon/ic-video.png);
+    content: url(../../assets/icon/ic-video.png);
   }
   #home-page #main-layouts section main .category-widget .category-widget-body .category-widget-card a h4 {
     display: -webkit-box;
@@ -2161,7 +2161,7 @@ p {
     position: absolute;
     left: 0;
     bottom: 0;
-    content: url(../../../assets/icon/ic-trend-1.png);
+    content: url(../../assets/icon/ic-trend-1.png);
     width: 53px;
     height: auto;
   }
@@ -2196,16 +2196,16 @@ p {
     height: auto;
   }
   #home-page #main-layouts section aside .terpopuler-widget .pop-card a .populer-img .ic-pop-2 {
-    content: url(../../../assets/icon/ic-trend-2.png);
+    content: url(../../assets/icon/ic-trend-2.png);
   }
   #home-page #main-layouts section aside .terpopuler-widget .pop-card a .populer-img .ic-pop-3 {
-    content: url(../../../assets/icon/ic-trend-3.png);
+    content: url(../../assets/icon/ic-trend-3.png);
   }
   #home-page #main-layouts section aside .terpopuler-widget .pop-card a .populer-img .ic-pop-4 {
-    content: url(../../../assets/icon/ic-trend-4.png);
+    content: url(../../assets/icon/ic-trend-4.png);
   }
   #home-page #main-layouts section aside .terpopuler-widget .pop-card a .populer-img .ic-pop-5 {
-    content: url(../../../assets/icon/ic-trend-5.png);
+    content: url(../../assets/icon/ic-trend-5.png);
   }
   #home-page #main-layouts section aside .terpopuler-widget .pop-card a h4 {
     height: 72px;
@@ -2320,16 +2320,16 @@ p {
   height: 32px;
 }
 #detail-live-video #details-layouts section main .live-stream-wrapper .socmed ul li a .ic-fb {
-  content: url(../../../assets/img/fb.png);
+  content: url(../../assets/img/fb.png);
 }
 #detail-live-video #details-layouts section main .live-stream-wrapper .socmed ul li a .ic-tw {
-  content: url(../../../assets/img/tw.png);
+  content: url(../../assets/img/tw.png);
 }
 #detail-live-video #details-layouts section main .live-stream-wrapper .socmed ul li a .ic-wa {
-  content: url(../../../assets/img/wa.png);
+  content: url(../../assets/img/wa.png);
 }
 #detail-live-video #details-layouts section main .live-stream-wrapper .socmed ul li a .ic-link {
-  content: url(../../../assets/img/link.png);
+  content: url(../../assets/img/link.png);
 }
 #detail-live-video #details-layouts section main .card-wrapper {
   width: 100%;
@@ -2393,10 +2393,10 @@ p {
   bottom: 12px;
 }
 #detail-live-video #details-layouts section main .card-wrapper .card-body .card a .card-img .ic-audio {
-  content: url(../../../assets/icon/ic-audio.png);
+  content: url(../../assets/icon/ic-audio.png);
 }
 #detail-live-video #details-layouts section main .card-wrapper .card-body .card a .card-img .ic-video {
-  content: url(../../../assets/icon/ic-video.png);
+  content: url(../../assets/icon/ic-video.png);
 }
 #detail-live-video #details-layouts section main .card-wrapper .card-body .card a .card-title {
   display: -webkit-box;
@@ -2480,10 +2480,10 @@ p {
     bottom: 12px;
   }
   #detail-live-video #details-layouts section main .card-wrapper .card-body .card a .card-img .ic-audio {
-    content: url(../../../assets/icon/ic-audio.png);
+    content: url(../../assets/icon/ic-audio.png);
   }
   #detail-live-video #details-layouts section main .card-wrapper .card-body .card a .card-img .ic-video {
-    content: url(../../../assets/icon/ic-video.png);
+    content: url(../../assets/icon/ic-video.png);
   }
   #detail-live-video #details-layouts section main .card-wrapper .card-body .card a h4 {
     display: -webkit-box;
@@ -2596,10 +2596,10 @@ p {
   bottom: 12px;
 }
 #detail-audio #details-layouts section main .card-wrapper .card-body .card a .card-img .ic-audio {
-  content: url(../../../assets/icon/ic-audio.png);
+  content: url(../../assets/icon/ic-audio.png);
 }
 #detail-audio #details-layouts section main .card-wrapper .card-body .card a .card-img .ic-video {
-  content: url(../../../assets/icon/ic-video.png);
+  content: url(../../assets/icon/ic-video.png);
 }
 #detail-audio #details-layouts section main .card-wrapper .card-body .card a .card-title {
   display: -webkit-box;
@@ -2683,10 +2683,10 @@ p {
     bottom: 12px;
   }
   #detail-audio #details-layouts section main .card-wrapper .card-body .card a .card-img .ic-audio {
-    content: url(../../../assets/icon/ic-audio.png);
+    content: url(../../assets/icon/ic-audio.png);
   }
   #detail-audio #details-layouts section main .card-wrapper .card-body .card a .card-img .ic-video {
-    content: url(../../../assets/icon/ic-video.png);
+    content: url(../../assets/icon/ic-video.png);
   }
   #detail-audio #details-layouts section main .card-wrapper .card-body .card a h4 {
     display: -webkit-box;
@@ -2858,16 +2858,16 @@ p {
   height: 32px;
 }
 #detail-tv-streaming #details-layouts section main .tv-stream-wrapper .socmed ul li a .ic-fb {
-  content: url(../../../assets/img/fb.png);
+  content: url(../../assets/img/fb.png);
 }
 #detail-tv-streaming #details-layouts section main .tv-stream-wrapper .socmed ul li a .ic-tw {
-  content: url(../../../assets/img/tw.png);
+  content: url(../../assets/img/tw.png);
 }
 #detail-tv-streaming #details-layouts section main .tv-stream-wrapper .socmed ul li a .ic-wa {
-  content: url(../../../assets/img/wa.png);
+  content: url(../../assets/img/wa.png);
 }
 #detail-tv-streaming #details-layouts section main .tv-stream-wrapper .socmed ul li a .ic-link {
-  content: url(../../../assets/img/link.png);
+  content: url(../../assets/img/link.png);
 }
 #detail-tv-streaming #details-layouts section main .card-wrapper {
   width: 100%;
@@ -2925,10 +2925,10 @@ p {
   bottom: 12px;
 }
 #detail-tv-streaming #details-layouts section main .card-wrapper .card-body .card a .card-img .ic-audio {
-  content: url(../../../assets/icon/ic-audio.png);
+  content: url(../../assets/icon/ic-audio.png);
 }
 #detail-tv-streaming #details-layouts section main .card-wrapper .card-body .card a .card-img .ic-video {
-  content: url(../../../assets/icon/ic-video.png);
+  content: url(../../assets/icon/ic-video.png);
 }
 #detail-tv-streaming #details-layouts section main .card-wrapper .card-body .card a .card-title {
   display: -webkit-box;
@@ -3009,10 +3009,10 @@ p {
     bottom: 12px;
   }
   #detail-tv-streaming #details-layouts section main .card-wrapper .card-body .card a .card-img .ic-audio {
-    content: url(../../../assets/icon/ic-audio.png);
+    content: url(../../assets/icon/ic-audio.png);
   }
   #detail-tv-streaming #details-layouts section main .card-wrapper .card-body .card a .card-img .ic-video {
-    content: url(../../../assets/icon/ic-video.png);
+    content: url(../../assets/icon/ic-video.png);
   }
 }
 @media (max-width: 1024px) {
@@ -3141,16 +3141,16 @@ p {
   height: 32px;
 }
 #detail-radio-streaming #details-layouts section main .radio-stream-wrapper ul li a .ic-fb {
-  content: url(../../../assets/img/fb.png);
+  content: url(../../assets/img/fb.png);
 }
 #detail-radio-streaming #details-layouts section main .radio-stream-wrapper ul li a .ic-tw {
-  content: url(../../../assets/img/tw.png);
+  content: url(../../assets/img/tw.png);
 }
 #detail-radio-streaming #details-layouts section main .radio-stream-wrapper ul li a .ic-wa {
-  content: url(../../../assets/img/wa.png);
+  content: url(../../assets/img/wa.png);
 }
 #detail-radio-streaming #details-layouts section main .radio-stream-wrapper ul li a .ic-link {
-  content: url(../../../assets/img/link.png);
+  content: url(../../assets/img/link.png);
 }
 #detail-radio-streaming #details-layouts section main .card-wrapper {
   width: 100%;
@@ -3214,10 +3214,10 @@ p {
   bottom: 12px;
 }
 #detail-radio-streaming #details-layouts section main .card-wrapper .card-body .card a .card-img .ic-audio {
-  content: url(../../../assets/icon/ic-audio.png);
+  content: url(../../assets/icon/ic-audio.png);
 }
 #detail-radio-streaming #details-layouts section main .card-wrapper .card-body .card a .card-img .ic-video {
-  content: url(../../../assets/icon/ic-video.png);
+  content: url(../../assets/icon/ic-video.png);
 }
 #detail-radio-streaming #details-layouts section main .card-wrapper .card-body .card a .card-title {
   display: -webkit-box;
@@ -3301,10 +3301,10 @@ p {
     bottom: 12px;
   }
   #detail-radio-streaming #details-layouts section main .card-wrapper .card-body .card a .card-img .ic-audio {
-    content: url(../../../assets/icon/ic-audio.png);
+    content: url(../../assets/icon/ic-audio.png);
   }
   #detail-radio-streaming #details-layouts section main .card-wrapper .card-body .card a .card-img .ic-video {
-    content: url(../../../assets/icon/ic-video.png);
+    content: url(../../assets/icon/ic-video.png);
   }
   #detail-radio-streaming #details-layouts section main .card-wrapper .card-body .card a h4 {
     display: -webkit-box;
@@ -3350,7 +3350,7 @@ p {
   cursor: pointer;
 }
 #detail-video header .container .brand-btn-wrapper .burger-btn .ic-burger {
-  content: url(../../../assets/icon/ic-burger.png);
+  content: url(../../assets/icon/ic-burger.png);
   width: 32px;
   height: 32px;
 }
@@ -3460,13 +3460,13 @@ p {
   height: 16px;
 }
 #detail-video nav #navigasi .side-nav li label .ic-play {
-  content: url(../../../assets/icon/ic-play.png);
+  content: url(../../assets/icon/ic-play.png);
 }
 #detail-video nav #navigasi .side-nav li label .ic-category {
-  content: url(../../../assets/icon/ic-category.png);
+  content: url(../../assets/icon/ic-category.png);
 }
 #detail-video nav #navigasi .side-nav li label .ic-radio {
-  content: url(../../../assets/icon/ic-radio.png);
+  content: url(../../assets/icon/ic-radio.png);
 }
 #detail-video nav #navigasi .side-nav li ul {
   list-style: none;
@@ -3550,16 +3550,16 @@ p {
   height: 32px;
 }
 #detail-video section main .socmed ul li a .ic-fb {
-  content: url(../../../assets/img/fb.png);
+  content: url(../../assets/img/fb.png);
 }
 #detail-video section main .socmed ul li a .ic-tw {
-  content: url(../../../assets/img/tw.png);
+  content: url(../../assets/img/tw.png);
 }
 #detail-video section main .socmed ul li a .ic-wa {
-  content: url(../../../assets/img/wa.png);
+  content: url(../../assets/img/wa.png);
 }
 #detail-video section main .socmed ul li a .ic-link {
-  content: url(../../../assets/img/link.png);
+  content: url(../../assets/img/link.png);
 }
 #detail-video section aside {
   overflow: hidden;
@@ -3717,10 +3717,10 @@ p {
   bottom: 12px;
 }
 #detail-video section aside .card-wrapper .card-body .card a .card-img .ic-audio {
-  content: url(../../../assets/icon/ic-audio.png);
+  content: url(../../assets/icon/ic-audio.png);
 }
 #detail-video section aside .card-wrapper .card-body .card a .card-img .ic-video {
-  content: url(../../../assets/icon/ic-video.png);
+  content: url(../../assets/icon/ic-video.png);
 }
 #detail-video section aside .card-wrapper .card-body .card a .card-title {
   display: -webkit-box;
@@ -3790,19 +3790,19 @@ p {
   height: 32px;
 }
 #detail-video section aside footer .container-footer .social-app .socmed li a .ic-fb {
-  content: url(../../../assets/img/fb.png);
+  content: url(../../assets/img/fb.png);
 }
 #detail-video section aside footer .container-footer .social-app .socmed li a .ic-tw {
-  content: url(../../../assets/img/tw.png);
+  content: url(../../assets/img/tw.png);
 }
 #detail-video section aside footer .container-footer .social-app .socmed li a .ic-ig {
-  content: url(../../../assets/img/ig.png);
+  content: url(../../assets/img/ig.png);
 }
 #detail-video section aside footer .container-footer .social-app .socmed li a .ic-yt {
-  content: url(../../../assets/img/yt.png);
+  content: url(../../assets/img/yt.png);
 }
 #detail-video section aside footer .container-footer .social-app .socmed li a .ic-tt {
-  content: url(../../../assets/img/tt.png);
+  content: url(../../assets/img/tt.png);
 }
 #detail-video section aside footer .container-footer .social-app .platform h4 {
   color: #d3d3d3;
@@ -3862,7 +3862,7 @@ p {
     cursor: pointer;
   }
   #detail-video header .container .brand-btn-wrapper .burger-btn .ic-burger {
-    content: url(../../../assets/icon/ic-burger.png);
+    content: url(../../assets/icon/ic-burger.png);
     width: 32px;
     height: 32px;
   }
@@ -3941,16 +3941,16 @@ p {
     height: 32px;
   }
   #detail-video section main ul li a .ic-fb {
-    content: url(../../../assets/img/fb.png);
+    content: url(../../assets/img/fb.png);
   }
   #detail-video section main ul li a .ic-tw {
-    content: url(../../../assets/img/tw.png);
+    content: url(../../assets/img/tw.png);
   }
   #detail-video section main ul li a .ic-wa {
-    content: url(../../../assets/img/wa.png);
+    content: url(../../assets/img/wa.png);
   }
   #detail-video section main ul li a .ic-link {
-    content: url(../../../assets/img/link.png);
+    content: url(../../assets/img/link.png);
   }
   #detail-video section aside {
     overflow: hidden;
@@ -4110,10 +4110,10 @@ p {
     bottom: 12px;
   }
   #detail-video section aside .card-wrapper .card-body .card a .card-img .ic-audio {
-    content: url(../../../assets/icon/ic-audio.png);
+    content: url(../../assets/icon/ic-audio.png);
   }
   #detail-video section aside .card-wrapper .card-body .card a .card-img .ic-video {
-    content: url(../../../assets/icon/ic-video.png);
+    content: url(../../assets/icon/ic-video.png);
   }
   #detail-video section aside .card-wrapper .card-body .card a h4 {
     display: -webkit-box;
@@ -4179,19 +4179,19 @@ p {
     height: 32px;
   }
   #detail-video section aside footer .container-footer .social-app .socmed li a .ic-fb {
-    content: url(../../../assets/img/fb.png);
+    content: url(../../assets/img/fb.png);
   }
   #detail-video section aside footer .container-footer .social-app .socmed li a .ic-tw {
-    content: url(../../../assets/img/tw.png);
+    content: url(../../assets/img/tw.png);
   }
   #detail-video section aside footer .container-footer .social-app .socmed li a .ic-ig {
-    content: url(../../../assets/img/ig.png);
+    content: url(../../assets/img/ig.png);
   }
   #detail-video section aside footer .container-footer .social-app .socmed li a .ic-yt {
-    content: url(../../../assets/img/yt.png);
+    content: url(../../assets/img/yt.png);
   }
   #detail-video section aside footer .container-footer .social-app .socmed li a .ic-tt {
-    content: url(../../../assets/img/tt.png);
+    content: url(../../assets/img/tt.png);
   }
   #detail-video section aside footer .container-footer .social-app .platform h4 {
     color: #d3d3d3;
@@ -4360,10 +4360,10 @@ p {
   bottom: 12px;
 }
 #page-tags #main-layouts section main .category-widget .category-widget-body .category-widget-card a .category-widget-img .ic-audio {
-  content: url(../../../assets/icon/ic-audio.png);
+  content: url(../../assets/icon/ic-audio.png);
 }
 #page-tags #main-layouts section main .category-widget .category-widget-body .category-widget-card a .category-widget-img .ic-video {
-  content: url(../../../assets/icon/ic-video.png);
+  content: url(../../assets/icon/ic-video.png);
 }
 #page-tags #main-layouts section main .category-widget .category-widget-body .category-widget-card a .card-title {
   display: -webkit-box;
@@ -4414,16 +4414,16 @@ p {
   height: 24px;
 }
 #page-tags #main-layouts section main .pagination ul li a .ic-backward {
-  content: url(../../../assets/icon/ic-backward.png);
+  content: url(../../assets/icon/ic-backward.png);
 }
 #page-tags #main-layouts section main .pagination ul li a .ic-forward {
-  content: url(../../../assets/icon/ic-forward.png);
+  content: url(../../assets/icon/ic-forward.png);
 }
 #page-tags #main-layouts section main .pagination ul li a .ic-prev-left {
-  content: url(../../../assets/icon/ic-prev-left.png);
+  content: url(../../assets/icon/ic-prev-left.png);
 }
 #page-tags #main-layouts section main .pagination ul li a .ic-prev-right {
-  content: url(../../../assets/icon/ic-prev-right.png);
+  content: url(../../assets/icon/ic-prev-right.png);
 }
 #page-tags #main-layouts section main .pagination ul li:hover {
   background-color: #f98e8e;
@@ -4478,7 +4478,7 @@ p {
   position: absolute;
   left: 0;
   bottom: 0;
-  content: url(../../../assets/icon/ic-trend-1.png);
+  content: url(../../assets/icon/ic-trend-1.png);
   width: 53px;
   height: auto;
 }
@@ -4513,16 +4513,16 @@ p {
   height: auto;
 }
 #page-tags #main-layouts section aside .terpopuler-widget .pop-card a .populer-img .ic-pop-2 {
-  content: url(../../../assets/icon/ic-trend-2.png);
+  content: url(../../assets/icon/ic-trend-2.png);
 }
 #page-tags #main-layouts section aside .terpopuler-widget .pop-card a .populer-img .ic-pop-3 {
-  content: url(../../../assets/icon/ic-trend-3.png);
+  content: url(../../assets/icon/ic-trend-3.png);
 }
 #page-tags #main-layouts section aside .terpopuler-widget .pop-card a .populer-img .ic-pop-4 {
-  content: url(../../../assets/icon/ic-trend-4.png);
+  content: url(../../assets/icon/ic-trend-4.png);
 }
 #page-tags #main-layouts section aside .terpopuler-widget .pop-card a .populer-img .ic-pop-5 {
-  content: url(../../../assets/icon/ic-trend-5.png);
+  content: url(../../assets/icon/ic-trend-5.png);
 }
 #page-tags #main-layouts section aside .terpopuler-widget .pop-card a .pop-title {
   display: -webkit-box;
@@ -4619,10 +4619,10 @@ p {
     bottom: 12px;
   }
   #page-tags #main-layouts section main .category-widget .category-widget-body .category-widget-card a .category-widget-img .ic-audio {
-    content: url(../../../assets/icon/ic-audio.png);
+    content: url(../../assets/icon/ic-audio.png);
   }
   #page-tags #main-layouts section main .category-widget .category-widget-body .category-widget-card a .category-widget-img .ic-video {
-    content: url(../../../assets/icon/ic-video.png);
+    content: url(../../assets/icon/ic-video.png);
   }
   #page-tags #main-layouts section main .category-widget .category-widget-body .category-widget-card a h4 {
     display: -webkit-box;
@@ -4674,7 +4674,7 @@ p {
     position: absolute;
     left: 0;
     bottom: 0;
-    content: url(../../../assets/icon/ic-trend-1.png);
+    content: url(../../assets/icon/ic-trend-1.png);
     width: 53px;
     height: auto;
   }
@@ -4709,16 +4709,16 @@ p {
     height: auto;
   }
   #page-tags #main-layouts section aside .terpopuler-widget .pop-card a .populer-img .ic-pop-2 {
-    content: url(../../../assets/icon/ic-trend-2.png);
+    content: url(../../assets/icon/ic-trend-2.png);
   }
   #page-tags #main-layouts section aside .terpopuler-widget .pop-card a .populer-img .ic-pop-3 {
-    content: url(../../../assets/icon/ic-trend-3.png);
+    content: url(../../assets/icon/ic-trend-3.png);
   }
   #page-tags #main-layouts section aside .terpopuler-widget .pop-card a .populer-img .ic-pop-4 {
-    content: url(../../../assets/icon/ic-trend-4.png);
+    content: url(../../assets/icon/ic-trend-4.png);
   }
   #page-tags #main-layouts section aside .terpopuler-widget .pop-card a .populer-img .ic-pop-5 {
-    content: url(../../../assets/icon/ic-trend-5.png);
+    content: url(../../assets/icon/ic-trend-5.png);
   }
   #page-tags #main-layouts section aside .terpopuler-widget .pop-card a h4 {
     height: 72px;
@@ -4835,10 +4835,10 @@ p {
   bottom: 12px;
 }
 #search-page #main-layouts section main .category-widget .category-widget-body .category-widget-card a .category-widget-img .ic-audio {
-  content: url(../../../assets/icon/ic-audio.png);
+  content: url(../../assets/icon/ic-audio.png);
 }
 #search-page #main-layouts section main .category-widget .category-widget-body .category-widget-card a .category-widget-img .ic-video {
-  content: url(../../../assets/icon/ic-video.png);
+  content: url(../../assets/icon/ic-video.png);
 }
 #search-page #main-layouts section main .category-widget .category-widget-body .category-widget-card a .card-title {
   display: -webkit-box;
@@ -4889,16 +4889,16 @@ p {
   height: 24px;
 }
 #search-page #main-layouts section main .pagination ul li a .ic-backward {
-  content: url(../../../assets/icon/ic-backward.png);
+  content: url(../../assets/icon/ic-backward.png);
 }
 #search-page #main-layouts section main .pagination ul li a .ic-forward {
-  content: url(../../../assets/icon/ic-forward.png);
+  content: url(../../assets/icon/ic-forward.png);
 }
 #search-page #main-layouts section main .pagination ul li a .ic-prev-left {
-  content: url(../../../assets/icon/ic-prev-left.png);
+  content: url(../../assets/icon/ic-prev-left.png);
 }
 #search-page #main-layouts section main .pagination ul li a .ic-prev-right {
-  content: url(../../../assets/icon/ic-prev-right.png);
+  content: url(../../assets/icon/ic-prev-right.png);
 }
 #search-page #main-layouts section main .pagination ul li:hover {
   background-color: #f98e8e;
@@ -4973,7 +4973,7 @@ p {
   position: absolute;
   left: 0;
   bottom: 0;
-  content: url(../../../assets/icon/ic-trend-1.png);
+  content: url(../../assets/icon/ic-trend-1.png);
   width: 53px;
   height: auto;
 }
@@ -5008,16 +5008,16 @@ p {
   height: auto;
 }
 #search-page #main-layouts section aside .terpopuler-widget .pop-card a .populer-img .ic-pop-2 {
-  content: url(../../../assets/icon/ic-trend-2.png);
+  content: url(../../assets/icon/ic-trend-2.png);
 }
 #search-page #main-layouts section aside .terpopuler-widget .pop-card a .populer-img .ic-pop-3 {
-  content: url(../../../assets/icon/ic-trend-3.png);
+  content: url(../../assets/icon/ic-trend-3.png);
 }
 #search-page #main-layouts section aside .terpopuler-widget .pop-card a .populer-img .ic-pop-4 {
-  content: url(../../../assets/icon/ic-trend-4.png);
+  content: url(../../assets/icon/ic-trend-4.png);
 }
 #search-page #main-layouts section aside .terpopuler-widget .pop-card a .populer-img .ic-pop-5 {
-  content: url(../../../assets/icon/ic-trend-5.png);
+  content: url(../../assets/icon/ic-trend-5.png);
 }
 #search-page #main-layouts section aside .terpopuler-widget .pop-card a .pop-title {
   display: -webkit-box;
@@ -5114,10 +5114,10 @@ p {
     bottom: 12px;
   }
   #search-page #main-layouts section main .category-widget .category-widget-body .category-widget-card a .category-widget-img .ic-audio {
-    content: url(../../../assets/icon/ic-audio.png);
+    content: url(../../assets/icon/ic-audio.png);
   }
   #search-page #main-layouts section main .category-widget .category-widget-body .category-widget-card a .category-widget-img .ic-video {
-    content: url(../../../assets/icon/ic-video.png);
+    content: url(../../assets/icon/ic-video.png);
   }
   #search-page #main-layouts section main .category-widget .category-widget-body .category-widget-card a h4 {
     display: -webkit-box;
@@ -5174,7 +5174,7 @@ p {
     position: absolute;
     left: 0;
     bottom: 0;
-    content: url(../../../assets/icon/ic-trend-1.png);
+    content: url(../../assets/icon/ic-trend-1.png);
     width: 53px;
     height: auto;
   }
@@ -5209,16 +5209,16 @@ p {
     height: auto;
   }
   #search-page #main-layouts section aside .terpopuler-widget .pop-card a .populer-img .ic-pop-2 {
-    content: url(../../../assets/icon/ic-trend-2.png);
+    content: url(../../assets/icon/ic-trend-2.png);
   }
   #search-page #main-layouts section aside .terpopuler-widget .pop-card a .populer-img .ic-pop-3 {
-    content: url(../../../assets/icon/ic-trend-3.png);
+    content: url(../../assets/icon/ic-trend-3.png);
   }
   #search-page #main-layouts section aside .terpopuler-widget .pop-card a .populer-img .ic-pop-4 {
-    content: url(../../../assets/icon/ic-trend-4.png);
+    content: url(../../assets/icon/ic-trend-4.png);
   }
   #search-page #main-layouts section aside .terpopuler-widget .pop-card a .populer-img .ic-pop-5 {
-    content: url(../../../assets/icon/ic-trend-5.png);
+    content: url(../../assets/icon/ic-trend-5.png);
   }
   #search-page #main-layouts section aside .terpopuler-widget .pop-card a h4 {
     height: 72px;
