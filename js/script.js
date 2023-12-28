@@ -1,5 +1,5 @@
 import { homePage } from "./home-page.js";
-import { detailLiveVideo } from "./detail-live-video.js";
+import { detailAudioVideo } from "./detail-audio-video.js";
 import { closeNav, opanNav } from "./navigation.js"
 
 
@@ -13,8 +13,8 @@ function runAllModules() {
     // Page Functions
     if ($("#home-page").length > 0) {
         homePage();
-    } else if ($("#detail-live-video-page").length > 0) {
-        detailLiveVideo();
+    } else {
+        detailAudioVideo();
     }
 }
 

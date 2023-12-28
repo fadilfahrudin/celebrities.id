@@ -956,7 +956,8 @@ p {
 #home-page #main-layouts section main .live-stream .live-card .live-chat {
   background-color: #222934;
   width: 60%;
-  height: 100%;
+  height: auto;
+  border-radius: 10px;
 }
 #home-page #main-layouts section main .live-stream .live-card .live-chat.hidden {
   display: none;
@@ -2530,10 +2531,39 @@ p {
   background-color: #222934;
 }
 #detail-audio #details-layouts section main .audio-stream-wrapper p {
+  display: var(--text-display, -webkit-box);
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  text-overflow: ellipsis;
+  overflow: hidden;
   margin-top: 12px;
   color: #707070;
   font-size: 18px;
   line-height: 150%;
+  height: auto;
+  background-color: #1c222b;
+}
+#detail-audio #details-layouts section main .audio-stream-wrapper p.show {
+  -webkit-line-clamp: unset;
+}
+#detail-audio #details-layouts section main .audio-stream-wrapper p .see-more {
+  cursor: pointer;
+  display: inline;
+  position: absolute;
+  z-index: 3;
+  right: 0px;
+  bottom: 1px;
+  background-color: #1c222b;
+  padding: 0 8px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  color: #f98e8e;
+}
+#detail-audio #details-layouts section main .audio-stream-wrapper p .see-more.show {
+  position: unset;
 }
 #detail-audio #details-layouts section main .card-wrapper {
   width: 100%;
@@ -3049,8 +3079,9 @@ p {
   height: auto;
 }
 #detail-radio-streaming #details-layouts section main .radio-stream-wrapper .radio-stream .video-stream {
+  padding: 0 15px;
   width: 100%;
-  height: 236px;
+  height: auto;
 }
 #detail-radio-streaming #details-layouts section main .radio-stream-wrapper .radio-stream .video-stream iframe {
   width: 100%;
