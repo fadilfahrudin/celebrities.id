@@ -152,7 +152,7 @@ p {
   height: 32px;
 }
 #main-layouts header .container .search {
-  background-color: #9b9b9b;
+  background-color: #2e343e;
   padding: 8px 16px;
   width: 350px;
   border: none;
@@ -314,6 +314,7 @@ p {
   width: 100%;
   min-height: 414px;
   padding: 32px 0;
+  padding-bottom: 0;
   overflow: hidden;
   background-color: #222934;
 }
@@ -435,7 +436,7 @@ p {
     height: 32px;
   }
   #main-layouts header .container .search {
-    background-color: #9b9b9b;
+    background-color: #2e343e;
     padding: 8px 16px;
     width: 30vw;
     border: none;
@@ -533,7 +534,7 @@ p {
   height: 32px;
 }
 #details-layouts header .container .search {
-  background-color: #9b9b9b;
+  background-color: #2e343e;
   padding: 8px 16px;
   width: 350px;
   border: none;
@@ -808,7 +809,7 @@ p {
     height: 32px;
   }
   #details-layouts header .container .search {
-    background-color: #9b9b9b;
+    background-color: #2e343e;
     padding: 8px 16px;
     width: 30vw;
     border: none;
@@ -3355,7 +3356,7 @@ p {
   height: 32px;
 }
 #detail-video header .container .search {
-  background-color: #9b9b9b;
+  background-color: #2e343e;
   padding: 8px 16px;
   width: 350px;
   border: none;
@@ -3867,7 +3868,7 @@ p {
     height: 32px;
   }
   #detail-video header .container .search {
-    background-color: #9b9b9b;
+    background-color: #2e343e;
     padding: 8px 16px;
     width: 30vw;
     border: none;
