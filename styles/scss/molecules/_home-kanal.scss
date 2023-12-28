@@ -485,11 +485,11 @@
                             gap: 16px;
                             .category-widget-card {
                                 flex-shrink: unset; //hide grow content
-                                flex-basis: 208px;
-                                flex-grow: 1;
+                                flex-basis: calc((100% / 3) - 11px);
+                                flex-grow: 0;
+                                overflow: hidden;
                                 width: 100%;
                                 height: auto;
-                                overflow: hidden;
                                 a {
                                     text-decoration: none;
                                     .category-widget-img {

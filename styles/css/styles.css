@@ -1451,16 +1451,9 @@ p {
     gap: 16px;
   }
   #home-page #main-layouts section main .category-widget .category-widget-body .category-widget-card {
-    flex-shrink: unset;
-    flex-basis: 208px;
-    flex-grow: 1;
-    width: 100%;
-    height: auto;
-    overflow: hidden;
-  }
-  #home-page #main-layouts section main .category-widget .category-widget-body .category-widget-card:last-child {
-    flex-basis: calc(50% - 8px);
+    flex-basis: calc(33.3333333333% - 11px);
     flex-grow: 0;
+    overflow: hidden;
   }
   #home-page #main-layouts section main .category-widget .category-widget-body .category-widget-card a {
     text-decoration: none;
@@ -2070,11 +2063,11 @@ p {
   }
   #home-page #main-layouts section main .category-widget .category-widget-body .category-widget-card {
     flex-shrink: unset;
-    flex-basis: 208px;
-    flex-grow: 1;
+    flex-basis: calc(33.3333333333% - 11px);
+    flex-grow: 0;
+    overflow: hidden;
     width: 100%;
     height: auto;
-    overflow: hidden;
   }
   #home-page #main-layouts section main .category-widget .category-widget-body .category-widget-card a {
     text-decoration: none;

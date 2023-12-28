@@ -618,17 +618,9 @@
                             flex-wrap: wrap;
                             gap: 16px;
                             .category-widget-card {
-                                flex-shrink: unset; //hide grow content
-                                flex-basis: 208px;
-                                flex-grow: 1;
-                                width: 100%;
-                                height: auto;
+                                flex-basis: calc((100% / 3) - 11px);
+                                flex-grow: 0;
                                 overflow: hidden;
-
-                                &:last-child {
-                                    flex-basis: calc((100% / 2) - 8px);
-                                    flex-grow: 0;
-                                }
                                 a {
                                     text-decoration: none;
                                     .category-widget-img {
