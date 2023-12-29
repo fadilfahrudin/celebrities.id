@@ -2288,6 +2288,20 @@ p {
   font-size: 18px;
   line-height: 150%;
 }
+#detail-live-video #details-layouts section main .live-stream-wrapper p .see-more {
+  cursor: pointer;
+  display: inline;
+  background-color: #1c222b;
+  padding: 0 8px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  color: #f98e8e;
+}
+#detail-live-video #details-layouts section main .live-stream-wrapper p .see-more.show {
+  position: unset;
+}
 #detail-live-video #details-layouts section main .live-stream-wrapper .socmed {
   margin-top: 24px;
   display: flex;
@@ -2845,6 +2859,20 @@ p {
   font-size: 18px;
   line-height: 150%;
 }
+#detail-tv-streaming #details-layouts section main .tv-stream-wrapper p .see-more {
+  cursor: pointer;
+  display: inline;
+  background-color: #1c222b;
+  padding: 0 8px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  color: #f98e8e;
+}
+#detail-tv-streaming #details-layouts section main .tv-stream-wrapper p .see-more.show {
+  position: unset;
+}
 #detail-tv-streaming #details-layouts section main .tv-stream-wrapper .socmed {
   margin-top: 24px;
   display: flex;
@@ -3133,6 +3161,20 @@ p {
   color: #707070;
   font-size: 18px;
   line-height: 150%;
+}
+#detail-radio-streaming #details-layouts section main .radio-stream-wrapper p .see-more {
+  cursor: pointer;
+  display: inline;
+  background-color: #1c222b;
+  padding: 0 8px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  color: #f98e8e;
+}
+#detail-radio-streaming #details-layouts section main .radio-stream-wrapper p .see-more.show {
+  position: unset;
 }
 #detail-radio-streaming #details-layouts section main .radio-stream-wrapper ul {
   margin-top: 24px;

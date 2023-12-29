@@ -99,6 +99,22 @@
                         color: #707070;
                         font-size: 18px;
                         line-height: 150%;
+                        .see-more {
+                            cursor: pointer;
+                            display: inline;
+                            background-color: $color-dark;
+
+                            padding: 0 8px;
+                            font-size: 18px;
+                            font-style: normal;
+                            font-weight: 700;
+                            line-height: 150%;
+                            color: $color-pink;
+
+                            &.show {
+                                position: unset;
+                            }
+                        }
                     }
                     ul {
                         margin-top: 24px;
