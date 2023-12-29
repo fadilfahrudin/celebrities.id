@@ -28,14 +28,6 @@
                         }
                     }
                     p {
-                        display: var(--text-display, -webkit-box);
-
-                        position: relative;
-                        -webkit-box-orient: vertical;
-                        -webkit-line-clamp: 3;
-                        text-overflow: ellipsis;
-                        overflow: hidden;
-
                         margin-top: 12px;
                         color: #707070;
                         font-size: 18px;
@@ -50,10 +42,6 @@
                         .see-more {
                             cursor: pointer;
                             display: inline;
-                            position: absolute;
-                            z-index: 3;
-                            right: 0px;
-                            bottom: 1px;
                             background-color: $color-dark;
 
                             padding: 0 8px;
