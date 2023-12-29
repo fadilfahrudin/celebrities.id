@@ -286,6 +286,7 @@ p {
   background-image: url(../../../assets/img/banner-live-streaming.png);
   width: 232px;
   height: 60px;
+  font-weight: bold;
 }
 #main-layouts nav.clicked {
   display: block;
@@ -668,6 +669,7 @@ p {
   background-image: url(../../../assets/img/banner-live-streaming.png);
   width: 232px;
   height: 60px;
+  font-weight: bold;
 }
 #details-layouts nav.clicked {
   display: block;
@@ -3557,6 +3559,7 @@ p {
   background-image: url(../../../assets/img/banner-live-streaming.png);
   width: 232px;
   height: 60px;
+  font-weight: bold;
 }
 #detail-video nav.clicked {
   display: block;
