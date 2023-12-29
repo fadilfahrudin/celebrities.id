@@ -2537,9 +2537,19 @@ p {
   border: none;
   background-color: #222934;
 }
+#detail-audio #details-layouts section main .audio-stream-wrapper .audio-created {
+  margin-top: 32px;
+  display: block;
+  color: var(--Grey-500, #707070);
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 170%; /* 27.2px */
+}
 #detail-audio #details-layouts section main .audio-stream-wrapper p {
   margin-top: 12px;
-  color: #707070;
+  color: #fff;
   font-size: 18px;
   line-height: 150%;
   height: auto;
@@ -2855,7 +2865,7 @@ p {
 }
 #detail-tv-streaming #details-layouts section main .tv-stream-wrapper p {
   margin-top: 12px;
-  color: #707070;
+  color: #d3d3d3;
   font-size: 18px;
   line-height: 150%;
 }
@@ -3158,7 +3168,7 @@ p {
 }
 #detail-radio-streaming #details-layouts section main .radio-stream-wrapper p {
   margin-top: 12px;
-  color: #707070;
+  color: #fff;
   font-size: 18px;
   line-height: 150%;
 }
