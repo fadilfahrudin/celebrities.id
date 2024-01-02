@@ -2285,13 +2285,13 @@ p {
   margin-top: 16px;
   color: #d3d3d3;
 }
-#detail-live-video #details-layouts section main .live-stream-wrapper p {
+#detail-live-video #details-layouts section main .live-stream-wrapper .content-data p {
   margin-top: 12px;
   color: #707070;
   font-size: 18px;
   line-height: 150%;
 }
-#detail-live-video #details-layouts section main .live-stream-wrapper p .see-more {
+#detail-live-video #details-layouts section main .live-stream-wrapper .content-data p .see-more {
   cursor: pointer;
   display: inline;
   background-color: #1c222b;
@@ -2302,7 +2302,7 @@ p {
   line-height: 150%;
   color: #f98e8e;
 }
-#detail-live-video #details-layouts section main .live-stream-wrapper p .see-more.show {
+#detail-live-video #details-layouts section main .live-stream-wrapper .content-data p .see-more.show {
   position: unset;
 }
 #detail-live-video #details-layouts section main .live-stream-wrapper .socmed {
@@ -2475,7 +2475,7 @@ p {
   font-weight: 400;
   line-height: 170%; /* 27.2px */
 }
-#detail-audio #details-layouts section main .audio-stream-wrapper p {
+#detail-audio #details-layouts section main .audio-stream-wrapper .content-data p {
   margin-top: 12px;
   color: #fff;
   font-size: 18px;
@@ -2483,10 +2483,10 @@ p {
   height: auto;
   background-color: #1c222b;
 }
-#detail-audio #details-layouts section main .audio-stream-wrapper p.show {
+#detail-audio #details-layouts section main .audio-stream-wrapper .content-data p.show {
   -webkit-line-clamp: unset;
 }
-#detail-audio #details-layouts section main .audio-stream-wrapper p .see-more {
+#detail-audio #details-layouts section main .audio-stream-wrapper .content-data p .see-more {
   cursor: pointer;
   display: inline;
   background-color: #1c222b;
@@ -2497,7 +2497,7 @@ p {
   line-height: 150%;
   color: #f98e8e;
 }
-#detail-audio #details-layouts section main .audio-stream-wrapper p .see-more.show {
+#detail-audio #details-layouts section main .audio-stream-wrapper .content-data p .see-more.show {
   position: unset;
 }
 #detail-audio #details-layouts section main .card-wrapper {
@@ -2740,13 +2740,13 @@ p {
   font-weight: 700;
   line-height: 150%;
 }
-#detail-tv-streaming #details-layouts section main .tv-stream-wrapper p {
+#detail-tv-streaming #details-layouts section main .tv-stream-wrapper .content-data p {
   margin-top: 12px;
   color: #d3d3d3;
   font-size: 18px;
   line-height: 150%;
 }
-#detail-tv-streaming #details-layouts section main .tv-stream-wrapper p .see-more {
+#detail-tv-streaming #details-layouts section main .tv-stream-wrapper .content-data p .see-more {
   cursor: pointer;
   display: inline;
   background-color: #1c222b;
@@ -2757,7 +2757,7 @@ p {
   line-height: 150%;
   color: #f98e8e;
 }
-#detail-tv-streaming #details-layouts section main .tv-stream-wrapper p .see-more.show {
+#detail-tv-streaming #details-layouts section main .tv-stream-wrapper .content-data p .see-more.show {
   position: unset;
 }
 #detail-tv-streaming #details-layouts section main .tv-stream-wrapper .socmed {
@@ -3004,13 +3004,13 @@ p {
   width: 124px;
   height: 82px;
 }
-#detail-radio-streaming #details-layouts section main .radio-stream-wrapper p {
+#detail-radio-streaming #details-layouts section main .radio-stream-wrapper .content-data p {
   margin-top: 12px;
   color: #fff;
   font-size: 18px;
   line-height: 150%;
 }
-#detail-radio-streaming #details-layouts section main .radio-stream-wrapper p .see-more {
+#detail-radio-streaming #details-layouts section main .radio-stream-wrapper .content-data p .see-more {
   cursor: pointer;
   display: inline;
   background-color: #1c222b;
@@ -3021,7 +3021,7 @@ p {
   line-height: 150%;
   color: #f98e8e;
 }
-#detail-radio-streaming #details-layouts section main .radio-stream-wrapper p .see-more.show {
+#detail-radio-streaming #details-layouts section main .radio-stream-wrapper .content-data p .see-more.show {
   position: unset;
 }
 #detail-radio-streaming #details-layouts section main .radio-stream-wrapper ul {

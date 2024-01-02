@@ -37,32 +37,34 @@
                         font-weight: 400;
                         line-height: 170%; /* 27.2px */
                     }
-                    p {
-                        margin-top: 12px;
-                        color: $color-white;
-                        font-size: 18px;
-                        line-height: 150%;
-                        height: auto;
-                        background-color: $color-dark;
-
-                        &.show {
-                            -webkit-line-clamp: unset;
-                        }
-
-                        .see-more {
-                            cursor: pointer;
-                            display: inline;
+                    .content-data {
+                        p {
+                            margin-top: 12px;
+                            color: $color-white;
+                            font-size: 18px;
+                            line-height: 150%;
+                            height: auto;
                             background-color: $color-dark;
 
-                            padding: 0 8px;
-                            font-size: 18px;
-                            font-style: normal;
-                            font-weight: 700;
-                            line-height: 150%;
-                            color: $color-pink;
-
                             &.show {
-                                position: unset;
+                                -webkit-line-clamp: unset;
+                            }
+
+                            .see-more {
+                                cursor: pointer;
+                                display: inline;
+                                background-color: $color-dark;
+
+                                padding: 0 8px;
+                                font-size: 18px;
+                                font-style: normal;
+                                font-weight: 700;
+                                line-height: 150%;
+                                color: $color-pink;
+
+                                &.show {
+                                    position: unset;
+                                }
                             }
                         }
                     }

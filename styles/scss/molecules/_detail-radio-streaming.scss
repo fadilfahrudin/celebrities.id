@@ -94,25 +94,27 @@
                             }
                         }
                     }
-                    p {
-                        margin-top: 12px;
-                        color: $color-white;
-                        font-size: 18px;
-                        line-height: 150%;
-                        .see-more {
-                            cursor: pointer;
-                            display: inline;
-                            background-color: $color-dark;
-
-                            padding: 0 8px;
+                    .content-data {
+                        p {
+                            margin-top: 12px;
+                            color: $color-white;
                             font-size: 18px;
-                            font-style: normal;
-                            font-weight: 700;
                             line-height: 150%;
-                            color: $color-pink;
+                            .see-more {
+                                cursor: pointer;
+                                display: inline;
+                                background-color: $color-dark;
 
-                            &.show {
-                                position: unset;
+                                padding: 0 8px;
+                                font-size: 18px;
+                                font-style: normal;
+                                font-weight: 700;
+                                line-height: 150%;
+                                color: $color-pink;
+
+                                &.show {
+                                    position: unset;
+                                }
                             }
                         }
                     }
