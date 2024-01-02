@@ -13,10 +13,13 @@ function runAllModules() {
     // Page Functions
     if ($("#home-page").length > 0) {
         homePage();
-    } else {
+    } else if ($("#detail-audio").length > 0) {
         detailAudio();
+    } else if ($("#detail-live-video").length > 0) {
         detailVideo();
+    } else if ($("#detail-tv-streaming").length > 0) {
         detailTvStreamming();
+    } else if ($("#detail-radio-streaming").length > 0) {
         detailRadioStreamming();
     }
 }
