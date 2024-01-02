@@ -88,7 +88,7 @@ p {
     line-height: normal;
 }
 
-@include media.tab {
+@include media.ipad {
     .container {
         padding: 0 5%;
     }

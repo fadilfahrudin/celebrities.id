@@ -313,7 +313,7 @@
         }
     }
 
-    @include media.tab {
+    @include media.ipad {
         header {
             position: sticky;
             z-index: 999;
