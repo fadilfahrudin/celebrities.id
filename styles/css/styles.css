@@ -3520,6 +3520,7 @@ p {
   display: flex;
   flex-direction: column;
   gap: 12px 0;
+  margin-bottom: 24px;
 }
 #detail-video section aside .video-summary .author-wrapper .author {
   display: flex;
