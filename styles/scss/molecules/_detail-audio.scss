@@ -27,15 +27,41 @@
                             background-color: $color-dark-50;
                         }
                     }
-                    .audio-created {
+                    .stream-title {
                         margin-top: 32px;
-                        display: block;
-                        color: var(--Grey-500, #707070);
-                        font-family: Roboto, sans-serif;
-                        font-size: 16px;
+                        color: #fff;
+
+                        /* Tiitle/24 Bold H1 */
+                        font-family: Inter, sans-serif;
+                        font-size: 24px;
                         font-style: normal;
-                        font-weight: 400;
-                        line-height: 170%; /* 27.2px */
+                        font-weight: 700;
+                        line-height: 150%; /* 36px */
+                    }
+                    .author-info {
+                        margin-top: 12px;
+                        display: flex;
+                        gap: 0 12px;
+                        width: max-content;
+                        .author-name {
+                            color: var(--Grey-300, #9b9b9b);
+                            display: inline-block;
+                            /* Caption/16 Med */
+                            font-family: Inter, sans-serif;
+                            font-size: 16px;
+                            font-style: normal;
+                            font-weight: 600;
+                            line-height: 170%; /* 27.2px */
+                        }
+                        .audio-created {
+                            display: block;
+                            color: var(--Grey-500, #707070);
+                            font-family: Roboto, sans-serif;
+                            font-size: 16px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: 170%; /* 27.2px */
+                        }
                     }
                     .content-data {
                         margin-top: 12px;
@@ -69,6 +95,41 @@
 
                             &.show {
                                 position: unset;
+                            }
+                        }
+                    }
+                    ul {
+                        margin-top: 24px;
+                        list-style: none;
+                        display: flex;
+                        align-items: center;
+                        gap: 0 12px;
+                        label {
+                            font-size: 16px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: normal;
+                            color: $text-light;
+                        }
+                        li {
+                            a {
+                                text-decoration: none;
+                                i {
+                                    width: 32px;
+                                    height: 32px;
+                                }
+                                .ic-fb {
+                                    content: url(../../assets/img/fb.png);
+                                }
+                                .ic-tw {
+                                    content: url(../../assets/img/tw.png);
+                                }
+                                .ic-wa {
+                                    content: url(../../assets/img/wa.png);
+                                }
+                                .ic-link {
+                                    content: url(../../assets/img/link.png);
+                                }
                             }
                         }
                     }

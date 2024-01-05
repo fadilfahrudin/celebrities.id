@@ -2485,8 +2485,33 @@ p {
   border: none;
   background-color: #222934;
 }
-#detail-audio #details-layouts section main .audio-stream-wrapper .audio-created {
+#detail-audio #details-layouts section main .audio-stream-wrapper .stream-title {
   margin-top: 32px;
+  color: #fff;
+  /* Tiitle/24 Bold H1 */
+  font-family: Inter, sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 36px */
+}
+#detail-audio #details-layouts section main .audio-stream-wrapper .author-info {
+  margin-top: 12px;
+  display: flex;
+  gap: 0 12px;
+  width: max-content;
+}
+#detail-audio #details-layouts section main .audio-stream-wrapper .author-info .author-name {
+  color: var(--Grey-300, #9b9b9b);
+  display: inline-block;
+  /* Caption/16 Med */
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 170%; /* 27.2px */
+}
+#detail-audio #details-layouts section main .audio-stream-wrapper .author-info .audio-created {
   display: block;
   color: var(--Grey-500, #707070);
   font-family: Roboto, sans-serif;
@@ -2527,6 +2552,39 @@ p {
 }
 #detail-audio #details-layouts section main .audio-stream-wrapper .content-data .see-more.show {
   position: unset;
+}
+#detail-audio #details-layouts section main .audio-stream-wrapper ul {
+  margin-top: 24px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 0 12px;
+}
+#detail-audio #details-layouts section main .audio-stream-wrapper ul label {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: #d3d3d3;
+}
+#detail-audio #details-layouts section main .audio-stream-wrapper ul li a {
+  text-decoration: none;
+}
+#detail-audio #details-layouts section main .audio-stream-wrapper ul li a i {
+  width: 32px;
+  height: 32px;
+}
+#detail-audio #details-layouts section main .audio-stream-wrapper ul li a .ic-fb {
+  content: url(../../assets/img/fb.png);
+}
+#detail-audio #details-layouts section main .audio-stream-wrapper ul li a .ic-tw {
+  content: url(../../assets/img/tw.png);
+}
+#detail-audio #details-layouts section main .audio-stream-wrapper ul li a .ic-wa {
+  content: url(../../assets/img/wa.png);
+}
+#detail-audio #details-layouts section main .audio-stream-wrapper ul li a .ic-link {
+  content: url(../../assets/img/link.png);
 }
 #detail-audio #details-layouts section main .card-wrapper {
   width: 100%;
@@ -3051,6 +3109,16 @@ p {
 #detail-radio-streaming #details-layouts section main .radio-stream-wrapper .radio-stream .channel-stream ul li a .channel-radio {
   width: 124px;
   height: 82px;
+}
+#detail-radio-streaming #details-layouts section main .radio-stream-wrapper .stream-title {
+  margin-top: 24px;
+  color: #fff;
+  /* Tiitle/24 Bold H1 */
+  font-family: Inter, sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 36px */
 }
 #detail-radio-streaming #details-layouts section main .radio-stream-wrapper .content-data {
   margin-top: 12px;
