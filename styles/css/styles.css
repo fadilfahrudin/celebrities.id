@@ -2445,7 +2445,7 @@ p {
 }
 @media (max-width: 1279px) {
   #detail-live-video #details-layouts section main .card-wrapper .card-body .card {
-    flex-basis: calc(33.3333333333% - 16px);
+    flex-basis: calc(25% - 16px);
     flex-grow: 0;
   }
   #detail-live-video #details-layouts section main .card-wrapper .card-body .card a {
@@ -2692,7 +2692,7 @@ p {
     gap: 16px;
   }
   #detail-audio #details-layouts section main .card-wrapper .card-body .card {
-    flex-basis: calc(33.3333333333% - 16px);
+    flex-basis: calc(25% - 16px);
     flex-grow: 0;
   }
   #detail-audio #details-layouts section main .card-wrapper .card-body .card a {
@@ -3004,7 +3004,7 @@ p {
     gap: 16px;
   }
   #detail-tv-streaming #details-layouts section main .card-wrapper .card-body .card {
-    flex-basis: calc(33.3333333333% - 16px);
+    flex-basis: calc(25% - 16px);
     flex-grow: 0;
   }
   #detail-tv-streaming #details-layouts section main .card-wrapper .card-body .card a {
@@ -3299,7 +3299,7 @@ p {
     gap: 16px;
   }
   #detail-radio-streaming #details-layouts section main .card-wrapper .card-body .card {
-    flex-basis: calc(33.3333333333% - 16px);
+    flex-basis: calc(25% - 16px);
     flex-grow: 0;
   }
   #detail-radio-streaming #details-layouts section main .card-wrapper .card-body .card a {
@@ -3502,6 +3502,7 @@ p {
   gap: 16px 0;
   padding: 0 24px;
   padding-top: 72px;
+  overflow: hidden;
 }
 #detail-video section main .video-player {
   width: 100%;
@@ -3626,6 +3627,8 @@ p {
   margin-bottom: 20px;
 }
 #detail-video section aside .video-summary .description p .b-pink {
+  text-decoration: none;
+  font-weight: 700;
   color: #f98e8e;
 }
 #detail-video section aside .video-summary .video-tags {
@@ -4217,6 +4220,11 @@ p {
     font-style: normal;
     font-weight: 500;
     line-height: 150%;
+  }
+}
+@media (orientation: landscape) {
+  #detail-video section main {
+    height: 752px;
   }
 }
 
