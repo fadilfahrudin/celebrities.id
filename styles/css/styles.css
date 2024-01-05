@@ -3626,7 +3626,7 @@ p {
   line-height: 150%; /* 24px */
   margin-bottom: 20px;
 }
-#detail-video section aside .video-summary .description p .b-pink {
+#detail-video section aside .video-summary .description p a {
   text-decoration: none;
   font-weight: 700;
   color: #f98e8e;
