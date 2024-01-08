@@ -191,11 +191,19 @@
                     .live-topic-tag {
                         ul {
                             display: flex;
+                            flex-wrap: wrap;
                             list-style: none;
-                            gap: 0 16px;
+                            gap: 16px;
                             li {
-                                a {
+                                .tag-item {
+                                    max-width: 182px;
+                                    white-space: nowrap;
                                     display: block;
+                                    -webkit-box-orient: vertical;
+                                    -webkit-line-clamp: 1;
+                                    text-overflow: ellipsis;
+                                    overflow: hidden;
+
                                     text-decoration: none;
                                     color: $text-white;
                                     padding: 8px 16px;

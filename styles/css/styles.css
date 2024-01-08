@@ -1059,21 +1059,28 @@ p {
 }
 #home-page #main-layouts section main .live-topics .live-topic-tag ul {
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
-  gap: 0 16px;
+  gap: 16px;
 }
-#home-page #main-layouts section main .live-topics .live-topic-tag ul li a {
+#home-page #main-layouts section main .live-topics .live-topic-tag ul li .tag-item {
+  max-width: 182px;
+  white-space: nowrap;
   display: block;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  text-overflow: ellipsis;
+  overflow: hidden;
   text-decoration: none;
   color: #fff;
   padding: 8px 16px;
   border: 1px solid #f98e8e;
   border-radius: 32px;
 }
-#home-page #main-layouts section main .live-topics .live-topic-tag ul li a.active {
+#home-page #main-layouts section main .live-topics .live-topic-tag ul li .tag-item.active {
   background-color: #f98e8e;
 }
-#home-page #main-layouts section main .live-topics .live-topic-tag ul li a:hover {
+#home-page #main-layouts section main .live-topics .live-topic-tag ul li .tag-item:hover {
   background-color: #f98e8e;
 }
 #home-page #main-layouts section main .category-widget {
