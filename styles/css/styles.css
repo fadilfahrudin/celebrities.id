@@ -3112,13 +3112,12 @@ p {
 }
 #detail-radio-streaming #details-layouts section main .radio-stream-wrapper .stream-title {
   margin-top: 24px;
-  color: #fff;
-  /* Tiitle/24 Bold H1 */
+  color: #fff !important;
   font-family: Inter, sans-serif;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 150%; /* 36px */
+  font-size: 24px !important;
+  font-style: normal !important;
+  font-weight: 700 !important;
+  line-height: 150% !important;
 }
 #detail-radio-streaming #details-layouts section main .radio-stream-wrapper .content-data {
   margin-top: 12px;
