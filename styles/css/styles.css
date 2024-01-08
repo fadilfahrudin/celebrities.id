@@ -1419,9 +1419,9 @@ p {
   #home-page #main-layouts section main .live-topics .live-topic-tag ul {
     display: flex;
     list-style: none;
-    gap: 0 16px;
+    gap: 16px;
   }
-  #home-page #main-layouts section main .live-topics .live-topic-tag ul li a {
+  #home-page #main-layouts section main .live-topics .live-topic-tag ul li .tag-item {
     display: block;
     text-decoration: none;
     color: #fff;
@@ -1430,10 +1430,10 @@ p {
     border: 1px solid #f98e8e;
     border-radius: 32px;
   }
-  #home-page #main-layouts section main .live-topics .live-topic-tag ul li a.active {
+  #home-page #main-layouts section main .live-topics .live-topic-tag ul li .tag-item.active {
     background-color: #f98e8e;
   }
-  #home-page #main-layouts section main .live-topics .live-topic-tag ul li a:hover {
+  #home-page #main-layouts section main .live-topics .live-topic-tag ul li .tag-item:hover {
     background-color: #f98e8e;
   }
   #home-page #main-layouts section main .category-widget {

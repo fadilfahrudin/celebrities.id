@@ -582,9 +582,9 @@
                             ul {
                                 display: flex;
                                 list-style: none;
-                                gap: 0 16px;
+                                gap: 16px;
                                 li {
-                                    a {
+                                    .tag-item {
                                         display: block;
                                         text-decoration: none;
                                         color: $text-white;
