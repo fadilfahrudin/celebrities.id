@@ -294,6 +294,9 @@ p {
 #main-layouts section {
   display: flex;
   gap: 32px;
+  width: 100vw;
+  justify-content: center;
+  overflow-x: hidden;
 }
 #main-layouts section main {
   width: 784px;
@@ -2030,7 +2033,7 @@ p {
   #home-page #main-layouts section main .live-topics .live-topic-tag ul {
     display: flex;
     list-style: none;
-    gap: 0 16px;
+    gap: 16px;
   }
   #home-page #main-layouts section main .live-topics .live-topic-tag ul li a {
     display: block;

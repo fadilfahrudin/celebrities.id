@@ -195,6 +195,9 @@
     section {
         display: flex;
         gap: 32px;
+        width: 100vw;
+        justify-content: center;
+        overflow-x: hidden;
         main {
             width: 784px;
             min-height: 100vh;
