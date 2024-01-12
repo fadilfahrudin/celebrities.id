@@ -4874,16 +4874,19 @@ p {
   border: #f98e8e;
 }
 #search-page #main-layouts section main .empty-img {
-  width: 100%;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 16px 0;
+  width: 100%;
+  height: 300px;
 }
 #search-page #main-layouts section main .empty-img img {
   aspect-ratio: 1/2;
-  width: 286px;
-  height: 251px;
+  object-fit: contain;
+  object-position: center center;
 }
 #search-page #main-layouts section main .empty-img figcaption {
   color: #d3d3d3;
@@ -5051,8 +5054,8 @@ p {
   }
   #search-page #main-layouts section main .empty-img img {
     aspect-ratio: 1/2;
-    width: 286px;
-    height: 251px;
+    object-fit: contain;
+    object-position: center center;
   }
   #search-page #main-layouts section aside .terpopuler-widget {
     gap: 15px 0;
