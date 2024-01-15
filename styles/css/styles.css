@@ -294,7 +294,7 @@ p {
 #main-layouts section {
   display: flex;
   gap: 32px;
-  width: 100vw;
+  width: 100%;
   justify-content: center;
   overflow-x: hidden;
 }
